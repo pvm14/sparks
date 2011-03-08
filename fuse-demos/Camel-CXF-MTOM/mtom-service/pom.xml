@@ -1,0 +1,136 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<artifactId>camel-cxf-mtom-demo</artifactId>
+		<groupId>com.fusesource.test</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>mtom-service</artifactId>
+	<packaging>bundle</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>MTOM Example Service</name>
+	
+	<properties>
+	  <cxf-version>2.2.11-fuse-00-00</cxf-version>
+	  <camel-version>2.4.0-fuse-00-00</camel-version>
+	  <log4j-version>1.2.16</log4j-version>
+	  <build-helper-maven-plugin.version>1.5</build-helper-maven-plugin.version>
+	  <!-- used to generate features.xml -->
+	  <spring-version>3.0.5.RELEASE</spring-version>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-core</artifactId>
+			<version>${camel-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-cxf</artifactId>
+			<version>${camel-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-spring</artifactId>
+			<version>${camel-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-bundle</artifactId>
+			<version>${cxf-version}</version>
+		</dependency>		
+	</dependencies>
+
+	<!-- for packaging as an OSGi bundle, we use the maven-bundle-plugin -->
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>.</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>plugin.xml</include>
+					<include>META-INF/*</include>
+				</includes>
+			</resource>
+    </resources>
+	
+
+		<plugins>
+			<plugin>
+  			  <groupId>org.apache.camel</groupId>
+  			  <artifactId>camel-maven-plugin</artifactId>
+  			  <version>${camel-version}</version>
+  			  <configuration>
+    			<applicationContextUri>META-INF/spring/*.xml</applicationContextUri>
+  			  </configuration>
+			</plugin>
+			
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<encoding>ISO-8859-1</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.cxf</groupId>
+				<artifactId>cxf-codegen-plugin</artifactId>
+				<version>${cxf-version}</version>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<configuration>
+							<sourceRoot>${basedir}/target/generated-src/main/java</sourceRoot>
+						</configuration>
+						<goals>
+							<goal>wsdl2java</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<version>1.4.0</version>
+				<configuration>
+					<manifestLocation>META-INF</manifestLocation>
+					<instructions>
+						<Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
+						<Export-Package>
+							com.fusesource.test.mtom
+						</Export-Package>
+						<Import-Package>
+							META-INF.cxf,
+							META-INF.cxf.osgi,
+							*        
+						</Import-Package>
+						<DynamicImport-Package>
+						  *
+						</DynamicImport-Package>
+						<Private-Package>
+							com.fusesource.test.mtom.v1,
+						</Private-Package>
+						
+						<Include-Resource>{src/main/resources}</Include-Resource>
+						<Require-Bundle>org.apache.cxf.bundle</Require-Bundle>
+					</instructions>
+				</configuration>
+			</plugin>
+	  </plugins>
+	</build>
+</project>

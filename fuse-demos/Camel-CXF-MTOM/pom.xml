@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.fusesource.test</groupId>
+  <artifactId>camel-cxf-mtom-demo</artifactId>
+  <packaging>pom</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <modules>
+  	<module>mtom-service</module>
+  	<module>mtom-client</module>
+  </modules>
+  
+  <pluginRepositories>
+    <pluginRepository>
+      <id>fusesource.m2</id>
+      <name>FuseSource Repository</name>
+      <url>http://repo.fusesource.com/nexus/content/groups/public</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <repositories>
+    <repository>
+      <id>fusesource.m2</id>
+      <name>FuseSource Repository</name>
+      <url>http://repo.fusesource.com/nexus/content/groups/public</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+  </repositories>
+</project>

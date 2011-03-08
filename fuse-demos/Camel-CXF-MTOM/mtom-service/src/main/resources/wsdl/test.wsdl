@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- My own version -->
+<wsdl:definitions 
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://www.fusesource.com/test/mtom" 
+	xmlns:v1="http://www.fusesource.com/test/mtom/v1" 
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xmime="http://www.w3.org/2005/05/xmlmime"
+	name="Mtom"
+	targetNamespace="http://www.fusesource.com/test/mtom">
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://www.fusesource.com/test/mtom/v1">
+			<xsd:element name="doMtomRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="input" type="xsd:string" />
+						<xsd:element name="data" type="xsd:base64Binary" xmime:expectedContentTypes="application/octet-stream"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="doMtomResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="return" type="xsd:string" />
+						<xsd:element name="data" type="xsd:base64Binary" xmime:expectedContentTypes="application/octet-stream" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="doMtomRequest">
+		<wsdl:part element="v1:doMtomRequest" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="doMtomResponse">
+		<wsdl:part element="v1:doMtomResponse" name="parameters" />
+	</wsdl:message>
+	<wsdl:portType name="MtomTest">
+		<wsdl:operation name="doMtom">
+			<wsdl:input message="tns:doMtomRequest" />
+			<wsdl:output message="tns:doMtomResponse" />
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="MtomSoap" type="tns:MtomTest">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="doMtom">
+			<soap:operation soapAction="http://www.fusesource.com/test/mtom/do" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="MtomTestService">
+		<wsdl:port binding="tns:MtomSoap" name="mtom">
+			<soap:address location="localhost:8102/test/mtom/v1" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

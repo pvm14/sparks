@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features>
+	<!-- This line needed in order to be able to import camel-core, camel-jms, etc... -->
+    <repository>mvn:org.apache.servicemix/apache-servicemix/4.3.0-fuse-03-00/xml/features</repository>
+
+	<feature name="Camel-CXF-MTOM-Demo">
+		<feature>camel-core</feature>
+        <feature>camel-spring</feature>
+        <feature>camel-nmr</feature>
+        <feature>camel-cxf</feature>
+        <feature>cxf</feature>
+        <feature>nmr</feature>
+		<bundle>mvn:com.fusesource.test/mtom-service/0.0.1-SNAPSHOT</bundle>
+		<bundle>mvn:org.springframework/spring-beans/3.0.3.RELEASE</bundle>
+	</feature>
+</features>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:camel="http://camel.apache.org/schema/spring"
+  xmlns:cxf="http://camel.apache.org/schema/cxf"
+  xsi:schemaLocation="
+  	http://www.springframework.org/schema/beans 
+  	  http://www.springframework.org/schema/beans/spring-beans.xsd
+  	http://camel.apache.org/schema/spring 
+  	  http://camel.apache.org/schema/spring/camel-spring.xsd
+    http://camel.apache.org/schema/cxf 
+      http://camel.apache.org/schema/cxf/camel-cxf.xsd">
+	
+  <!-- CXF consumer endpoint -->
+  <cxf:cxfEndpoint id="mtomWs"
+    address="http://localhost:8102/test/mtom/v1"
+    wsdlURL="wsdl/test.wsdl"
+    serviceClass="com.fusesource.test.mtom.MtomTest">
+    <cxf:properties>
+      <entry key="mtom-enabled" value="true" />
+   	  <entry key="dataFormat" value="POJO" />
+   	</cxf:properties>		
+  </cxf:cxfEndpoint>
+  
+  <!-- Camel route definition -->
+  <camel:camelContext trace="false">
+    <camel:route id="mtom" >
+      <camel:from uri="cxf:bean:mtomWs"/>
+      <camel:to uri="log:CamelMessageLogger?level=INFO"/>
+      <camel:to uri="bean:ServiceImpl"/>
+     </camel:route>
+  </camel:camelContext>
+  
+  <!-- WSDL service implementation class -->
+  <bean id="ServiceImpl" class="com.fusesource.test.mtom.MtomImpl"/>
+</beans>
