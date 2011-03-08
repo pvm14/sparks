@@ -1,0 +1,24 @@
+#ifndef _SERVER_GRID_IDL_
+#define _SERVER_GRID_IDL_
+ 
+//
+//      Copyright (c) 2000 IONA Technologies PLC. All Rights Reserved.
+//
+
+interface Grid 
+{
+  exception GridException {
+	    string  reason;
+  };
+
+
+  readonly attribute short height;  // height of the grid
+  readonly attribute short width;   // width of the grid
+
+  void set(in short n, in short m, in long value) raises (GridException); 
+  long get(in short n, in short m) raises (GridException);
+};
+   
+
+
+#endif  /*!_SERVER_GRID_IDL_*/

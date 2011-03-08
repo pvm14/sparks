@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:osgi="http://camel.apache.org/schema/osgi"
+       xmlns:osgix="http://www.springframework.org/schema/osgi-compendium"
+       xmlns:ctx="http://www.springframework.org/schema/context"
+       xmlns:cxf="http://camel.apache.org/schema/cxf"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans 
+         http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+       http://camel.apache.org/schema/spring 
+         http://camel.apache.org/schema/spring/camel-spring.xsd
+       http://camel.apache.org/schema/osgi 
+         http://camel.apache.org/schema/osgi/camel-osgi.xsd
+       http://www.springframework.org/schema/osgi-compendium 
+         http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium.xsd
+       http://www.springframework.org/schema/context 
+         http://www.springframework.org/schema/context/spring-context.xsd
+	   http://camel.apache.org/schema/cxf
+	     http://camel.apache.org/schema/cxf/camel-cxf-2.4.0.xsd">
+   
+  <camelContext xmlns="http://camel.apache.org/schema/spring" 
+  	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+
+    <!-- JAXB dataFormat for unmarshaling request -->
+  	<dataFormats>
+      <jaxb id="myJaxb" prettyPrint="true" 
+        contextPath="com.fusesource.camel_cxf_corba_test"/>
+    </dataFormats>
+    
+    <!-- Handle exceptions in a simple way -->
+    <onException>
+	  <exception>java.lang.Exception</exception>
+	  <!-- tell Camel to handle and continue when this exception was thrown -->
+	  <continued><constant>true</constant></continued>
+	</onException>
+	
+	
+    <route>
+      <!-- start a timer  -->
+      <from uri="timer://myTimer?fixedRate=true&amp;period=20000"/>
+	  <setHeader headerName="operationName">
+	    <constant>get</constant>
+	  </setHeader>
+	  
+	  <!-- set fixed message body -->
+	  <setBody>
+	    <constant>
+	    <![CDATA[
+	      <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+	        xmlns:cam="http://fusesource.com/camel_cxf_corba_test">
+            <soapenv:Header/>
+            <soapenv:Body>
+              <cam:set>
+                <n>1</n>
+                <m>1</m>
+                <value>10</value>
+              </cam:set>
+            </soapenv:Body>
+          </soapenv:Envelope>
+        ]]>
+        </constant>
+	  </setBody>
+	  
+	  <!-- strip off soap envelope and body -->
+	  <transform>
+	    <!-- assuming only one child under <soapenv:Body> -->
+   	    <xquery>/soap:Envelope/soap:Body/child::*</xquery>
+   	  </transform>
+      <to uri="log:BeforeJAXB"/>
+      
+      <!-- unmarshal into JAXB object -->
+      <unmarshal ref="myJaxb"/>
+      
+      <!-- pass to custom processor -->
+      <process ref="MyProcessor"/>
+      <to uri="log:AfterCustomProcessor"/>
+      
+      <!-- invoke CXF producer endpoint -->
+      <to uri="cxf:bean:CORBAServiceEndpoint?dataFormat=POJO"/>
+      <to uri="log:AfterCORBAInvocation"/>
+    </route>
+  </camelContext>
+
+  <!-- Configuration of CXF producer endpoint. 
+  	   When deployed into OSGI, you need to reference the full path
+  	   name to CORBA IOR, e.g:
+  	     address="file:///D:/Temp/TestCases/Cisco/PROD-512/Camel-CXF-CORBA-Test/camel-cxf-corba-test/ior.txt"
+  	   When running standalone using the camel-maven-plugin, relative path 
+  	   names are sufficient, e.g
+  	     address="file:./ior.txt"
+  	     
+  	  All CORBA related calls are delegated to the Sun ORB. So there is also support
+  	  for corbaloc and corbaname url scheme, e.g.
+  	    address="corbaname::localhost:53083#gridServer"
+  	  
+  	  where 
+  	    localhost:53083 names the host and port of the NameService process, and
+  	    #gridServer is the name inside the NameService under which the CORBA 
+  	    server IOR is registered.
+  -->
+  
+  <cxf:cxfEndpoint id="CORBAServiceEndpoint" 
+     wsdlURL="classpath:wsdl/grid.wsdl"
+     serviceClass="com.fusesource.camel_cxf_corba_test.Grid"
+     endpointName="s:GridCORBAPort"
+     serviceName="s:GridCORBAService"
+     address="file:///D:/Temp/TestCases/Cisco/PROD-512/Camel-CXF-CORBA-Test/camel-cxf-corba-test/ior.txt"
+     xmlns:s="http://fusesource.com/camel_cxf_corba_test" >
+  </cxf:cxfEndpoint>
+  
+  
+  <!-- Custom processor prepares message for POJO format according to 
+       http://camel.apache.org/cxf.html#CXF-HowtopreparethemessageforthecamelcxfendpointinPOJOdataformat
+       
+       When using CXF CORBA binding, POJO format is needed in camel-cxf!
+       Because the CORBA binding puts the marshal and unmarshal and the 
+       transport part together.
+       This processor maps the invocation arguments to an ArrayList 
+        -->
+  <bean id="MyProcessor" class="com.fusesource.camel_cxf_corba_test.MyProcessor"/>
+ </beans>

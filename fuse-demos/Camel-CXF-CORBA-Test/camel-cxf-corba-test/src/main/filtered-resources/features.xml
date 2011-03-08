@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features>
+
+  <!-- This line needed in order to be able to import camel-core, camel-jms, etc... -->
+  <repository>mvn:org.apache.servicemix/apache-servicemix/${servicemix-version}/xml/features</repository>
+
+  <feature name="CXF Load balancing research">
+    <feature>camel-core</feature>
+    <feature>camel-cxf</feature>
+    <feature>camel-spring</feature>
+    <feature>camel-saxon</feature>
+    <feature>camel-jaxb</feature>
+    <feature>cxf</feature>
+    <feature>cxf-osgi</feature>
+    <bundle>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundle>
+  </feature>
+</features>

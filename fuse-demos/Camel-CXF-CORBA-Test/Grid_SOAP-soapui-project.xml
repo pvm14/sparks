@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project name="Grid_SOAP" resourceRoot="" soapui-version="2.5.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="GridSoapBinding" type="wsdl" bindingName="{http://fusesource.com/camel_cxf_corba_test}GridSoapBinding" soapVersion="1_1" anonymous="optional" definition="file:/C:/Temp/grid_soap.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/C:/Temp/grid_soap.wsdl"><con:part><con:url>file:/C:/Temp/grid_soap.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://fusesource.com/camel_cxf_corba_test" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://fusesource.com/camel_cxf_corba_test" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsd1="http://fusesource.com/camel_cxf_corba_test" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://fusesource.com/camel_cxf_corba_test" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://fusesource.com/camel_cxf_corba_test">
+      <xs:element name="Grid.GridException" type="Grid.GridExceptionType"></xs:element>
+      <xs:complexType name="Grid.GridExceptionType">
+        <xs:sequence>
+          <xs:element name="reason" type="xs:string"></xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="_get_height">
+        <xs:complexType>
+          <xs:sequence></xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="_get_heightResult">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:short"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="_get_width">
+        <xs:complexType>
+          <xs:sequence></xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="_get_widthResult">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:short"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="set">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="n" type="xs:short"></xs:element>
+            <xs:element name="m" type="xs:short"></xs:element>
+            <xs:element name="value" type="xs:int"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="setResponse">
+        <xs:complexType>
+          <xs:sequence></xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="get">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="n" type="xs:short"></xs:element>
+            <xs:element name="m" type="xs:short"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:int"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="get">
+    <wsdl:part name="inparameter" element="tns:get"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Grid.GridException">
+    <wsdl:part name="exception" element="tns:Grid.GridException"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="_get_height">
+    <wsdl:part name="parameters" element="tns:_get_height"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="set">
+    <wsdl:part name="inparameter" element="tns:set"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="_get_widthResponse">
+    <wsdl:part name="parameters" element="tns:_get_widthResult"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="_get_heightResponse">
+    <wsdl:part name="parameters" element="tns:_get_heightResult"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="_get_width">
+    <wsdl:part name="parameters" element="tns:_get_width"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setResponse">
+    <wsdl:part name="outparameter" element="tns:setResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getResponse">
+    <wsdl:part name="outparameter" element="tns:getResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Grid">
+    <wsdl:operation name="_get_height">
+      <wsdl:input name="_get_height" message="tns:_get_height"></wsdl:input>
+      <wsdl:output name="_get_heightResponse" message="tns:_get_heightResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_get_width">
+      <wsdl:input name="_get_width" message="tns:_get_width"></wsdl:input>
+      <wsdl:output name="_get_widthResponse" message="tns:_get_widthResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set">
+      <wsdl:input name="setRequest" message="tns:set"></wsdl:input>
+      <wsdl:output name="setResponse" message="tns:setResponse"></wsdl:output>
+      <wsdl:fault name="Grid.GridException" message="tns:Grid.GridException"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="get">
+      <wsdl:input name="getRequest" message="tns:get"></wsdl:input>
+      <wsdl:output name="getResponse" message="tns:getResponse"></wsdl:output>
+      <wsdl:fault name="Grid.GridException" message="tns:Grid.GridException"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GridCORBABinding" type="tns:Grid">
+    <corba:binding repositoryID="IDL:Grid:1.0"/>
+    <wsdl:operation name="_get_height">
+      <corba:operation name="_get_height">
+        <corba:return name="return" idltype="corba:short"/>
+      </corba:operation>
+      <wsdl:input name="_get_height"></wsdl:input>
+      <wsdl:output name="_get_heightResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_get_width">
+      <corba:operation name="_get_width">
+        <corba:return name="return" idltype="corba:short"/>
+      </corba:operation>
+      <wsdl:input name="_get_width"></wsdl:input>
+      <wsdl:output name="_get_widthResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set">
+      <corba:operation name="set">
+        <corba:param mode="in" name="n" idltype="corba:short"/>
+        <corba:param mode="in" name="m" idltype="corba:short"/>
+        <corba:param mode="in" name="value" idltype="corba:long"/>
+        <corba:raises exception="Grid.GridException" xmlns="http://fusesource.com/camel_cxf_corba_test/typemap"/>
+      </corba:operation>
+      <wsdl:input name="setRequest"></wsdl:input>
+      <wsdl:output name="setResponse"></wsdl:output>
+      <wsdl:fault name="Grid.GridException"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="get">
+      <corba:operation name="get">
+        <corba:param mode="in" name="n" idltype="corba:short"/>
+        <corba:param mode="in" name="m" idltype="corba:short"/>
+        <corba:return name="return" idltype="corba:long"/>
+        <corba:raises exception="Grid.GridException" xmlns="http://fusesource.com/camel_cxf_corba_test/typemap"/>
+      </corba:operation>
+      <wsdl:input name="getRequest"></wsdl:input>
+      <wsdl:output name="getResponse"></wsdl:output>
+      <wsdl:fault name="Grid.GridException"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GridSoapBinding" type="tns:Grid">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="_get_height">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="_get_height">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="_get_heightResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_get_width">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="_get_width">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="_get_widthResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Grid.GridException">
+        <soap:fault name="Grid.GridException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="get">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Grid.GridException">
+        <soap:fault name="Grid.GridException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GridCORBAService">
+    <wsdl:port name="GridCORBAPort" binding="tns:GridCORBABinding">
+      <corba:address location="file:./ior.txt"/>
+    </wsdl:port>
+  </wsdl:service>
+  <corba:typeMapping targetNamespace="http://fusesource.com/camel_cxf_corba_test/typemap">
+    <corba:exception repositoryID="IDL:Grid/GridException:1.0" name="Grid.GridException" type="Grid.GridExceptionType" xmlns="http://fusesource.com/camel_cxf_corba_test">
+      <corba:member name="reason" idltype="corba:string"/>
+    </corba:exception>
+  </corba:typeMapping>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints/><con:operation isOneWay="false" action="" name="_get_height" bindingOperationName="_get_height" type="Request-Response" outputName="_get_heightResponse" inputName="_get_height" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cam="http://fusesource.com/camel_cxf_corba_test">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cam:_get_height/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://fusesource.com/camel_cxf_corba_test/Grid/_get_height"/></con:call></con:operation><con:operation isOneWay="false" action="" name="_get_width" bindingOperationName="_get_width" type="Request-Response" outputName="_get_widthResponse" inputName="_get_width" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cam="http://fusesource.com/camel_cxf_corba_test">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cam:_get_width/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://fusesource.com/camel_cxf_corba_test/Grid/_get_width"/></con:call></con:operation><con:operation isOneWay="false" action="" name="get" bindingOperationName="get" type="Request-Response" outputName="getResponse" inputName="getRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cam="http://fusesource.com/camel_cxf_corba_test">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cam:get>
+         <n>?</n>
+         <m>?</m>
+      </cam:get>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://fusesource.com/camel_cxf_corba_test/Grid/getRequest"/></con:call></con:operation><con:operation isOneWay="false" action="" name="set" bindingOperationName="set" type="Request-Response" outputName="setResponse" inputName="setRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cam="http://fusesource.com/camel_cxf_corba_test">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cam:set>
+         <n>?</n>
+         <m>?</m>
+         <value>?</value>
+      </cam:set>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://fusesource.com/camel_cxf_corba_test/Grid/setRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/></con:soapui-project>

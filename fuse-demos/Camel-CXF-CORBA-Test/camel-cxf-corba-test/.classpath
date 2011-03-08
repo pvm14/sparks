@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Temp/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar">
+		<attributes>
+			<attribute name="maven.groupId" value="commons-logging"/>
+			<attribute name="maven.artifactId" value="commons-logging"/>
+			<attribute name="maven.version" value="1.1.1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Temp/.m2/repository/org/apache/camel/camel-core/2.4.0-fuse-01-00/camel-core-2.4.0-fuse-01-00.jar">
+		<attributes>
+			<attribute name="maven.groupId" value="org.apache.camel"/>
+			<attribute name="maven.artifactId" value="camel-core"/>
+			<attribute name="maven.version" value="2.4.0-fuse-01-00"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Temp/.m2/repository/org/apache/camel/camel-cxf/2.4.0-fuse-01-00/camel-cxf-2.4.0-fuse-01-00.jar">
+		<attributes>
+			<attribute name="maven.groupId" value="org.apache.camel"/>
+			<attribute name="maven.artifactId" value="camel-cxf"/>
+			<attribute name="maven.version" value="2.4.0-fuse-01-00"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

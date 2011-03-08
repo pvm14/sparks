@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <!--
+
+      Licensed to the Apache Software Foundation (ASF) under one or more
+      contributor license agreements.  See the NOTICE file distributed with
+      this work for additional information regarding copyright ownership.
+      The ASF licenses this file to You under the Apache License, Version 2.0
+      (the "License"); you may not use this file except in compliance with
+      the License.  You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+      Unless required by applicable law or agreed to in writing, software
+      distributed under the License is distributed on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+      See the License for the specific language governing permissions and
+      limitations under the License.
+  -->
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.fusesource.test</groupId>
+  <artifactId>camel-cxf-corba-test</artifactId>
+  <packaging>bundle</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>A Camel OSGi Service Unit</name>
+  <url>http://www.myorganization.org</url>
+
+  <properties>
+    <commons.logging.version>1.1.1</commons.logging.version>
+    <camel-version>2.4.0-fuse-02-00</camel-version>
+    <cxf-version>2.2.10-fuse-00-00</cxf-version>
+    <!-- <cxf-version>2.2.10</cxf-version> -->
+  </properties>
+  
+  
+  <repositories>
+    <repository>
+      <id>open.iona.m2</id>
+      <name>IONA Open Source Community Release Repository</name>
+      <url>http://repo.open.iona.com/maven2</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+    <repository>
+      <id>open.iona.m2-snapshot</id>
+      <name>IONA Open Source Community Snapshot Repository</name>
+      <url>http://repo.fusesource.com/maven2-snapshot</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>open.iona.m2</id>
+      <name>IONA Open Source Community Release Repository</name>
+      <url>http://repo.fusesource.com/maven2</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </pluginRepository>
+    <pluginRepository>
+      <id>open.iona.m2-snapshot</id>
+      <name>IONA Open Source Community Snapshot Repository</name>
+      <url>http://repo.fusesource.com/maven2-snapshot</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>${commons.logging.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.16</version>
+      <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.camel</groupId>
+      <artifactId>camel-core</artifactId>
+      <version>${camel-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel</groupId>
+      <artifactId>camel-cxf</artifactId>
+      <version>${camel-version}</version>
+    </dependency>
+
+	<!-- runtime dependencies -->
+	<!--
+    <dependency>
+      <groupId>org.springframework.osgi</groupId>
+      <artifactId>spring-osgi-core</artifactId>
+      <version>1.2.1</version>
+	  <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.core</artifactId>
+      <version>4.2.0</version>
+	  <scope>runtime</scope>
+    </dependency>
+    -->
+    <dependency>
+      <groupId>org.apache.camel</groupId>
+      <artifactId>camel-jaxb</artifactId>
+      <version>${camel-version}</version>
+      <scope>runtime</scope>
+    </dependency>  
+    <dependency>
+      <groupId>org.apache.camel</groupId>
+      <artifactId>camel-saxon</artifactId>
+      <version>${camel-version}</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf</artifactId>
+      <version>${cxf-version}</version>
+      <type>pom</type>
+	  <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-core</artifactId>
+      <version>${cxf-version}</version>
+      <type>pom</type>
+	  <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-bindings</artifactId>
+      <version>${cxf-version}</version>
+      <type>pom</type>
+	  <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-bindings-corba</artifactId>
+      <version>${cxf-version}</version>
+      <type>jar</type>
+	  <scope>runtime</scope>
+    </dependency>	
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-common</artifactId>
+      <version>${cxf-version}</version>
+      <type>pom</type>
+	  <scope>runtime</scope>
+    </dependency>  
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt</artifactId>
+      <version>${cxf-version}</version>
+      <type>pom</type>
+	  <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-databinding-jaxb</artifactId>
+      <version>${cxf-version}</version>
+      <type>pom</type>
+	  <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-frontend-jaxws</artifactId>
+      <version>${cxf-version}</version>
+      <type>pom</type>
+	  <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-transports-local</artifactId>
+      <version>${cxf-version}</version>
+      <type>pom</type>
+	  <scope>runtime</scope>
+    </dependency>    
+  </dependencies>
+
+  <build>
+    <defaultGoal>install</defaultGoal>
+   
+    <resources>
+      <resource>
+        <directory>${pom.basedir}/src/main/filtered-resources</directory>
+        <filtering>true</filtering>
+        <includes>
+          <include>**/*</include>
+        </includes>
+      </resource>
+      <resource>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>**/*</include>
+        </includes>
+      </resource>
+    </resources>
+    
+    <plugins>
+      <!-- allows the example to be ran via 'mvn camel:run' -->
+      <plugin>
+        <groupId>org.apache.camel</groupId>
+        <artifactId>camel-maven-plugin</artifactId>
+        <version>${camel-version}</version>
+        <!-- default camel-context.xml is configured to run in osgi env, so
+        	 use a copy version that can be used standalone
+        
+        <configuration>
+          <fileApplicationContextUri>src/main/resources/META-INF/spring/camel-context-standalone.xml</fileApplicationContextUri>
+        </configuration>
+        -->
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
+            <Import-Package>*,org.apache.camel.osgi</Import-Package>
+            <Private-Package>com.fusesource.test.camel_cxf_corba_test</Private-Package>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
