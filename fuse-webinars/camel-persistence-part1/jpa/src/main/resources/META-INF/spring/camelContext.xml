@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2011 FuseSource
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/spring
+       http://camel.apache.org/schema/spring/camel-spring.xsd
+    ">
+
+    <bean id="jpa" class="org.apache.camel.component.jpa.JpaComponent"/>
+    <bean id="processIncident" class="com.fusesource.webinars.persistence.camel.ProcessIncidents"/>
+
+    <camelContext id="camel" xmlns="http://camel.apache.org/schema/spring">
+
+        <dataFormats>
+            <bindy type="Csv" packages="com.fusesource.webinars.persistence.model" id="csvReport"/>
+        </dataFormats>
+
+        <route id="trigger-database">
+            <from uri="jpa://com.fusesource.webinars.persistence.model.Incident?consumeDelete=false&amp;consumer.delay=10000"/>
+            <log message=">>> Result : ${body}"/>
+        </route>
+
+        <route id="create-incident">
+            <from uri="file://target/datainsert?moveFailed=failed"/>
+            <unmarshal ref="csvReport"/>
+            <split>
+                <simple>${body}</simple>
+                <bean ref="processIncident"/>
+                <to uri="jpa://com.fusesource.webinars.persistence.model.Incident"/>
+                <log message=">>> Record inserted : ${body}"/>
+            </split>
+        </route>
+
+        <route id="rollback-incident">
+            <from uri="file://target/datainsertrollback?moveFailed=failed"/>
+            <transacted/>
+            <unmarshal ref="csvReport"/>
+            <split>
+                <simple>${body}</simple>
+                <bean ref="processIncident"/>
+                <to uri="jpa://com.fusesource.webinars.persistence.model.Incident"/>
+                <bean ref="processIncident" method="generateError"/>
+                <log message=">>> Record not inserted : ${body}"/>
+            </split>
+        </route>
+
+    </camelContext>
+
+</beans>
