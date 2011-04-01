@@ -34,6 +34,7 @@
 
     <modules>
         <!-- <module>sql-spring-persistence</module> -->
+        <module>database</module>
         <module>dao</module>
         <module>dao-jta</module>
         <module>route-two-tx</module>
