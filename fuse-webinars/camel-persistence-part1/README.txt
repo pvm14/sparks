@@ -24,7 +24,7 @@ database = project containing the scripts to create the database in HSQLDB and t
 jdbc = maven project for camel-jdbc demo
 sql = idem but for camel-sql component
 jpa = mavemn project containing camel routes for JPA persistence
-sql-spring-persistence = maven projetc with additional examples (not coivered during the webinars) but could be used to test transaction with SQL component
+sql-spring-persistence = maven projetc with additional examples (not covered during the webinars) but could be used to test transaction with SQL component
 
 
 DATABASE
@@ -34,7 +34,7 @@ STEP 1 : Open a DOS/UNIX console in the folder persistence/database
 
 STEP 2 : Start the HSQLDB Server using the command
 
-java -cp ../lib/hsqldb-1.8.0.10.jar org.hsqldb.Server -database.0 file:reportdb -dbname.0 report
+java -cp lib/hsqldb-1.8.0.10.jar org.hsqldb.Server -database.0 file:db/reportdb -dbname.0 reportdb
 
 STEP 3 : In a separate DOS/UNIX console, start the Swing DataBase Manager console using the following command
 
