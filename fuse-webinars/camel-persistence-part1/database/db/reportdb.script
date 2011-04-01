@@ -7,16 +7,5 @@ ALTER TABLE T_INCIDENT ALTER COLUMN INCIDENT_ID RESTART WITH 39
 CREATE USER SA PASSWORD ""
 GRANT DBA TO SA
 SET WRITE_DELAY 10
-SET SCHEMA PUBLIC
-INSERT INTO OPENJPA_SEQUENCE_TABLE VALUES(0,51)
-INSERT INTO T_INCIDENT VALUES(1,'2011-03-24 11:14:38.000000000','file','this is a report incident for camel-001','cibsen@gmail.com','Ibsen','Claus','2011-01-22 00:03:00.000000000','001','+111 10 20 300','incident camel-001')
-INSERT INTO T_INCIDENT VALUES(2,'2011-03-24 11:14:38.000000000','file','this is a report incident for smx-002','cmoulliard@gmail.com','Moulliard','Charles','2011-01-23 00:03:00.000000000','002','+222 10 20 300','incident smx-002')
-INSERT INTO T_INCIDENT VALUES(3,'2011-03-24 11:14:38.000000000','file','this is a report incident for camel-123','gnodet@gmail.com','Nodet','Guillaume','2011-01-24 00:03:00.000000000','003','+333 10 20 300','incident camel-123')
-INSERT INTO T_INCIDENT VALUES(4,'2011-03-24 11:14:38.000000000','file','this is a report incident for camel-454','gvanthienen@gmail.com','Vanthienen','Gert','2011-01-25 00:03:00.000000000','004','+444 10 20 300','incident camel-454')
-INSERT INTO T_INCIDENT VALUES(5,'2011-03-24 11:14:38.000000000','file','this is a report incident for smx-023','janstey@gmail.com','Anstey','Jonathan','2011-01-26 00:03:00.000000000','005','+555 10 20 300','incident smx-023')
-INSERT INTO T_INCIDENT VALUES(6,'2011-03-24 11:14:38.000000000','file','this is a report incident for smx-456','wjiang@gmail.com','Jiang','Willem','2011-01-27 00:03:00.000000000','007','+666 10 20 300','incident smx-456')
-INSERT INTO T_INCIDENT VALUES(7,'2011-03-24 11:14:38.000000000','file','this is a report incident for appfuse-123','mraibble@gmail.com','Raibble','Matt','2011-01-28 00:03:00.000000000','008','+777 10 20 300','incident appfuse-123')
-INSERT INTO T_INCIDENT VALUES(8,'2011-03-24 11:14:38.000000000','file','this is a report incident for smx3-088','cjbonofre@gmail.com','Onofre','Jean-Baptiste','2011-01-29 00:03:00.000000000','009','+888 10 20 300','incident smx3-088')
-INSERT INTO T_INCIDENT VALUES(9,'2011-03-24 11:14:38.000000000','file','this is a report incident for camel-005','hzbarcea@gmail.com','Zbarcea','Hadrian','2011-01-30 00:03:00.000000000','010','+999 10 20 300','incident camel-005')
 SET SCHEMA REPORT
 INSERT INTO T_INCIDENT VALUES(38,'009','2011-03-21 00:00:00.000000000','Charles','Moulliard','Incident-009','This is a report incident for camel-009','cmoulliard@fusesource.com','+111 10 20 300',NULL,NULL)
