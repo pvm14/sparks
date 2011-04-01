@@ -22,13 +22,13 @@
         </cm:default-properties>
     </cm:property-placeholder>
 
-    <service interface="javax.sql.XADataSource" ref="jta">
+    <service auto-export="interfaces" ref="jta">
         <service-properties>
             <entry key="transactional" value="true"/>
         </service-properties>
     </service>
 
-    <service interface="javax.sql.DataSource" ref="nonJTA">
+    <service auto-export="interfaces" ref="nonJTA">
         <service-properties>
             <entry key="transactional" value="false"/>
         </service-properties>
