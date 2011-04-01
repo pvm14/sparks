@@ -6,29 +6,33 @@
 
     <persistence-unit name="reportincident" transaction-type="JTA">
 
-        <jta-data-source>java:reportDS</jta-data-source>
-
         <class>com.fusesource.webinars.persistence.model.Incident</class>
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
-        <!-- openjpa & HSQLDB
+        <!-- openjpa & HSQLDB -->
         <properties>
             <property name="openjpa.jdbc.SynchronizeMappings"
                       value="buildSchema(SchemaAction='add,deleteTableContents')"/>
             <property name="openjpa.Log"
-                      value="commons" />
+                      value="commons"/>
             <property name="openjpa.jdbc.DBDictionary"
                       value="hsql(useSchemaName=true)"/>
             <property name="openjpa.jdbc.Schema"
-                      value="PUBLIC" />
+                      value="PUBLIC"/>
             <property name="openjpa.TransactionMode"
-                      value="local"/>
+                      value="managed"/>
             <property name="openjpa.ManagedRuntime"
-                      value="jndi(TransactionManagerName=aries:services/javax.transaction.TransactionManager)/(tx=JTA-Spring)"/>
+                      value="jndi(TransactionManagerName=aries:services/javax.transaction.TransactionManager)"/>
+            <property name="openjpa.Multithreaded"
+                      value="true"/>
+            <property name="openjpa.TransactionMode"
+                      value="managed"/>
+            <property name="openjpa.ConnectionFactoryMode"
+                      value="managed"/>
         </properties>
-        -->
 
+        <!--
         <properties>
             <property name="openjpa.jdbc.SynchronizeMappings"
                       value="buildSchema(SchemaAction='add,deleteTableContents')"/>
@@ -36,13 +40,12 @@
                       value="commons" />
             <property name="openjpa.jdbc.DBDictionary"
                       value="mysql(useSchemaName=true)"/>
-            <!--
             <property name="openjpa.TransactionMode"
                       value="local"/>
             <property name="openjpa.ManagedRuntime"
-                      value="jndi(TransactionManagerName=aries:services/javax.transaction.TransactionManager/(tx=JTA-Spring))"/>
-                      -->
+                      value="jndi(TransactionManagerName=aries:services/javax.transaction.TransactionManager)"/>
         </properties>
+                      -->
 
     </persistence-unit>
 </persistence>

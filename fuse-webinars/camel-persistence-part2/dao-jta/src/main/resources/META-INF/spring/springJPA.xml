@@ -33,55 +33,33 @@
 
     <context:component-scan base-package="com.fusesource.webinars.persistence.dao.impl"/>
 
-    <tx:annotation-driven transaction-manager="jtaSpringTransactionManager"/>
+    <tx:annotation-driven transaction-manager="txManager"/>
 
-    <import resource="datasource.xml"/>
-
-    <osgi:reference id="txManager" interface="javax.transaction.TransactionManager"/>
-
-    <bean id="jtaSpringTransactionManager" class="org.springframework.transaction.jta.JtaTransactionManager">
-        <property name="transactionManager" ref="txManager"/>
-    </bean>
+    <osgi:reference id="txManager" interface="org.springframework.transaction.PlatformTransactionManager"/>
 
     <!-- Export SpringJTATxManager -->
-    <osgi:service ref="jtaSpringTransactionManager"
-                  interface="org.springframework.transaction.PlatformTransactionManager">
-        <service-properties>
-            <entry key="tx" value="JTA-Spring"/>
-        </service-properties>
-    </osgi:service>
-
-
-    <bean id="jndi"
-          class="org.apache.xbean.spring.jndi.SpringInitialContextFactory"
-          factory-method="makeInitialContext">
-        <property name="entries">
-            <map>
-                <entry key="jdbc/reportDS" value-ref="reportdb"/>
-            </map>
-        </property>
-    </bean>
 
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="persistenceUnitName" value="reportincident"/>
         <property name="dataSource" ref="reportdb"/>
         <property name="jpaVendorAdapter">
-            <!-- HSQL
+            <!-- HSQL  -->
             <bean id="jpaAdapter" class="org.springframework.orm.jpa.vendor.OpenJpaVendorAdapter">
                 <property name="databasePlatform" value="org.apache.openjpa.jdbc.sql.HSQLDictionary"/>
                 <property name="showSql" value="true"/>
                 <property name="database" value="HSQL"/>
             </bean>
-            -->
-            <!-- MySQL -->
+            <!-- MySQL
             <bean id="jpaAdapter" class="org.springframework.orm.jpa.vendor.OpenJpaVendorAdapter">
                 <property name="databasePlatform" value="org.apache.openjpa.jdbc.sql.MySQLDictionary"/>
                 <property name="showSql" value="true"/>
                 <property name="database" value="MYSQL"/>
             </bean>
+            -->
         </property>
     </bean>
 
+    <osgi:reference id="reportdb" interface="javax.sql.DataSource" filter="(transactional=true)" />
 
     <!-- Expose DAO as a OSGI Service for Camel Route -->
     <osgi:service ref="daoReport" interface="com.fusesource.webinars.persistence.dao.IncidentDAO"/>
