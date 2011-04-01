@@ -44,8 +44,6 @@
              com.fusesource.webinars.persistence.dao,
              com.fusesource.webinars.persistence.model,
              org.apache.camel,
-             org.apache.camel.component,
-             org.apache.camel.component.jpa,
              *
          </osgi-import-pkg>
          <osgi-export-pkg></osgi-export-pkg>

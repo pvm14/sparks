@@ -57,6 +57,7 @@
             <osgi:reference interface="org.springframework.transaction.PlatformTransactionManager"/>
         </property>
         <property name="transacted" value="true"/>
+        <property name="cacheLevelName" value="CACHE_AUTO"/>
     </bean>
 
     <bean id="activemq" class="org.apache.activemq.camel.component.ActiveMQComponent">
