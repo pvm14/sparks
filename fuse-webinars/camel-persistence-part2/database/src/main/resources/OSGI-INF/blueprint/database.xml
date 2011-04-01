@@ -34,8 +34,6 @@
         </service-properties>
     </service>
 
-    <reference id="transactionManager" interface="org.apache.geronimo.transaction.manager.RecoverableTransactionManager"/>
-
     <!-- ###### JDBC Data Source ###### -->
 
     <bean id="jta" class="org.enhydra.jdbc.standard.StandardXADataSource">
