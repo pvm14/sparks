@@ -24,7 +24,7 @@ database = project containing the scripts to create the database in HSQLDB and t
 jdbc = maven project for camel-jdbc demo
 sql = idem but for camel-sql component
 jpa = mavemn project containing camel routes for JPA persistence
-sql-spring-persistence = maven projetc with additional examples (not covered during the webinars) but could be used to test transaction with SQL component
+sql-spring-persistence = maven projetc with additional examples (not coivered during the webinars) but could be used to test transaction with SQL component
 
 
 DATABASE
@@ -34,7 +34,7 @@ STEP 1 : Open a DOS/UNIX console in the folder persistence/database
 
 STEP 2 : Start the HSQLDB Server using the command
 
-java -cp lib/hsqldb-1.8.0.10.jar org.hsqldb.Server -database.0 file:db/reportdb -dbname.0 reportdb
+java -cp lib/hsqldb-1.8.0.10.jar org.hsqldb.Server -database.0 file:reportdb -dbname.0 reportdb
 
 STEP 3 : In a separate DOS/UNIX console, start the Swing DataBase Manager console using the following command
 
@@ -59,20 +59,25 @@ to allow the file:// endpoint of the camel routes to read the corresponding file
 into the database
 
 
-1) jdbc folder
-cd camel-persistence-part1/jdbc
-cp data/keys.txt target/data/
+1) route-two-tx folder
+Charles-Moulliards-MacBook-Pro:route-two-tx charlesmoulliard$ cp data/csv.txt /Users/charlesmoulliard/Applications/apache-servicemix-4.3.1-fuse-01-09/datainsert
+Charles-Moulliards-MacBook-Pro:route-two-tx charlesmoulliard$ pwd
+/Users/charlesmoulliard/fuse/sparks/fuse-webinars/camel-persistence-part2/route-two-tx
 
-2) sql-spring folder
-cd camel-persistence-part1/jdbc/sql-spring
-cp data/key.txt target/datainsert/
 
-3) jpa folder
-cd camel-persistence-part1/jpa
-cp data/csv.txt target/datainsert/
-cp data/csv-notinserted.txt target/datainsertrollback/
+Features
+========
 
-4) NOT COVERED BY WEBINAR - in sql-spring-persistence folder
-cd camel-persistence-part1/sql-spring-persistence
-cp data/key.txt target/datainsertnotrollback/
+features:addUrl mvn:com.fusesource.webinars/persistence/1.0.0/xml/features
 
+1) Install Projet
+features:install reportincident-jpa
+
+Check that two lines are uncommented in the the file /etc/jre.properties for JDK 1.6
+
+ javax.annotation, \
+ javax.annotation.processing, \
+
+
+ drop table `PUBLIC`.`OPENJPA_SEQUENCE_TABLE`;
+drop table `PUBLIC`.`T_INCIDENT`;
