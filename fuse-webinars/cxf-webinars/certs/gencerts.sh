@@ -88,7 +88,7 @@ EOF
     -storepass fuse-esb -keypass bse-esuf -noprompt -alias fuse-esb
 
     keytool -import -file scott.chain -keystore scott.jks -storetype jks \
-    -storepass scott123 -keypass ttocs123 -noprompt -alias -scott
+    -storepass scott123 -keypass ttocs123 -noprompt -alias scott
 
 # Create the Truststore file containing the CA cert.
 
@@ -96,6 +96,9 @@ EOF
     
     keytool -import -file cacert.pem -alias TheCA -keystore truststore.jks \
     -storepass truststore -noprompt
+
+#    keytool -import -file scott-cert.pem -alias scott -keystore truststore.jks \
+#    -storepass truststore -noprompt
 
 # Get rid of everything not required.
 rm -rf *.pem exts demoCA *pk12 *chain
