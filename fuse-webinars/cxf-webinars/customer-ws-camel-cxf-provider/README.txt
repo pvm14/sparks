@@ -1,0 +1,1 @@
+TODO: Implement an example of a DOMSource or SAXSource provider with CXF.
