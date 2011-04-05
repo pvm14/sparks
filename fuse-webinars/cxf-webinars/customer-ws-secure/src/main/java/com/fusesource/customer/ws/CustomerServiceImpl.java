@@ -26,6 +26,12 @@ import javax.xml.ws.WebServiceContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/*
+ * This class implements the business logic for the CustomerService. Note that 
+ * it is largely security free - all of the security stuff is configured in. The 
+ * only exception to this is the usage of getUserPrincipal() to log who the current
+ * user is.
+ */
 @WebService(targetNamespace = "http://demo.fusesource.com/wsdl/CustomerService/",
 name = "CustomerService",
 serviceName = "CustomerService",
@@ -39,6 +45,9 @@ public class CustomerServiceImpl implements CustomerService {
 
   public Customer lookupCustomer(String customerId) {
 
+    // You can access the current caller's details by getting the Principal from
+    // the WebServiceContext.
+    //
     Principal caller = wsc.getUserPrincipal();
     log.info("Caller is " + ((caller == null) ? " <no-principal> " : caller.getName()));
     
@@ -55,8 +64,7 @@ public class CustomerServiceImpl implements CustomerService {
 
   public void updateCustomer(Customer cust) {
     Principal caller = wsc.getUserPrincipal();
-    log.info("Caller is " + ((caller == null) ? " <no-principal> " : caller.getName()));
-    
+    log.info("Caller is " + ((caller == null) ? " <no-principal> " : caller.getName()));    
     log.info("Update customer called.");
   }
 
@@ -65,6 +73,7 @@ public class CustomerServiceImpl implements CustomerService {
     
     log.info("Caller is " + ((caller == null) ? " <no-principal> " : caller.getName()));
     log.info("Getting statys for custoemr " + customerId);
+    
     status.value = "asleep";
     statusMessage.value = "ZZzzzzz";
   }
