@@ -1,0 +1,648 @@
+2011-03-11 11:17:59 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@199836ed: startup date [Fri Mar 11 11:17:59 GMT 2011]; root of context hierarchy
+2011-03-11 11:18:00 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-11 11:18:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-11 11:18:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-11 11:18:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-11 11:18:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-11 11:18:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-11 11:18:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-11 11:18:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-11 11:18:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-11 11:18:01 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7eb1cc87: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-11 11:19:52 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@199836ed: startup date [Fri Mar 11 11:19:52 GMT 2011]; root of context hierarchy
+2011-03-11 11:19:52 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-11 11:19:52 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-11 11:19:52 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-11 11:19:52 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-11 11:19:52 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-11 11:19:52 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-11 11:19:52 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-11 11:19:52 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-11 11:19:52 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-11 11:19:53 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@74f30494: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-11 11:19:57 ReflectionServiceFactoryBean [INFO] Creating Service {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService from WSDL: https://samwise.local:8443/cxf/Customers?wsdl
+2011-03-11 11:20:00 ClientSidePasswordCallback [INFO] Setting password for user Alice existing password is 'null'
+2011-03-11 11:20:00 ClientSidePasswordCallback [INFO] Setting password for user adrian.trenaman existing password is 'null'
+2011-03-11 11:20:01 AbstractLoggingInterceptor [INFO] Outbound Message
+---------------------------
+ID: 1
+Address: https://samwise.local:8443/cxf/Customers
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {SOAPAction=["http://www.example.org/CustomerService/lookupCustomer"], Accept=[*/*]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><soap:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><xenc:EncryptedKey xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncKeyId-354DF7A1F8293B852D12998424015095"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><ds:X509Data>
+<ds:X509IssuerSerial>
+<ds:X509IssuerName>CN=CA,OU=PS,O=FuseSource,L=Dublin,ST=Leinster,C=IE</ds:X509IssuerName>
+<ds:X509SerialNumber>1</ds:X509SerialNumber>
+</ds:X509IssuerSerial>
+</ds:X509Data></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>bTflifPR/y64BD6W4hepUC8PCo7w+81vXVU3mtxvNvgjSHje8std/MlCGPd5LRXg+A8kyTeh03a2QVJLEF4ZjSDYDYpgjfDsjx0i46JY5RdJZrvb12tZsCWylP8btYa4Wgy8jnW1S1lZvQdEYlmgo1tqW5ksF2kCZIxK/+fxEAU=</xenc:CipherValue></xenc:CipherData><xenc:ReferenceList><xenc:DataReference URI="#EncDataId-5"/><xenc:DataReference URI="#EncDataId-6"/></xenc:ReferenceList></xenc:EncryptedKey><wsse:BinarySecurityToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" wsu:Id="CertId-354DF7A1F8293B852D12998424003491">MIICtTCCAh6gAwIBAgIBAjANBgkqhkiG9w0BAQUFADBgMQswCQYDVQQGEwJJRTERMA8GA1UECBMITGVpbnN0ZXIxDzANBgNVBAcTBkR1YmxpbjETMBEGA1UEChMKRnVzZVNvdXJjZTELMAkGA1UECxMCUFMxCzAJBgNVBAMTAkNBMB4XDTExMDMxMDE4NTMzOVoXDTEyMDMwOTE4NTMzOVowZDELMAkGA1UEBhMCSUUxETAPBgNVBAgTCExlaW5zdGVyMRMwEQYDVQQKEwpGdXNlU291cmNlMRMwEQYDVQQLEwpQcm9kdWN0aW9uMRgwFgYDVQQDEw9BZHJpYW4gVHJlbmFtYW4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALMW3GmS6Co6NZmXZ8voUM2Oik8t6/d1P4+mKSPRfRzXZUh91e4xTbuKbsqgLDz6vZNB5A3NRC6nNuKmCkMfpZYLuF1ptjSbjeIAsUezYyUm/paEWEAYwmmT550VxVnJ412SC7Mk3g797dN+VHVZEU4Ha5oYmhx0oDMRDzaT/dBXAgMBAAGjezB5MAkGA1UdEwQCMAAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBSvnNG8nejCIQrToGDSHcXQLcfSPTAfBgNVHSMEGDAWgBRFCwR7zJrKAdQsyLIdzzVHKMbtejANBgkqhkiG9w0BAQUFAAOBgQCrAyMEOOWgCRuWnndULiIL+YwZTlUcyMhjv34Sn/Jr9MY5ASHCwdISZ0LY+VCnHE9zfU6puQO5FICcFUFF1kDG/reROB7SJrxldkJG/B8hFJu/GJu+iChSszo3EX+K0vyrr/DdFvl/r/1pKmwUtKvAPMs5HXVbEHnIP1XLMJqxFA==</wsse:BinarySecurityToken><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-3">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference URI="#Timestamp-2">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>SmsoTyhLpIrHkr4pcn6cKkd1MHw=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#id-4">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>p1YF2IB+Q8mFktsGZSTiEMbyjmc=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+NuUlYyVbAA2yrsfEH2c9IAXTeHRmkezsH67YENXt630nWWnp7yvEc2HAo6cQyxw1IvHDTklj4uj2
+3K3rVAgE8e1kHFFhwIkRWPhZr1iSRo8W1Ja/DnhoXXSyrEP2qwx/On99ug72VOvCUDyv5AGs64QU
+BfxYMig4HZTtR0hwlWU=
+</ds:SignatureValue>
+<ds:KeyInfo Id="KeyId-354DF7A1F8293B852D12998424004532">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="STRId-354DF7A1F8293B852D12998424004563"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#CertId-354DF7A1F8293B852D12998424003491" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"/></wsse:SecurityTokenReference>
+</ds:KeyInfo>
+</ds:Signature><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncDataId-5" Type="http://www.w3.org/2001/04/xmlenc#Element"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#EncKeyId-354DF7A1F8293B852D12998424015095"/></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>Lr1yQIQJsRUQewtC9pfNsS1XxDZv/kJYr/W7YEnGRLQHpjjZZi1CBMyig6Inr0Z45HHiCTcmLSrA
+Moq1auEyOMHg6E1GuoR3Zdr53goi0rTpJ8bAexGUh8Azqcpy1B7hOfDk2EwQpNluf0KwocEbBRkQ
+RfswIQZlW8hyRHMzmKDcyO8VBeK7OfYYvU84ttelgNKpUJB5ugxjdCsu7QH7YtFKjcSfh2YrALOO
+s7ULKyDAp5RzzbbGhoaLFd9B9GrNXNR1H2Ac08RTLv+rX2qakMnr2f8L7w1g6NJN+bLfEVXdg/Ar
+p0JHUUKY88BFbZLoj0qTVL8rXxqStB8F/pQAtfuI8CotNy4o9ve/Nd60e/AoLFsAydiwEd3nMgWg
+nWET4NVfWuF21f30g0b4jY8U3jh+dJX4qi89xIfWc28HQ5H81WoaZMmlS2XWkdo6+6bLhE+GIEJ7
+9RIO+wdHKA9lM4ARGaJDPXEfN26U5+KeKFmTemMLXK2g7t7y0xj9tPaOBGQF2YPf7PrLA9IkqzJU
+4MCZBogb7J9gZZeaL6iqhY4dvrwa1Dg5fhNp3Axn4EfZSu5QRehtfnqmn7Wn0JFzaz2CRY72KNwg
++eb/Bq0ZsHg=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData><wsse:UsernameToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-1"><wsse:Username>Alice</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">nQ6T475p+LdpujxU8kG3Le4oNGA=</wsse:Password><wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">c27rKxtHuCpRRcvES32vgA==</wsse:Nonce><wsu:Created>2011-03-11T11:20:00.243Z</wsu:Created></wsse:UsernameToken></wsse:Security></soap:Header><soap:Body xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="id-4"><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncDataId-6" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#EncKeyId-354DF7A1F8293B852D12998424015095"/></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>7HJxP6uQ+3GVxxHLy47Pdb+LF6BTIVQR2Szhp3zUc71E+/fqxOhYGhkhKyI4yaHzAAepGlQpo8zt
+aq1gu7Nwi+aTgAq8qv4e4RG7rhWsnN8WzS1Al3kdm6CJWRLYGTiJfE7oNwwpwJLtPt51JqE7/V0u
+BK0XnvCFQetuFU+Vizq8HIZb61G4qG3SsMd58P9EnoJS8cdwVwTJEe+Ul/MWip0plENXNY2XW9Am
+sHy4/vWPfyz3T666W9Ci/SakaP4HXwylzPhfsjQfIf0TNryGYg==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-11 11:20:37 AbstractLoggingInterceptor [INFO] Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml; charset=utf-8
+Headers: {content-type=[text/xml; charset=utf-8], Content-Length=[431], Server=[Jetty(6.1.x)]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:lookupCustomerResponse xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:ns3="http://www.fusesource.com/demo/customer"><ret><ns3:firstName>Ade</ns3:firstName><ns3:lastName>Trenaman</ns3:lastName><ns3:phoneNumber>+353-1-01234567</ns3:phoneNumber><ns3:id>007</ns3:id></ret></ns2:lookupCustomerResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-11 11:22:21 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@5239443f: startup date [Fri Mar 11 11:22:21 GMT 2011]; root of context hierarchy
+2011-03-11 11:22:21 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-11 11:22:21 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-11 11:22:21 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-11 11:22:21 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-11 11:22:21 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-11 11:22:21 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-11 11:22:21 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-11 11:22:21 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-11 11:22:21 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-11 11:22:22 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7eb1cc87: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-11 11:22:24 ReflectionServiceFactoryBean [INFO] Creating Service {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService from WSDL: https://samwise.local:8443/cxf/Customers?wsdl
+2011-03-11 11:22:27 ClientSidePasswordCallback [INFO] Setting password for user Alice existing password is 'null'
+2011-03-11 11:22:27 ClientSidePasswordCallback [INFO] Setting password for user adrian.trenaman existing password is 'null'
+2011-03-11 11:22:28 AbstractLoggingInterceptor [INFO] Outbound Message
+---------------------------
+ID: 1
+Address: https://samwise.local:8443/cxf/Customers
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {SOAPAction=["http://www.example.org/CustomerService/lookupCustomer"], Accept=[*/*]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><soap:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><xenc:EncryptedKey xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncKeyId-2FF78C55CDA64C967212998425485075"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><ds:X509Data>
+<ds:X509IssuerSerial>
+<ds:X509IssuerName>CN=CA,OU=PS,O=FuseSource,L=Dublin,ST=Leinster,C=IE</ds:X509IssuerName>
+<ds:X509SerialNumber>1</ds:X509SerialNumber>
+</ds:X509IssuerSerial>
+</ds:X509Data></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>JscMXsCRqMEo1q5PC8mBLlUN3PY52LhHuCHu7j7t9jYJmYPqTsS3EUxVYr7FNYTZV6ehruu8krlt0dPbfMjpJa1QKiJFsstIJ6wywAB8fMtKUMNYCtb+1RKXOwsq9UD1CvPqtPYiymg4bRYhj6toJSbpfgw2Dzj8I1yczavZ+uw=</xenc:CipherValue></xenc:CipherData><xenc:ReferenceList><xenc:DataReference URI="#EncDataId-5"/><xenc:DataReference URI="#EncDataId-6"/></xenc:ReferenceList></xenc:EncryptedKey><wsse:BinarySecurityToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" wsu:Id="CertId-2FF78C55CDA64C967212998425473561">MIICtTCCAh6gAwIBAgIBAjANBgkqhkiG9w0BAQUFADBgMQswCQYDVQQGEwJJRTERMA8GA1UECBMITGVpbnN0ZXIxDzANBgNVBAcTBkR1YmxpbjETMBEGA1UEChMKRnVzZVNvdXJjZTELMAkGA1UECxMCUFMxCzAJBgNVBAMTAkNBMB4XDTExMDMxMDE4NTMzOVoXDTEyMDMwOTE4NTMzOVowZDELMAkGA1UEBhMCSUUxETAPBgNVBAgTCExlaW5zdGVyMRMwEQYDVQQKEwpGdXNlU291cmNlMRMwEQYDVQQLEwpQcm9kdWN0aW9uMRgwFgYDVQQDEw9BZHJpYW4gVHJlbmFtYW4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALMW3GmS6Co6NZmXZ8voUM2Oik8t6/d1P4+mKSPRfRzXZUh91e4xTbuKbsqgLDz6vZNB5A3NRC6nNuKmCkMfpZYLuF1ptjSbjeIAsUezYyUm/paEWEAYwmmT550VxVnJ412SC7Mk3g797dN+VHVZEU4Ha5oYmhx0oDMRDzaT/dBXAgMBAAGjezB5MAkGA1UdEwQCMAAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBSvnNG8nejCIQrToGDSHcXQLcfSPTAfBgNVHSMEGDAWgBRFCwR7zJrKAdQsyLIdzzVHKMbtejANBgkqhkiG9w0BAQUFAAOBgQCrAyMEOOWgCRuWnndULiIL+YwZTlUcyMhjv34Sn/Jr9MY5ASHCwdISZ0LY+VCnHE9zfU6puQO5FICcFUFF1kDG/reROB7SJrxldkJG/B8hFJu/GJu+iChSszo3EX+K0vyrr/DdFvl/r/1pKmwUtKvAPMs5HXVbEHnIP1XLMJqxFA==</wsse:BinarySecurityToken><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-3">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference URI="#Timestamp-2">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>FC3AWM3Uqycu/N79JGE/nTFMgs4=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#id-4">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>p1YF2IB+Q8mFktsGZSTiEMbyjmc=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+HtStgCjlLwAOEjz3ZLIF5c1jdw3HGcT392BBwkpN/bmeyA+h/XH2YqChyOVGfteUQu7V372+s0Uq
+sVEO8ukM3NQQWFH1gdFzvvPanOEGF1ZRlZbWEUdvG5TXnvaVuDDZLHKPIdLbJfMWaIdJ5NFYMgm1
+Q3z19n6pzJZxVJzrWEA=
+</ds:SignatureValue>
+<ds:KeyInfo Id="KeyId-2FF78C55CDA64C967212998425473652">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="STRId-2FF78C55CDA64C967212998425473673"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#CertId-2FF78C55CDA64C967212998425473561" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"/></wsse:SecurityTokenReference>
+</ds:KeyInfo>
+</ds:Signature><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncDataId-5" Type="http://www.w3.org/2001/04/xmlenc#Element"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#EncKeyId-2FF78C55CDA64C967212998425485075"/></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>LAX2iHvK/1yROsXSOtAWoDna3/ffDXIHPQY6RSnJh8bP30NK5w1JdDHVupQ6Chx12T9Rkx/Kx8St
+hRzOmsHdw80dn36DYjzal+vhSbWUex+08rCt0NCpso6K/Z02ppX4tLmEFSCKU6hGP+fl5dELhwKJ
+aWuPa6iFIryjjZAXPI226wyil6KrHX2YZML8GmhYQgmdGT4H0X9b6wNFMXbsyfAY7Vj5rQc9+DRq
+GSiQRZgbbHEuS0OlCZwPBU/bnVmxRF6Gzzlr28ZXosdKiMEzOiEjbdni58kGbwkl/6j4mCmf5L6P
+pjergWOPWceeGgLiYwacC0rHVCzo0JO5Ox8HghghpIoskGzlunVsf977K9ljp98Bt+0yfgyJK0LK
+LAGupUe0FzG+5YV/9zhV9EglhIwWKeLWieud11uPE/GDYDgtwplkn+2GqwOZzK1tEudJ+ytl/G/3
+p/xnmrukBwE5Y5QtZMSZeWtFkeESgj5V9T+GcEZWdgkk/StVWC1E1oFy0WpyvNcpBt1Xyvy2w4H9
+M8QLSTzEIJUO2HifnGuRVjFr+8XaeHhMg2MKXgIAqQC2wTGK9+agOefjI8L3kmhpJbecLRLK9hKS
+Ise2wYMpExU=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData><wsse:UsernameToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-1"><wsse:Username>Alice</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">mCtmhKidOODCastUA8m80XcrIh0=</wsse:Password><wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">FebS+VuMrPR2sMSto45dvQ==</wsse:Nonce><wsu:Created>2011-03-11T11:22:27.346Z</wsu:Created></wsse:UsernameToken></wsse:Security></soap:Header><soap:Body xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="id-4"><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncDataId-6" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#EncKeyId-2FF78C55CDA64C967212998425485075"/></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>HQfCHPaNMQwO3B5IVcum60PHQa5u0Q8io3hzCGCEb+RGtGORxFVCDHmFZpQTC4Zzl2D+Epyi9Qri
+YFRYWl89C2MObxrQydmXimFdAifM7e8NEh4FNxurIY4G5vAARSQc4cTI8n01pLeEBelwr+Pln5Cy
+ECO7RjTp7yYaVxqJprzFsts6b96+sNoyl1fdsE/66pTZePgbCnT6HifONItDvxoPoWb/b6hGBzXJ
+40P6Syjpu2X09+8XDK5mwhDjyDQpgKATtOqjj15vUzNj2GV6fQ==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-11 11:22:29 AbstractLoggingInterceptor [INFO] Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml; charset=utf-8
+Headers: {content-type=[text/xml; charset=utf-8], Content-Length=[431], Server=[Jetty(6.1.x)]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:lookupCustomerResponse xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:ns3="http://www.fusesource.com/demo/customer"><ret><ns3:firstName>Ade</ns3:firstName><ns3:lastName>Trenaman</ns3:lastName><ns3:phoneNumber>+353-1-01234567</ns3:phoneNumber><ns3:id>007</ns3:id></ret></ns2:lookupCustomerResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-11 11:23:55 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@199836ed: startup date [Fri Mar 11 11:23:55 GMT 2011]; root of context hierarchy
+2011-03-11 11:23:56 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-11 11:23:56 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-11 11:23:56 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-11 11:23:56 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-11 11:23:56 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-11 11:23:56 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-11 11:23:56 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-11 11:23:56 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-11 11:23:56 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-11 11:23:56 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6983d95: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-11 11:23:58 ReflectionServiceFactoryBean [INFO] Creating Service {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService from WSDL: https://samwise.local:8443/cxf/Customers?wsdl
+2011-03-11 11:24:01 ClientSidePasswordCallback [INFO] Setting password for user Alice existing password is 'null'
+2011-03-11 11:24:01 ClientSidePasswordCallback [INFO] Setting password for user adrian.trenaman existing password is 'null'
+2011-03-11 11:24:02 AbstractLoggingInterceptor [INFO] Outbound Message
+---------------------------
+ID: 1
+Address: https://samwise.local:8443/cxf/Customers
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {SOAPAction=["http://www.example.org/CustomerService/lookupCustomer"], Accept=[*/*]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><soap:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><xenc:EncryptedKey xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncKeyId-AAB24DC2F3685CBC2812998426419595"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><ds:X509Data>
+<ds:X509IssuerSerial>
+<ds:X509IssuerName>CN=CA,OU=PS,O=FuseSource,L=Dublin,ST=Leinster,C=IE</ds:X509IssuerName>
+<ds:X509SerialNumber>1</ds:X509SerialNumber>
+</ds:X509IssuerSerial>
+</ds:X509Data></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>YfUNyVOhoNMu6zJeoQQPFGq4gvhsq63h+ibAp5ZyzXk1JOYt/j8eaA0Fw8dmn6pFvm5ZOLbiw1IN3tzzNAn2As0BlF/lNp5L93mnFzBncHNc/S1thXtmFUHzVCocd+cWfJHcvKPo8eCf9/LKc50SsXywm4uinuOw8cw4CflAQkg=</xenc:CipherValue></xenc:CipherData><xenc:ReferenceList><xenc:DataReference URI="#EncDataId-5"/><xenc:DataReference URI="#EncDataId-6"/></xenc:ReferenceList></xenc:EncryptedKey><wsse:BinarySecurityToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" wsu:Id="CertId-AAB24DC2F3685CBC2812998426411531">MIICtTCCAh6gAwIBAgIBAjANBgkqhkiG9w0BAQUFADBgMQswCQYDVQQGEwJJRTERMA8GA1UECBMITGVpbnN0ZXIxDzANBgNVBAcTBkR1YmxpbjETMBEGA1UEChMKRnVzZVNvdXJjZTELMAkGA1UECxMCUFMxCzAJBgNVBAMTAkNBMB4XDTExMDMxMDE4NTMzOVoXDTEyMDMwOTE4NTMzOVowZDELMAkGA1UEBhMCSUUxETAPBgNVBAgTCExlaW5zdGVyMRMwEQYDVQQKEwpGdXNlU291cmNlMRMwEQYDVQQLEwpQcm9kdWN0aW9uMRgwFgYDVQQDEw9BZHJpYW4gVHJlbmFtYW4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALMW3GmS6Co6NZmXZ8voUM2Oik8t6/d1P4+mKSPRfRzXZUh91e4xTbuKbsqgLDz6vZNB5A3NRC6nNuKmCkMfpZYLuF1ptjSbjeIAsUezYyUm/paEWEAYwmmT550VxVnJ412SC7Mk3g797dN+VHVZEU4Ha5oYmhx0oDMRDzaT/dBXAgMBAAGjezB5MAkGA1UdEwQCMAAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBSvnNG8nejCIQrToGDSHcXQLcfSPTAfBgNVHSMEGDAWgBRFCwR7zJrKAdQsyLIdzzVHKMbtejANBgkqhkiG9w0BAQUFAAOBgQCrAyMEOOWgCRuWnndULiIL+YwZTlUcyMhjv34Sn/Jr9MY5ASHCwdISZ0LY+VCnHE9zfU6puQO5FICcFUFF1kDG/reROB7SJrxldkJG/B8hFJu/GJu+iChSszo3EX+K0vyrr/DdFvl/r/1pKmwUtKvAPMs5HXVbEHnIP1XLMJqxFA==</wsse:BinarySecurityToken><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-3">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference URI="#Timestamp-2">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>dGAwYhhGSRQnT65XGkHYY92r/JY=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#id-4">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>p1YF2IB+Q8mFktsGZSTiEMbyjmc=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+IcRDWANI7XRx9gIjCSzLo/ccfD6Rn0BlmAVfazA9Q1c4MYX7U7kqTTA1b/ppJ/cG/lwh4d4mSlDU
+67YpJotZC84r+tVfHNMsCR/rJlmOS0eI/gPTWZaJn79XuEh+9EcVdvtD3qzAfENZml8M1t2lQ0ev
+NdjCMaCg1RdXqo3iFN0=
+</ds:SignatureValue>
+<ds:KeyInfo Id="KeyId-AAB24DC2F3685CBC2812998426411642">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="STRId-AAB24DC2F3685CBC2812998426411663"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#CertId-AAB24DC2F3685CBC2812998426411531" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"/></wsse:SecurityTokenReference>
+</ds:KeyInfo>
+</ds:Signature><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncDataId-5" Type="http://www.w3.org/2001/04/xmlenc#Element"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#EncKeyId-AAB24DC2F3685CBC2812998426419595"/></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>w3f92DyBBWQsZMKDA0HS/offm5KhuVnO/Wxzi07X6mzTpipAooeCqcDTdn2WJdc/9TiunSiEJg9X
++f1YoqBNfvbAkryiDDYzS+vDOsQHdEHzt5BwBCH/rX+vCVyy2tX8uIy/MdeCMb0PVNOEm8GUjviE
+Ug6DTGRNzSrqx6t5uleisD5pqO60XrLfy2xAptFx7CN+NWm0lYsxvCAXLGuynv1CjcCmBthL01ub
+xjQBp8K5PeUNTXl39HXG+xpt/Z3rkY7G2C0u+A5ODd+sYv8OiuB+0AkGT/VWJ+aPRjFad0zpbTWd
+tNWkQO4UrTzZ8PccViUVjX2xilSkZl3jtCy8xO9uJmhQHWGDX58ak6pjjN7dCa1+S6PqkZLDAx5l
+9zrLJwG47k3U4kJBe3MNClfDUpxy8D11U47i4fdfREReDSFel6xkmPxWc71SR6qSeOR2cTsJLgVP
+BsFp9auZivkyyyxmGB737uISiHUGdLdz2CbSC9t9xTeiK3/FsqRmls4tBjElWVpD8KOROebwqOd6
+2RiXKhlUCPlW/MRdSddzNydec04eK9R+hXDKKjKB/zTXdiyGDLhDJSwXMTwIj2Xm4X51pxi/kzci
+mhBSNfllyeA=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData><wsse:UsernameToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-1"><wsse:Username>Alice</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">MyAagnBwj866ne8Cc7svsGI3Lm8=</wsse:Password><wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">GvL9+3RDmgGNesCXBEVGUQ==</wsse:Nonce><wsu:Created>2011-03-11T11:24:01.145Z</wsu:Created></wsse:UsernameToken></wsse:Security></soap:Header><soap:Body xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="id-4"><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncDataId-6" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#EncKeyId-AAB24DC2F3685CBC2812998426419595"/></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>IPcgpDp0lk48VDyqj1/y4xcC9vcE68QQB6Bd8qcXCo/EcFbXJORYpbuMlj40OYl+Jo6y+d3ifk88
+X0cJ1CCaEaBJycZPdg8WCU7xPbi/8sJP6VO4NRAx1h/TyUkGtjQEHYlcAvcZqBor4P/ZYzkiJ63W
+76qZ3ky35FsT5ZO6BgHpXae78G+CkH/zpEXvvLflek2b9V3ij9As6i7VJJls6rLPPFP/rTWAQm8t
+IQ/aOSddSvyEV8qHtUz/3ge0Z+o4xmOdHO8pjZOKGgyEjt1jDQ==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-11 11:25:02 PhaseInterceptorChain [WARN] Interceptor for {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService#{http://demo.fusesource.com/wsdl/CustomerService/}lookupCustomer has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not send Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:255)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:313)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:265)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:73)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:124)
+	at $Proxy25.lookupCustomer(Unknown Source)
+	at com.fusesource.customer.ws.SampleClient.main(SampleClient.java:57)
+Caused by: java.net.SocketTimeoutException: SocketTimeoutException invoking https://samwise.local:8443/cxf/Customers: Read timed out
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:2107)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:2092)
+	at org.apache.cxf.io.CacheAndWriteOutputStream.postClose(CacheAndWriteOutputStream.java:47)
+	at org.apache.cxf.io.CachedOutputStream.close(CachedOutputStream.java:188)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:697)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	... 8 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.sun.net.ssl.internal.ssl.InputRecord.readFully(InputRecord.java:293)
+	at com.sun.net.ssl.internal.ssl.InputRecord.read(InputRecord.java:331)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:798)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:755)
+	at com.sun.net.ssl.internal.ssl.AppInputStream.read(AppInputStream.java:75)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:258)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:687)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:632)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1200)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:379)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:318)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponseInternal(HTTPConduit.java:2224)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponse(HTTPConduit.java:2193)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:2037)
+	... 13 more
+2011-03-11 14:01:59 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@72e6f7d2: startup date [Fri Mar 11 14:01:59 GMT 2011]; root of context hierarchy
+2011-03-11 14:02:00 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-11 14:02:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-11 14:02:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-11 14:02:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-11 14:02:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-11 14:02:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-11 14:02:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-11 14:02:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-11 14:02:00 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-11 14:02:01 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@74f30494: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-11 14:02:03 ReflectionServiceFactoryBean [INFO] Creating Service {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService from WSDL: https://samwise.local:8443/cxf/Customers?wsdl
+2011-03-11 14:02:07 ClientSidePasswordCallback [INFO] Setting password for user Alice existing password is 'null'
+2011-03-11 14:02:07 ClientSidePasswordCallback [INFO] Setting password for user adrian.trenaman existing password is 'null'
+2011-03-11 14:02:08 AbstractLoggingInterceptor [INFO] Outbound Message
+---------------------------
+ID: 1
+Address: https://samwise.local:8443/cxf/Customers
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {SOAPAction=["http://www.example.org/CustomerService/lookupCustomer"], Accept=[*/*]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><soap:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><xenc:EncryptedKey xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncKeyId-925F22980BE6414DD612998521280215"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><ds:X509Data>
+<ds:X509IssuerSerial>
+<ds:X509IssuerName>CN=CA,OU=PS,O=FuseSource,L=Dublin,ST=Leinster,C=IE</ds:X509IssuerName>
+<ds:X509SerialNumber>1</ds:X509SerialNumber>
+</ds:X509IssuerSerial>
+</ds:X509Data></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>NpSYWSA17uUbVYnfcfVkeI+h7nbiecpmq1chhp3tUU636RiSpnQRJLtLcNbWADBWhIxdQ0bBKIOZm5psF/uwOyKIbhBh53Rz2dWSv3oN+1/FRlfRMk5GfovJ07I6TYYKtm1LvUewgJkIqqW9/jRXYPEloQyuQLrWfyi11FduAyE=</xenc:CipherValue></xenc:CipherData><xenc:ReferenceList><xenc:DataReference URI="#EncDataId-5"/><xenc:DataReference URI="#EncDataId-6"/></xenc:ReferenceList></xenc:EncryptedKey><wsse:BinarySecurityToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" wsu:Id="CertId-925F22980BE6414DD612998521270431">MIICtTCCAh6gAwIBAgIBAjANBgkqhkiG9w0BAQUFADBgMQswCQYDVQQGEwJJRTERMA8GA1UECBMITGVpbnN0ZXIxDzANBgNVBAcTBkR1YmxpbjETMBEGA1UEChMKRnVzZVNvdXJjZTELMAkGA1UECxMCUFMxCzAJBgNVBAMTAkNBMB4XDTExMDMxMDE4NTMzOVoXDTEyMDMwOTE4NTMzOVowZDELMAkGA1UEBhMCSUUxETAPBgNVBAgTCExlaW5zdGVyMRMwEQYDVQQKEwpGdXNlU291cmNlMRMwEQYDVQQLEwpQcm9kdWN0aW9uMRgwFgYDVQQDEw9BZHJpYW4gVHJlbmFtYW4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALMW3GmS6Co6NZmXZ8voUM2Oik8t6/d1P4+mKSPRfRzXZUh91e4xTbuKbsqgLDz6vZNB5A3NRC6nNuKmCkMfpZYLuF1ptjSbjeIAsUezYyUm/paEWEAYwmmT550VxVnJ412SC7Mk3g797dN+VHVZEU4Ha5oYmhx0oDMRDzaT/dBXAgMBAAGjezB5MAkGA1UdEwQCMAAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBSvnNG8nejCIQrToGDSHcXQLcfSPTAfBgNVHSMEGDAWgBRFCwR7zJrKAdQsyLIdzzVHKMbtejANBgkqhkiG9w0BAQUFAAOBgQCrAyMEOOWgCRuWnndULiIL+YwZTlUcyMhjv34Sn/Jr9MY5ASHCwdISZ0LY+VCnHE9zfU6puQO5FICcFUFF1kDG/reROB7SJrxldkJG/B8hFJu/GJu+iChSszo3EX+K0vyrr/DdFvl/r/1pKmwUtKvAPMs5HXVbEHnIP1XLMJqxFA==</wsse:BinarySecurityToken><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-3">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference URI="#Timestamp-2">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>DfMFW/FJQlXAPUIT/+zaHIsEZmg=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#id-4">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>p1YF2IB+Q8mFktsGZSTiEMbyjmc=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+VUGbPfHypErdM/QGNRgMI0mt+cSiZzlfh0qFS4TBC2U+Sq/1mqNv0RdnmrNg7OnOBX6DylPRFiNk
+QoEZYuGKs/BYpaVKnAO+94fNB96Dd1puCezhindnqGhZs8SAj/dFtgBNL3st7v39PImQh7XdKpzl
+qu7kgZbJWkmObrkEYoc=
+</ds:SignatureValue>
+<ds:KeyInfo Id="KeyId-925F22980BE6414DD612998521270852">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="STRId-925F22980BE6414DD612998521270873"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#CertId-925F22980BE6414DD612998521270431" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"/></wsse:SecurityTokenReference>
+</ds:KeyInfo>
+</ds:Signature><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncDataId-5" Type="http://www.w3.org/2001/04/xmlenc#Element"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#EncKeyId-925F22980BE6414DD612998521280215"/></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>Q0p7liaL0wf8dXqvB4fOg4aL789fOORxDyuVyeFlOsMBaSCy7wZXAdcV/lnn1wEcNt5QiyfVxdfk
+AbtwR0IunP5R8fSDQlUW0J7oTDRErbAgP0NCX6OgtUTpAh+an1seJFK2DK75i8Kiz+kIyKfKRZlz
+CO0uj0kr+SJOTmHFpWjNQpHjlCpvj8NNEjx4nfSD4CEzji6CytOLkx/3voTqNX5kEPHbiU46itM2
+uMwkzspsYRUA7M/pu2GLk06shYgpUf986YHtTUAEmhyIzXgIchl8ZD/SZZTmnZGRTOBMEbGftzvd
+mDRcBz2qtzzvz/3PtK7oy3P/1oHIRu7qXBQd3JV1HYwx35xraIAI+BTVlcuyZp6kquOHE3JcgM0Y
+9osZV4+x7UrHP+np7GHLjCRWlwVzfQ6V4Bj/ByM6GHOYGpNLtoSMqi1idv+scLcaWbkvxPZyVFFt
+BSkkm2EOn13d/GWiRLskELMVTynV2JSrq6p+xk6rlq7/36KW0Vp1ZhJ7W2mMtwO6Ot5qjLidT3ea
+scKAz/ABrk2ihVDZF8t17nWRGkDdXDQKWHWXI5FpYRci8sAEE+Hzg23WL/livLYTYS5mbQcHHdUy
+Ko9pIg7iUZM=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData><wsse:UsernameToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-1"><wsse:Username>Alice</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">ecilA</wsse:Password></wsse:UsernameToken></wsse:Security></soap:Header><soap:Body xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="id-4"><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncDataId-6" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#EncKeyId-925F22980BE6414DD612998521280215"/></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>U6bU+aqie53CzV92xNKRzVPZdUUF6EFEWtgVNdMjdrLAPbzWLqsIgde7UduAw8DhdDp1sy6ZKEXt
+BzOS34fUKw5vhbmUQG3W3NTwLyCQtzJcDRX8jpe70wiDa9EORtaGRqvOMfYRDDdsXic4Sl7wz2RL
+GxokuvbJ+Am7Jc3vSzBAcc9ZgKZuaIRzBAZHEEXN+PleTDP2rvDo4bySnY92BzO8UE8bqN0H9+SQ
+Mv+VLx5qqmfMzYLTJjl91Qe3A2Tzn/7BImzMxpD4jKOMnD3azQ==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-11 14:02:50 AbstractLoggingInterceptor [INFO] Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml; charset=utf-8
+Headers: {content-type=[text/xml; charset=utf-8], Content-Length=[431], Server=[Jetty(6.1.x)]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:lookupCustomerResponse xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:ns3="http://www.fusesource.com/demo/customer"><ret><ns3:firstName>Ade</ns3:firstName><ns3:lastName>Trenaman</ns3:lastName><ns3:phoneNumber>+353-1-01234567</ns3:phoneNumber><ns3:id>007</ns3:id></ret></ns2:lookupCustomerResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-11 14:03:30 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@199836ed: startup date [Fri Mar 11 14:03:30 GMT 2011]; root of context hierarchy
+2011-03-11 14:03:31 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-11 14:03:31 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-11 14:03:31 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-11 14:03:31 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-11 14:03:31 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-11 14:03:31 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-11 14:03:31 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-11 14:03:31 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-11 14:03:31 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-11 14:03:31 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6983d95: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-11 14:03:33 ReflectionServiceFactoryBean [INFO] Creating Service {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService from WSDL: https://samwise.local:8443/cxf/Customers?wsdl
+2011-03-11 14:03:36 ClientSidePasswordCallback [INFO] Setting password for user Alice existing password is 'null'
+2011-03-11 14:03:36 ClientSidePasswordCallback [INFO] Setting password for user adrian.trenaman existing password is 'null'
+2011-03-11 14:03:37 AbstractLoggingInterceptor [INFO] Outbound Message
+---------------------------
+ID: 1
+Address: https://samwise.local:8443/cxf/Customers
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {SOAPAction=["http://www.example.org/CustomerService/lookupCustomer"], Accept=[*/*]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><soap:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><xenc:EncryptedKey xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncKeyId-CC4ACDC73FC2B503BA12998522170165"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><ds:X509Data>
+<ds:X509IssuerSerial>
+<ds:X509IssuerName>CN=CA,OU=PS,O=FuseSource,L=Dublin,ST=Leinster,C=IE</ds:X509IssuerName>
+<ds:X509SerialNumber>1</ds:X509SerialNumber>
+</ds:X509IssuerSerial>
+</ds:X509Data></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>ScYJ27prO4IqsTIy20nEc1ZUodfkuzM9Sbvip60HjswfLH3pAYhUq1z6nKkIUpbz9tGQrng52/imemLJ+uwydGwKRrupMoYkfIYQJc7DnP2ApKfEbJkb0ex/el/4HcixEUFopAcmCmq7Ypj3CF50NTwAnnfe3Pwx79uKKMlAQgI=</xenc:CipherValue></xenc:CipherData><xenc:ReferenceList><xenc:DataReference URI="#EncDataId-5"/><xenc:DataReference URI="#EncDataId-6"/></xenc:ReferenceList></xenc:EncryptedKey><wsse:BinarySecurityToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" wsu:Id="CertId-CC4ACDC73FC2B503BA12998522160321">MIICtTCCAh6gAwIBAgIBAjANBgkqhkiG9w0BAQUFADBgMQswCQYDVQQGEwJJRTERMA8GA1UECBMITGVpbnN0ZXIxDzANBgNVBAcTBkR1YmxpbjETMBEGA1UEChMKRnVzZVNvdXJjZTELMAkGA1UECxMCUFMxCzAJBgNVBAMTAkNBMB4XDTExMDMxMDE4NTMzOVoXDTEyMDMwOTE4NTMzOVowZDELMAkGA1UEBhMCSUUxETAPBgNVBAgTCExlaW5zdGVyMRMwEQYDVQQKEwpGdXNlU291cmNlMRMwEQYDVQQLEwpQcm9kdWN0aW9uMRgwFgYDVQQDEw9BZHJpYW4gVHJlbmFtYW4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALMW3GmS6Co6NZmXZ8voUM2Oik8t6/d1P4+mKSPRfRzXZUh91e4xTbuKbsqgLDz6vZNB5A3NRC6nNuKmCkMfpZYLuF1ptjSbjeIAsUezYyUm/paEWEAYwmmT550VxVnJ412SC7Mk3g797dN+VHVZEU4Ha5oYmhx0oDMRDzaT/dBXAgMBAAGjezB5MAkGA1UdEwQCMAAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBSvnNG8nejCIQrToGDSHcXQLcfSPTAfBgNVHSMEGDAWgBRFCwR7zJrKAdQsyLIdzzVHKMbtejANBgkqhkiG9w0BAQUFAAOBgQCrAyMEOOWgCRuWnndULiIL+YwZTlUcyMhjv34Sn/Jr9MY5ASHCwdISZ0LY+VCnHE9zfU6puQO5FICcFUFF1kDG/reROB7SJrxldkJG/B8hFJu/GJu+iChSszo3EX+K0vyrr/DdFvl/r/1pKmwUtKvAPMs5HXVbEHnIP1XLMJqxFA==</wsse:BinarySecurityToken><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-3">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference URI="#Timestamp-2">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>Rg1P3MdPQ/vwjr+CmM0Hrgqc2Qw=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#id-4">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>p1YF2IB+Q8mFktsGZSTiEMbyjmc=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+rfqQvo5ISUxyGqFYUHG8cSXInEL0rIiGdbFxZhSZ1f/H4qUMM7J5bkmWHTn856QBwF4YVsV1hHjh
+ViAf1pNYg7m3d+5z2NYjWRVfwQGWyLJvMLU705ybXosE9Baq4uEt8Mh6CIhd8huHQDOgNhidBl1v
+PVVe8xYZnU6KUXtPYWo=
+</ds:SignatureValue>
+<ds:KeyInfo Id="KeyId-CC4ACDC73FC2B503BA12998522160422">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="STRId-CC4ACDC73FC2B503BA12998522160463"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#CertId-CC4ACDC73FC2B503BA12998522160321" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"/></wsse:SecurityTokenReference>
+</ds:KeyInfo>
+</ds:Signature><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncDataId-5" Type="http://www.w3.org/2001/04/xmlenc#Element"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#EncKeyId-CC4ACDC73FC2B503BA12998522170165"/></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>lEchWNCGZ3GmhIN0yJvKjB0LhZinGW68IkUyjKQOZ+sQCt7tbCu1Xo6nHLckuc0veRKIeAAKmXPX
+3IY8r/E5mTMrCTIlJLGxKcY/CR7I2WDbRz9qeUmVPUePeYxK6+hStiLNk4obq9FNNcEthmBiNih2
+COTdeB+HmpW6Uii247+h32LByTLi8NYyEU0bMZDKKo4croSLyjahXz0xNn8xfDJ7qy/L1ze12Hs2
+gUKGP/SO3fhTXdLKFG/d2mVsBgPIU91m8NW60o8J5J+RmJ79fLAV0/Criu/Qlmho34Epdpzzz5L8
+kHqr6Ff4Jzm5ajV5Q49gEfNC3z/w4kz66agIkzbqwypuniPYxzZr/vDx8zhtjFkFXG9FagJ2zogm
+HS51xJiVSRzFjKqaZq+CmqqcrLtWR97x0367GrMMICn4k4hphkZ0MuyN4ZRMo339v/zlsCAIAJ0V
+FWFxz4YITlCWiVMdiSv1SmYXsDGOjVh2D7mQlVGF1iWfh+Ny6wVCl3ZQ/Mb/ksEl7Ryxz172gZsz
+Oh+J6HsHcYwN4UltMHpgRvFC0Z2a3R64LsbaoSTpF0V3q5I9R95wxz9yYorjNk0msoJ5Zll3fdrw
+6nkwwfAQ3qc=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData><wsse:UsernameToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-1"><wsse:Username>Alice</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">ecilA</wsse:Password></wsse:UsernameToken></wsse:Security></soap:Header><soap:Body xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="id-4"><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncDataId-6" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#EncKeyId-CC4ACDC73FC2B503BA12998522170165"/></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>1D/FqWK9xjZ2WmcKLdEirtwWqRnDoh6yM6kwWYfxqQusEeCAfEXuIIHbMJLnFyky+nDU+s9lGxpd
+styhCYL8Sw6bz2V6I3+DjVYEni0zrcuvMRiqfwKHRNqMpvTUBpjnzChI+WRk6dxMZLJ3grPLiI1j
+khZScr96suDUxrUPH1A6lLS0QwsGMITK5Mq+cyc/CtNBxU8oEPy41b9hMNG3cg/fh/5zypwT4M8q
+Kq/daBC90LCJJuSWK8JEMLR8CXKcJ4eLcWNOt+wZk6ZPbsq+yw==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-11 14:03:53 AbstractLoggingInterceptor [INFO] Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml; charset=utf-8
+Headers: {content-type=[text/xml; charset=utf-8], Content-Length=[431], Server=[Jetty(6.1.x)]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:lookupCustomerResponse xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:ns3="http://www.fusesource.com/demo/customer"><ret><ns3:firstName>Ade</ns3:firstName><ns3:lastName>Trenaman</ns3:lastName><ns3:phoneNumber>+353-1-01234567</ns3:phoneNumber><ns3:id>007</ns3:id></ret></ns2:lookupCustomerResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-11 14:04:28 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@68da4b71: startup date [Fri Mar 11 14:04:28 GMT 2011]; root of context hierarchy
+2011-03-11 14:04:28 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-11 14:04:28 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-11 14:04:28 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-11 14:04:28 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-11 14:04:28 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-11 14:04:28 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-11 14:04:28 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-11 14:04:28 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-11 14:04:28 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-11 14:04:29 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@a50a649: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-11 14:04:30 ReflectionServiceFactoryBean [INFO] Creating Service {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService from WSDL: https://samwise.local:8443/cxf/Customers?wsdl
+2011-03-11 14:04:33 ClientSidePasswordCallback [INFO] Setting password for user Alice existing password is 'null'
+2011-03-11 14:04:33 ClientSidePasswordCallback [INFO] Setting password for user adrian.trenaman existing password is 'null'
+2011-03-11 14:04:34 AbstractLoggingInterceptor [INFO] Outbound Message
+---------------------------
+ID: 1
+Address: https://samwise.local:8443/cxf/Customers
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {SOAPAction=["http://www.example.org/CustomerService/lookupCustomer"], Accept=[*/*]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><soap:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><xenc:EncryptedKey xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncKeyId-826253D4E9CB5B71C412998522744315"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><ds:X509Data>
+<ds:X509IssuerSerial>
+<ds:X509IssuerName>CN=CA,OU=PS,O=FuseSource,L=Dublin,ST=Leinster,C=IE</ds:X509IssuerName>
+<ds:X509SerialNumber>1</ds:X509SerialNumber>
+</ds:X509IssuerSerial>
+</ds:X509Data></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>X3ND6GxWrkazjftcjVFOY3C96hq9N/lNNRtODZlcvgJKnUr6gfrVZ9iV2IQz56p/xQfexvqtD33ZUeoALo6q8ohk7Lk2xtH2NbnsLy7XtFIiIBoLKiibfAYWW/8HPOvvmaWDw/CkI9xr1fh037a/jYWqB1Z/SJ2cQVlr4Dj8404=</xenc:CipherValue></xenc:CipherData><xenc:ReferenceList><xenc:DataReference URI="#EncDataId-5"/><xenc:DataReference URI="#EncDataId-6"/></xenc:ReferenceList></xenc:EncryptedKey><wsse:BinarySecurityToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" wsu:Id="CertId-826253D4E9CB5B71C412998522735281">MIICtTCCAh6gAwIBAgIBAjANBgkqhkiG9w0BAQUFADBgMQswCQYDVQQGEwJJRTERMA8GA1UECBMITGVpbnN0ZXIxDzANBgNVBAcTBkR1YmxpbjETMBEGA1UEChMKRnVzZVNvdXJjZTELMAkGA1UECxMCUFMxCzAJBgNVBAMTAkNBMB4XDTExMDMxMDE4NTMzOVoXDTEyMDMwOTE4NTMzOVowZDELMAkGA1UEBhMCSUUxETAPBgNVBAgTCExlaW5zdGVyMRMwEQYDVQQKEwpGdXNlU291cmNlMRMwEQYDVQQLEwpQcm9kdWN0aW9uMRgwFgYDVQQDEw9BZHJpYW4gVHJlbmFtYW4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALMW3GmS6Co6NZmXZ8voUM2Oik8t6/d1P4+mKSPRfRzXZUh91e4xTbuKbsqgLDz6vZNB5A3NRC6nNuKmCkMfpZYLuF1ptjSbjeIAsUezYyUm/paEWEAYwmmT550VxVnJ412SC7Mk3g797dN+VHVZEU4Ha5oYmhx0oDMRDzaT/dBXAgMBAAGjezB5MAkGA1UdEwQCMAAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBSvnNG8nejCIQrToGDSHcXQLcfSPTAfBgNVHSMEGDAWgBRFCwR7zJrKAdQsyLIdzzVHKMbtejANBgkqhkiG9w0BAQUFAAOBgQCrAyMEOOWgCRuWnndULiIL+YwZTlUcyMhjv34Sn/Jr9MY5ASHCwdISZ0LY+VCnHE9zfU6puQO5FICcFUFF1kDG/reROB7SJrxldkJG/B8hFJu/GJu+iChSszo3EX+K0vyrr/DdFvl/r/1pKmwUtKvAPMs5HXVbEHnIP1XLMJqxFA==</wsse:BinarySecurityToken><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-3">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference URI="#Timestamp-2">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>99Sg06snwLDVU8EIBldGAYnc/hE=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#id-4">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>p1YF2IB+Q8mFktsGZSTiEMbyjmc=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+kcd8jKvXUm4AbZ9fBdO+wABgXstuRepXGZp6x5FRT+3btppomdfoR7j9wXywMX8ICSR5nS/DcdaO
+N+/CQHCXG52x8iGkYBQ82nuqHJxAwzsNZw/dS1lOIvEfsFrOYe4pmtJ4oN8CUUJw4omdxaSSUdZT
+8I/JLrLU02Uw06Dzc3k=
+</ds:SignatureValue>
+<ds:KeyInfo Id="KeyId-826253D4E9CB5B71C412998522735402">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="STRId-826253D4E9CB5B71C412998522735423"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#CertId-826253D4E9CB5B71C412998522735281" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"/></wsse:SecurityTokenReference>
+</ds:KeyInfo>
+</ds:Signature><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncDataId-5" Type="http://www.w3.org/2001/04/xmlenc#Element"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#EncKeyId-826253D4E9CB5B71C412998522744315"/></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>rNqS75+dze3vrbIsMxRJBquXI1E2G90opkexEBmdtkcDmK4ATiFJq3q+RhGeVasXGXquj4Ytnysy
+eOE/pu/cPGOrcp9SblECk/ovZ07lxdSajKcARBXzGRJVwHM5S7ukgq5G3pBvPvmgxwjI/7DMM9IS
+GsxfQYTEmBiwmyvTgIEjvcFmGI7c9wjWtxQINzHrqKmuO4WTu9uiwTfuw1OszBxghdQe1NzcShWw
+EsKQ1ppyhoXCG5c/eaSacWZRKEd23sXq+U2i9l+kjBQdJqzcMwk7V0BqDsdlqrh3AD2Po6BqmDjJ
+UtO0OOO7cd245RdClhhA2V/erZMbGROKn8e48axcHUckHSEl3lZXj8J5LMO4u3gTSYCyowM6kxfT
+L3NwVo9+RdtAk0btnkdNXgDP4XXC6VeQQP1S1nTHvG+S+T7nRuROUgAKJh9uO8bJ5ljUY3JdAvWd
+aouqdDPk7IB08VHqpLWyF+gDJLJzO4s5Ctaj8kIpXZ25TbYF5JpxDve4o2N2YEUnH+hBz1Kq/LT0
++H/X3wGiNAMmnUmiP98tB5HrEaES2RtRyE650psO0iMXl5Wha8G6KoitUK6rhGVPgT563FRa8XOH
+uozbJOMd/xQ=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData><wsse:UsernameToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-1"><wsse:Username>Alice</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">ecilA</wsse:Password></wsse:UsernameToken></wsse:Security></soap:Header><soap:Body xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="id-4"><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncDataId-6" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#EncKeyId-826253D4E9CB5B71C412998522744315"/></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>dzIVxEnUjUXNIzgVpE/sl03ffYoepmQr7HrkXkJDUNZzlZmVdaZK2xwJFp9+72TjmFby5FwFCdTg
+RsroTE0WAk6nrV9IiSm+cX07IGZFLcPCPgM26jNay5Ohz1v9v4WaZojJJMf0KbWpDDjOU6/K2F4q
+5atwVHIIuls69ugyVXRrcvfxWjXL9TW3Hccr1G8cbI9quDynLDzP5IKAeANymQ33/44XsEK50oUw
+yuSW/V9QCzKdF+U8MKU97ytUHX+T+lmwzk7nRiIAAuKX3fc9Pw==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-11 14:05:04 AbstractLoggingInterceptor [INFO] Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml; charset=utf-8
+Headers: {content-type=[text/xml; charset=utf-8], Content-Length=[431], Server=[Jetty(6.1.x)]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:lookupCustomerResponse xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:ns3="http://www.fusesource.com/demo/customer"><ret><ns3:firstName>Ade</ns3:firstName><ns3:lastName>Trenaman</ns3:lastName><ns3:phoneNumber>+353-1-01234567</ns3:phoneNumber><ns3:id>007</ns3:id></ret></ns2:lookupCustomerResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-11 14:15:49 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@199836ed: startup date [Fri Mar 11 14:15:49 GMT 2011]; root of context hierarchy
+2011-03-11 14:15:49 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-11 14:15:49 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-11 14:15:50 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-11 14:15:50 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-11 14:15:50 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-11 14:15:50 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-11 14:15:50 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-11 14:15:50 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-11 14:15:50 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-11 14:15:50 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4aeaf40c: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-11 14:15:51 ReflectionServiceFactoryBean [INFO] Creating Service {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService from WSDL: https://samwise.local:8443/cxf/Customers?wsdl
+2011-03-11 14:15:53 ClientSidePasswordCallback [INFO] Setting password for user Alice existing password is 'null'
+2011-03-11 14:15:53 ClientSidePasswordCallback [INFO] Setting password for user adrian.trenaman existing password is 'null'
+2011-03-11 14:15:54 AbstractLoggingInterceptor [INFO] Outbound Message
+---------------------------
+ID: 1
+Address: https://samwise.local:8443/cxf/Customers
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {SOAPAction=["http://www.example.org/CustomerService/lookupCustomer"], Accept=[*/*]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><soap:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><xenc:EncryptedKey xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncKeyId-1A5F3C91DC5167F0AB12998529540915"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><ds:X509Data>
+<ds:X509IssuerSerial>
+<ds:X509IssuerName>CN=CA,OU=PS,O=FuseSource,L=Dublin,ST=Leinster,C=IE</ds:X509IssuerName>
+<ds:X509SerialNumber>1</ds:X509SerialNumber>
+</ds:X509IssuerSerial>
+</ds:X509Data></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>pomtzIlHL6L5Nllt6XIkc8nhXSXLTyhTWs++D+rzGplCEAu9hkBzUrslauxYfJrWgv3HZW4+Llm88mDO3XVWfqmYi0Vr8TBsvCJcmVF5QzPYESdJgDf4ZabkscipmQ/BKi/LcnlO4UVTN0oRx2khkDiMggGwcqcvBIrUVZVhMmg=</xenc:CipherValue></xenc:CipherData><xenc:ReferenceList><xenc:DataReference URI="#EncDataId-5"/><xenc:DataReference URI="#EncDataId-6"/></xenc:ReferenceList></xenc:EncryptedKey><wsse:BinarySecurityToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" wsu:Id="CertId-1A5F3C91DC5167F0AB12998529534151">MIICtTCCAh6gAwIBAgIBAjANBgkqhkiG9w0BAQUFADBgMQswCQYDVQQGEwJJRTERMA8GA1UECBMITGVpbnN0ZXIxDzANBgNVBAcTBkR1YmxpbjETMBEGA1UEChMKRnVzZVNvdXJjZTELMAkGA1UECxMCUFMxCzAJBgNVBAMTAkNBMB4XDTExMDMxMDE4NTMzOVoXDTEyMDMwOTE4NTMzOVowZDELMAkGA1UEBhMCSUUxETAPBgNVBAgTCExlaW5zdGVyMRMwEQYDVQQKEwpGdXNlU291cmNlMRMwEQYDVQQLEwpQcm9kdWN0aW9uMRgwFgYDVQQDEw9BZHJpYW4gVHJlbmFtYW4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALMW3GmS6Co6NZmXZ8voUM2Oik8t6/d1P4+mKSPRfRzXZUh91e4xTbuKbsqgLDz6vZNB5A3NRC6nNuKmCkMfpZYLuF1ptjSbjeIAsUezYyUm/paEWEAYwmmT550VxVnJ412SC7Mk3g797dN+VHVZEU4Ha5oYmhx0oDMRDzaT/dBXAgMBAAGjezB5MAkGA1UdEwQCMAAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBSvnNG8nejCIQrToGDSHcXQLcfSPTAfBgNVHSMEGDAWgBRFCwR7zJrKAdQsyLIdzzVHKMbtejANBgkqhkiG9w0BAQUFAAOBgQCrAyMEOOWgCRuWnndULiIL+YwZTlUcyMhjv34Sn/Jr9MY5ASHCwdISZ0LY+VCnHE9zfU6puQO5FICcFUFF1kDG/reROB7SJrxldkJG/B8hFJu/GJu+iChSszo3EX+K0vyrr/DdFvl/r/1pKmwUtKvAPMs5HXVbEHnIP1XLMJqxFA==</wsse:BinarySecurityToken><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-3">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference URI="#Timestamp-2">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>pIWnrUG7U7ajlwBHE7nDhn2FDgY=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#id-4">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>p1YF2IB+Q8mFktsGZSTiEMbyjmc=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+QC3ijJUVTyTJaSKjcbmQkmr7ny9lB8qPd4Tis2ACyZ1nprIdUUKwLvoOVHXNbkYY5G1PwKQHem1o
+h509ysiLdLbfWgKJV2lZdKI4Abu4lGG7JgFu7uLtFtQ+zt0gsHGSsp87EKuJDcgLRpAgbJ2aRLuG
+hisELD/EJwmj+EsFlkI=
+</ds:SignatureValue>
+<ds:KeyInfo Id="KeyId-1A5F3C91DC5167F0AB12998529534232">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="STRId-1A5F3C91DC5167F0AB12998529534253"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#CertId-1A5F3C91DC5167F0AB12998529534151" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"/></wsse:SecurityTokenReference>
+</ds:KeyInfo>
+</ds:Signature><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncDataId-5" Type="http://www.w3.org/2001/04/xmlenc#Element"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#EncKeyId-1A5F3C91DC5167F0AB12998529540915"/></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>KSpsjMtAfa2DyPK11EguDQOIXX61ZMaGOQOCY+qqvj7kdMT2X0AfU9EuMqLdqcoePZsVfz8sKCBv
+Av1CrFtmFktpI/WjkCcp+kNcZbKrKM28JC0eEzaEX6/RT8rUbq3+lnJ6xDY0OCc8Vf7xWoEctJ0h
+zGjYwIW0F4Cct5C3wr0bZWMce1C4CMuXCeQ1AMT8IYcSk0Ml5rOL4wEUmWuTDjs+oNrRTf3T/g7j
+Zb41+ttb83RBXx+LilFWSVnRXFESVxHdWjj6ArZT0dy0divTviOFimj7KhUzi7yvsm82iMPJL6qC
+YH6pUL9xGk+FxUj6r9ikGsb6/tseLtFvh9kosflnSYoYzwHbzKTCMNM7ZTpipevhTJUeLl/GB525
+y2h4g5XNDf0cGtu/R/ap0cjdB4zF3ab9Zed5yZfqdbOqhnCQztLJvAacNymW+WqXkv3/d54QY2dd
+XP7kys1KbApCDQGNcVPTlBud2DIhExad3yllqG+2xuXNI6O8eRHKf/8LpMg1X1xx28vEwyzCjUbu
+F6UugGl4kaVb462wvk8Tzo+Nc3KeF4dEChvRRmTSziII9o8axckynYRqIFHZx34awZJ0Ur42OrA4
+wdOpd5RLOEo=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData><wsse:UsernameToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-1"><wsse:Username>Alice</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">ecilA</wsse:Password></wsse:UsernameToken></wsse:Security></soap:Header><soap:Body xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="id-4"><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="EncDataId-6" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><wsse:Reference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" URI="#EncKeyId-1A5F3C91DC5167F0AB12998529540915"/></wsse:SecurityTokenReference>
+</ds:KeyInfo><xenc:CipherData><xenc:CipherValue>c3TJV/1gaPoKTr+tuR6H3+fEnXfZo85To3RT/13WVY4QHzOkTo1KM6PRf/zUB2Lsj+9qzauLLH1/
+L+oFsOXtlTISdT+MoDYQiFjfJE7PpYJcQnn0+xDdxoplwzqE8s8m0uvhJzmMNV6bbFtJ8ls8pYWz
+MjNRvUiZZVejfGWDNeU1FTiVk37PcJ1Puz0QKyjJzK5SQF7BFDCxCnLtuWDOYeZJ3F/4riXML4zW
+8cdkRHzf8akT3/iooSPuF8MPZCutruIIuj/9mYhbkesmYnaGaw==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-11 14:16:54 PhaseInterceptorChain [WARN] Interceptor for {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService#{http://demo.fusesource.com/wsdl/CustomerService/}lookupCustomer has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not send Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:255)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:313)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:265)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:73)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:124)
+	at $Proxy25.lookupCustomer(Unknown Source)
+	at com.fusesource.customer.ws.SampleClient.main(SampleClient.java:57)
+Caused by: java.net.SocketTimeoutException: SocketTimeoutException invoking https://samwise.local:8443/cxf/Customers: Read timed out
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:2107)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:2092)
+	at org.apache.cxf.io.CacheAndWriteOutputStream.postClose(CacheAndWriteOutputStream.java:47)
+	at org.apache.cxf.io.CachedOutputStream.close(CachedOutputStream.java:188)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:697)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	... 8 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.sun.net.ssl.internal.ssl.InputRecord.readFully(InputRecord.java:293)
+	at com.sun.net.ssl.internal.ssl.InputRecord.read(InputRecord.java:331)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:798)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:755)
+	at com.sun.net.ssl.internal.ssl.AppInputStream.read(AppInputStream.java:75)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:258)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:687)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:632)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1200)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:379)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:318)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponseInternal(HTTPConduit.java:2224)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponse(HTTPConduit.java:2193)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:2037)
+	... 13 more

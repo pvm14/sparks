@@ -1,0 +1,881 @@
+2011-03-09 13:19:47 LogUtils [DEBUG] Using org.apache.cxf.common.logging.Log4jLogger for logging.
+2011-03-09 13:19:47 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@2b20bf2c: startup date [Wed Mar 09 13:19:47 GMT 2011]; root of context hierarchy
+2011-03-09 13:19:47 TunedDocumentLoader [DEBUG] FastInfoset not found on classpath. Disabling context load optimizations.
+2011-03-09 13:19:47 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-09 13:19:47 BusApplicationContext [DEBUG] Creating application context with resources: [class path resource [META-INF/cxf/cxf.xml], class path resource [META-INF/cxf/cxf-extension-ws-security.xml], class path resource [META-INF/cxf/cxf-extension-soap.xml], class path resource [META-INF/cxf/cxf-extension-jaxws.xml], class path resource [META-INF/cxf/cxf-extension-xml.xml], class path resource [META-INF/cxf/cxf-extension-addr.xml], class path resource [META-INF/cxf/cxf-extension-http.xml], URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]]
+2011-03-09 13:19:47 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-09 13:19:47 DefaultBeanDefinitionDocumentReader [DEBUG] Loading bean definitions
+2011-03-09 13:19:47 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-09 13:19:47 DefaultBeanDefinitionDocumentReader [DEBUG] Loading bean definitions
+2011-03-09 13:19:47 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-09 13:19:47 DefaultBeanDefinitionDocumentReader [DEBUG] Loading bean definitions
+2011-03-09 13:19:47 BeanDefinitionParserDelegate [DEBUG] Neither XML 'id' nor 'name' specified - using generated bean name [org.apache.cxf.binding.soap.spring.SoapVersionRegistrar#72c743eb]
+2011-03-09 13:19:47 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-09 13:19:47 DefaultBeanDefinitionDocumentReader [DEBUG] Loading bean definitions
+2011-03-09 13:19:47 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-09 13:19:47 DefaultBeanDefinitionDocumentReader [DEBUG] Loading bean definitions
+2011-03-09 13:19:47 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-09 13:19:47 DefaultBeanDefinitionDocumentReader [DEBUG] Loading bean definitions
+2011-03-09 13:19:47 BeanDefinitionParserDelegate [DEBUG] Neither XML 'id' nor 'name' specified - using generated bean name [javax.xml.namespace.QName#643ae941]
+2011-03-09 13:19:47 BeanDefinitionParserDelegate [DEBUG] Neither XML 'id' nor 'name' specified - using generated bean name [javax.xml.namespace.QName#57a7ddcf]
+2011-03-09 13:19:47 BeanDefinitionParserDelegate [DEBUG] Neither XML 'id' nor 'name' specified - using generated bean name [javax.xml.namespace.QName#4dd36dfe]
+2011-03-09 13:19:47 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-09 13:19:47 DefaultBeanDefinitionDocumentReader [DEBUG] Loading bean definitions
+2011-03-09 13:19:47 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-09 13:19:47 DefaultDocumentLoader [DEBUG] Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2011-03-09 13:19:47 PluggableSchemaResolver [DEBUG] Loading schema mappings from [META-INF/spring.schemas]
+2011-03-09 13:19:47 PluggableSchemaResolver [DEBUG] Loaded schema mappings: {http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://cxf.apache.org/schemas/configuration/security.xsd=schemas/configuration/security.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://cxf.apache.org/schemas/configuration/soap.xsd=schemas/configuration/soap.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://cxf.apache.org/schemas/wsdl/http-conf.xsd=schemas/wsdl/http-conf.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://cxf.apache.org/schemas/jaxws.xsd=schemas/jaxws.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://cxf.apache.org/schemas/simple.xsd=schemas/simple.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://schemas.xmlsoap.org/wsdl/2003-02-11.xsd=schemas/wsdl/wsdl.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://cxf.apache.org/schemas/configuration/cxf-beans.xsd=schemas/configuration/cxf-beans.xsd, http://cxf.apache.org/schemas/ws/addressing.xsd=schemas/ws-addr-conf.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://cxf.apache.org/schemas/core.xsd=schemas/core.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://cxf.apache.org/schemas/configuration/http-conf.xsd=schemas/configuration/http-conf.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://schemas.xmlsoap.org/wsdl/http/=schemas/wsdl/http.xsd, http://cxf.apache.org/schemas/configuration/parameterized-types.xsd=schemas/configuration/parameterized-types.xsd, http://schemas.xmlsoap.org/wsdl/=schemas/wsdl/wsdl.xsd, http://schemas.xmlsoap.org/ws/2004/08/addressing=schemas/wsdl/addressing.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+2011-03-09 13:19:47 PluggableSchemaResolver [DEBUG] Found XML schema [http://www.springframework.org/schema/beans/spring-beans-2.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.0.xsd
+2011-03-09 13:19:47 PluggableSchemaResolver [DEBUG] Found XML schema [http://cxf.apache.org/schemas/core.xsd] in classpath: schemas/core.xsd
+2011-03-09 13:19:47 PluggableSchemaResolver [DEBUG] Found XML schema [http://cxf.apache.org/schemas/configuration/cxf-beans.xsd] in classpath: schemas/configuration/cxf-beans.xsd
+2011-03-09 13:19:47 DefaultBeanDefinitionDocumentReader [DEBUG] Loading bean definitions
+2011-03-09 13:19:47 DefaultNamespaceHandlerResolver [DEBUG] Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://cxf.apache.org/clustering=org.apache.cxf.clustering.spring.NamespaceHandler, http://cxf.apache.org/ws/addressing=org.apache.cxf.ws.addressing.spring.NamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://cxf.apache.org/transports/http/configuration=org.apache.cxf.transport.http.spring.NamespaceHandler, http://cxf.apache.org/bindings/soap=org.apache.cxf.binding.soap.spring.NamespaceHandler, http://cxf.apache.org/simple=org.apache.cxf.frontend.spring.NamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://cxf.apache.org/core=org.apache.cxf.bus.spring.NamespaceHandler, http://cxf.apache.org/jaxws=org.apache.cxf.jaxws.spring.NamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2011-03-09 13:19:47 AbstractBeanDefinitionParser [DEBUG] Adding org.apache.cxf.configuration.spring.AbstractBeanDefinitionParser.wireBus attribute CONSTRUCTOR to bean org.springframework.beans.factory.support.BeanDefinitionBuilder@35cf7491
+2011-03-09 13:19:47 BeanDefinitionParserDelegate [DEBUG] Using generated bean name [cxf:logging#1018f51f] for nested custom element 'cxf:logging'
+2011-03-09 13:19:47 BusApplicationContext [DEBUG] Bean factory for org.apache.cxf.bus.spring.BusApplicationContext@2b20bf2c: org.springframework.beans.factory.support.DefaultListableBeanFactory@5684ce7a: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-09 13:19:47 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.binding.soap.customEditorConfigurer'
+2011-03-09 13:19:47 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.binding.soap.customEditorConfigurer'
+2011-03-09 13:19:47 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.binding.soap.customEditorConfigurer' to allow for resolving potential circular references
+2011-03-09 13:19:47 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.binding.soap.spring.SoapVersionRegistrar#72c743eb'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.binding.soap.spring.SoapVersionRegistrar#72c743eb'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.binding.soap.customEditorConfigurer'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor'
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean cxf
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.bus.spring.BusApplicationListener
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.bus.spring.Jsr250BeanPostProcessor
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.bus.spring.BusExtensionPostProcessor
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.resource.ResourceManager
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.configuration.Configurer
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.binding.BindingFactoryManager
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.transport.DestinationFactoryManager
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.transport.ConduitInitiatorManager
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.wsdl.WSDLManager
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.phase.PhaseManager
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.workqueue.WorkQueueManager
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.buslifecycle.BusLifeCycleManager
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.endpoint.ServerRegistry
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.endpoint.ServerLifeCycleManager
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.endpoint.ClientLifeCycleManager
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.transports.http.QueryHandlerRegistry
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.endpoint.EndpointResolverRegistry
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.headers.HeaderManager
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.catalog.OASISCatalogManager
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.service.factory.FactoryBeanListenerManager
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.endpoint.ServiceContractResolverRegistry
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.binding.soap.SoapBindingFactory
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.binding.soap.SoapTransportFactory
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.binding.soap.customEditorConfigurer
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.jaxws.context.WebServiceContextResourceResolver
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.jaxws.context.WebServiceContextImpl
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.binding.xml.XMLBindingFactory
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Checking bean cxf.config0
+2011-03-09 13:19:48 BusWiringBeanFactoryPostProcessor [DEBUG] Found org.apache.cxf.configuration.spring.AbstractBeanDefinitionParser.wireBus attribute CONSTRUCTOR on bean cxf.config0
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor'
+2011-03-09 13:19:48 BusApplicationContext [DEBUG] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@2339e351]
+2011-03-09 13:19:48 BusApplicationContext [DEBUG] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@5e29c58e]
+2011-03-09 13:19:48 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5684ce7a: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'cxf'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'cxf'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'cxf' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning eagerly cached instance of singleton bean 'cxf' that is not fully initialized yet - a consequence of a circular reference
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'cxf'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.bus.spring.BusApplicationListener'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.bus.spring.BusApplicationListener'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.bus.spring.BusApplicationListener' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.bus.spring.BusApplicationListener'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'org.apache.cxf.binding.soap.customEditorConfigurer'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'cxf.config0'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'cxf.config0'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'cxf'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'cxf.config0' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'cxf:logging#1018f51f'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'cxf:logging#1018f51f'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'cxf.config0'
+2011-03-09 13:19:48 BusApplicationContext [DEBUG] Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@5adf48c4]
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'lifecycleProcessor'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'org.apache.cxf.bus.spring.BusApplicationListener'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'cxf'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.buslifecycle.BusLifeCycleManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.buslifecycle.BusLifeCycleManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'cxf'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.buslifecycle.BusLifeCycleManager' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.buslifecycle.BusLifeCycleManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'cxf'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.wsdl.WSDLManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.wsdl.WSDLManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'cxf'
+2011-03-09 13:19:48 WSDLManagerImpl [DEBUG] Registering extension: org.apache.cxf.transports.http.configuration.HTTPServerPolicy for parent: javax.wsdl.Port
+2011-03-09 13:19:48 WSDLManagerImpl [DEBUG] Registering extension: org.apache.cxf.bindings.xformat.XMLFormatBinding for parent: javax.wsdl.Binding
+2011-03-09 13:19:48 WSDLManagerImpl [DEBUG] Registering extension: org.apache.cxf.transports.http.configuration.HTTPClientPolicy for parent: javax.wsdl.Port
+2011-03-09 13:19:48 WSDLManagerImpl [DEBUG] Registering extension: org.apache.cxf.bindings.xformat.XMLBindingMessageFormat for parent: javax.wsdl.BindingOutput
+2011-03-09 13:19:48 WSDLManagerImpl [DEBUG] Registering extension: org.apache.cxf.bindings.xformat.XMLBindingMessageFormat for parent: javax.wsdl.BindingInput
+2011-03-09 13:19:48 WSDLManagerImpl [DEBUG] Registering extension: org.apache.cxf.ws.addressing.wsdl.UsingAddressing for parent: javax.wsdl.Binding
+2011-03-09 13:19:48 WSDLManagerImpl [DEBUG] Registering extension: org.apache.cxf.wsdl.http.AddressType for parent: javax.wsdl.Port
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.wsdl.WSDLManager' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.wsdl.WSDLManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.catalog.OASISCatalogManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.catalog.OASISCatalogManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'cxf'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.catalog.OASISCatalogManager' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.catalog.OASISCatalogManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.transport.ConduitInitiatorManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.transport.ConduitInitiatorManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'cxf'
+2011-03-09 13:19:48 BeanUtils [DEBUG] No property editor [org.apache.cxf.configuration.spring.MapProviderEditor] found for type org.apache.cxf.configuration.spring.MapProvider according to 'Editor' suffix convention
+2011-03-09 13:19:48 BeanUtils [DEBUG] No property editor [java.util.MapEditor] found for type java.util.Map according to 'Editor' suffix convention
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.transport.ConduitInitiatorManager' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.transport.ConduitInitiatorManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'cxf'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.configuration.Configurer'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.configuration.Configurer'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.configuration.Configurer' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Invoking afterPropertiesSet() on bean with name 'org.apache.cxf.configuration.Configurer'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.configuration.Configurer'
+2011-03-09 13:19:48 ConfigurerImpl [DEBUG] Could not find a definition for bean with id http://localhost:8083/Customers - no injection will be performed.
+2011-03-09 13:19:48 HTTPConduit [DEBUG] No Trust Decider configured for Conduit 'null.http-conduit'
+2011-03-09 13:19:48 HTTPConduit [DEBUG] No Auth Supplier configured for Conduit 'null.http-conduit'
+2011-03-09 13:19:48 HTTPConduit [DEBUG] Conduit 'null.http-conduit' has been configured for plain http.
+2011-03-09 13:19:48 HTTPConduit [DEBUG] registering incoming observer: org.apache.cxf.transport.TransportURIResolver$1@36c8570c
+2011-03-09 13:19:48 HTTPConduit [DEBUG] Sending GET Message with Headers to http://localhost:8083/Customers?wsdl Conduit :null.http-conduit
+Content-Type: text/xml
+
+2011-03-09 13:19:48 HTTPConduit [DEBUG] Accept: */*
+2011-03-09 13:19:48 HTTPConduit [DEBUG] No Trust Decider for Conduit 'null.http-conduit'. An afirmative Trust Decision is assumed.
+2011-03-09 13:19:48 HTTPConduit [DEBUG] Response Code: 200 Conduit: null.http-conduit
+2011-03-09 13:19:48 HTTPConduit [DEBUG] Content length: -1
+2011-03-09 13:19:48 HTTPConduit [DEBUG] Header fields: 
+    null: [HTTP/1.1 200 OK]
+    Transfer-Encoding: [chunked]
+    Content-Type: [text/xml]
+    Server: [Jetty(7.2.2.v20101205)]
+
+2011-03-09 13:19:48 ServiceImpl [DEBUG] creating port for portName
+2011-03-09 13:19:48 ServiceImpl [DEBUG] endpoint reference:
+2011-03-09 13:19:48 ServiceImpl [DEBUG] endpoint interface:
+2011-03-09 13:19:48 ConfigurerImpl [DEBUG] Could not determine bean name for instance of class org.apache.cxf.jaxws.JaxWsProxyFactoryBean.
+2011-03-09 13:19:48 ConfigurerImpl [DEBUG] Could not determine bean name for instance of class org.apache.cxf.jaxws.JaxWsClientFactoryBean.
+2011-03-09 13:19:48 ConfigurerImpl [DEBUG] Could not find a definition for bean with id {http://demo.fusesource.com/wsdl/CustomerService/}SOAPOverHTTP.jaxws-client.proxyFactory - no injection will be performed.
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.service.factory.FactoryBeanListenerManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.service.factory.FactoryBeanListenerManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'cxf'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.service.factory.FactoryBeanListenerManager' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.service.factory.FactoryBeanListenerManager'
+2011-03-09 13:19:48 ReflectionServiceFactoryBean [INFO] Creating Service {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService from WSDL: http://localhost:8083/Customers?wsdl
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.binding.BindingFactoryManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.binding.BindingFactoryManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'cxf'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.binding.BindingFactoryManager' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.binding.BindingFactoryManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.binding.soap.SoapBindingFactory'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.binding.soap.SoapBindingFactory'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'cxf'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.binding.soap.SoapBindingFactory' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.binding.soap.SoapBindingFactory'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.transport.DestinationFactoryManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.transport.DestinationFactoryManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'cxf'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.transport.DestinationFactoryManager' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.transport.DestinationFactoryManager'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.binding.soap.SoapTransportFactory'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.binding.soap.SoapTransportFactory'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.binding.soap.SoapTransportFactory' to allow for resolving potential circular references
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Returning cached instance of singleton bean 'cxf'
+2011-03-09 13:19:48 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.binding.soap.SoapTransportFactory'
+2011-03-09 13:19:49 JAXBDataBinding [DEBUG] Created JAXBContext "jar:file:/Users/ade/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.13/jaxb-impl-2.1.13.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.1.13
+Classes known to this context:
+  [B
+  boolean
+  byte
+  char
+  com.fusesource.demo.customer.Customer
+  com.fusesource.demo.wsdl.customerservice.GetCustomerStatus
+  com.fusesource.demo.wsdl.customerservice.GetCustomerStatusResponse
+  com.fusesource.demo.wsdl.customerservice.LookupCustomer
+  com.fusesource.demo.wsdl.customerservice.LookupCustomerResponse
+  com.fusesource.demo.wsdl.customerservice.UpdateCustomer
+  com.fusesource.demo.wsdl.customerservice.UpdateCustomerResponse
+  com.sun.xml.bind.api.CompositeStructure
+  double
+  float
+  int
+  java.awt.Image
+  java.io.File
+  java.lang.Boolean
+  java.lang.Byte
+  java.lang.Character
+  java.lang.Class
+  java.lang.Double
+  java.lang.Float
+  java.lang.Integer
+  java.lang.Long
+  java.lang.Object
+  java.lang.Short
+  java.lang.String
+  java.lang.Void
+  java.math.BigDecimal
+  java.math.BigInteger
+  java.net.URI
+  java.net.URL
+  java.util.Calendar
+  java.util.Date
+  java.util.GregorianCalendar
+  java.util.UUID
+  javax.activation.DataHandler
+  javax.xml.bind.JAXBElement
+  javax.xml.datatype.Duration
+  javax.xml.datatype.XMLGregorianCalendar
+  javax.xml.namespace.QName
+  javax.xml.transform.Source
+  long
+  short
+  void
+" with classes [class com.fusesource.demo.wsdl.customerservice.LookupCustomer, class com.fusesource.demo.wsdl.customerservice.LookupCustomerResponse, class com.fusesource.demo.customer.Customer, class com.fusesource.demo.wsdl.customerservice.GetCustomerStatus, class com.fusesource.demo.wsdl.customerservice.GetCustomerStatusResponse, class com.fusesource.demo.wsdl.customerservice.UpdateCustomer, class com.fusesource.demo.wsdl.customerservice.UpdateCustomerResponse, class com.fusesource.demo.customer.ObjectFactory, class com.fusesource.demo.wsdl.customerservice.ObjectFactory].
+2011-03-09 13:19:49 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.endpoint.ClientLifeCycleManager'
+2011-03-09 13:19:49 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.endpoint.ClientLifeCycleManager'
+2011-03-09 13:19:49 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.endpoint.ClientLifeCycleManager' to allow for resolving potential circular references
+2011-03-09 13:19:49 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.endpoint.ClientLifeCycleManager'
+2011-03-09 13:19:49 ConfigurerImpl [DEBUG] Could not find a definition for bean with id {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService - no injection will be performed.
+2011-03-09 13:19:49 ConfigurerImpl [DEBUG] Could not find a definition for bean with id {http://demo.fusesource.com/wsdl/CustomerService/}SOAPOverHTTP.endpoint - no injection will be performed.
+2011-03-09 13:19:49 AnnotationHandlerChainBuilder [DEBUG] building handler chain
+2011-03-09 13:19:49 AnnotationHandlerChainBuilder [DEBUG] Checking for HandlerChain annotation on com.fusesource.demo.wsdl.customerservice.CustomerService_Service
+2011-03-09 13:19:49 AnnotationHandlerChainBuilder [DEBUG] Checking for HandlerChain annotation on javax.xml.ws.Service
+2011-03-09 13:19:49 AnnotationHandlerChainBuilder [DEBUG] Checking for HandlerChain annotation on java.lang.Object
+2011-03-09 13:19:49 AnnotationHandlerChainBuilder [DEBUG] no HandlerChain annotation on class com.fusesource.demo.wsdl.customerservice.CustomerService_Service
+2011-03-09 13:19:49 ServiceImpl [DEBUG] created proxy
+2011-03-09 13:19:49 ClientImpl [DEBUG] Invoke, operation info: [BindingOperationInfo: {http://demo.fusesource.com/wsdl/CustomerService/}lookupCustomer], params: [007]
+2011-03-09 13:19:49 ClientImpl [DEBUG] set requestContext to message be{java.lang.reflect.Method=public abstract com.fusesource.demo.customer.Customer com.fusesource.demo.wsdl.customerservice.CustomerService.lookupCustomer(java.lang.String), org.apache.cxf.jaxws.context.WrappedMessageContext.SCOPES={org.apache.cxf.message.Message.ENDPOINT_ADDRESS=APPLICATION}, org.apache.cxf.message.Message.ENDPOINT_ADDRESS=http://0.0.0.0:8083/Customers}
+2011-03-09 13:19:49 DefaultListableBeanFactory [DEBUG] Creating shared instance of singleton bean 'org.apache.cxf.phase.PhaseManager'
+2011-03-09 13:19:49 DefaultListableBeanFactory [DEBUG] Creating instance of bean 'org.apache.cxf.phase.PhaseManager'
+2011-03-09 13:19:49 DefaultListableBeanFactory [DEBUG] Eagerly caching bean 'org.apache.cxf.phase.PhaseManager' to allow for resolving potential circular references
+2011-03-09 13:19:49 DefaultListableBeanFactory [DEBUG] Finished creating instance of bean 'org.apache.cxf.phase.PhaseManager'
+2011-03-09 13:19:49 ClientImpl [DEBUG] Interceptors contributed by bus: [org.apache.cxf.interceptor.LoggingOutInterceptor@355c6c8d, org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor@46dab859, org.apache.cxf.interceptor.LoggingOutInterceptor@417cff66]
+2011-03-09 13:19:49 ClientImpl [DEBUG] Interceptors contributed by client: []
+2011-03-09 13:19:49 ClientImpl [DEBUG] Interceptors contributed by endpoint: [org.apache.cxf.interceptor.MessageSenderInterceptor@7563a320, org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@606ac615, org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@1f2be27, org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@67a1f370]
+2011-03-09 13:19:49 ClientImpl [DEBUG] Interceptors contributed by binding: [org.apache.cxf.interceptor.AttachmentOutInterceptor@39757337, org.apache.cxf.interceptor.StaxOutInterceptor@4ddf3d59, org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@7b34c5ff, org.apache.cxf.interceptor.WrappedOutInterceptor@45b3278a, org.apache.cxf.interceptor.BareOutInterceptor@74e8f8c5, org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@6b248979, org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@2bbd9de3]
+2011-03-09 13:19:49 ClientImpl [DEBUG] Interceptors contributed by databinding: []
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.LoggingOutInterceptor@355c6c8d to phase pre-stream
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor@46dab859 to phase pre-protocol
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.LoggingOutInterceptor@417cff66 to phase pre-stream
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@7563a320 to phase prepare-send
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@606ac615 to phase pre-logical
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@1f2be27 to phase pre-logical
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@67a1f370 to phase pre-logical
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@39757337 to phase pre-stream
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.StaxOutInterceptor@4ddf3d59 to phase pre-stream
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@7b34c5ff to phase pre-logical
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.WrappedOutInterceptor@45b3278a to phase marshal
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.BareOutInterceptor@74e8f8c5 to phase marshal
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@6b248979 to phase post-logical
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@2bbd9de3 to phase write
+2011-03-09 13:19:49 ConfigurerImpl [DEBUG] Could not find a definition for bean with id {http://demo.fusesource.com/wsdl/CustomerService/}SOAPOverHTTP.http-conduit - no injection will be performed.
+2011-03-09 13:19:49 ConfigurerImpl [DEBUG] Could not find a definition for bean with id http://0.0.0.0:8083/Customers - no injection will be performed.
+2011-03-09 13:19:49 HTTPConduit [DEBUG] No Trust Decider configured for Conduit '{http://demo.fusesource.com/wsdl/CustomerService/}SOAPOverHTTP.http-conduit'
+2011-03-09 13:19:49 HTTPConduit [DEBUG] No Auth Supplier configured for Conduit '{http://demo.fusesource.com/wsdl/CustomerService/}SOAPOverHTTP.http-conduit'
+2011-03-09 13:19:49 HTTPConduit [DEBUG] Conduit '{http://demo.fusesource.com/wsdl/CustomerService/}SOAPOverHTTP.http-conduit' has been configured for plain http.
+2011-03-09 13:19:49 HTTPConduit [DEBUG] registering incoming observer: org.apache.cxf.endpoint.ClientImpl@71ce5e7a
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Chain org.apache.cxf.phase.PhaseInterceptorChain@da2da17 was created. Current flow:
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol [WSS4JOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@67a1f370
+2011-03-09 13:19:49 HolderOutInterceptor [DEBUG] op: [OperationInfo: {http://demo.fusesource.com/wsdl/CustomerService/}lookupCustomer]
+2011-03-09 13:19:49 HolderOutInterceptor [DEBUG] op.hasOutput(): true
+2011-03-09 13:19:49 HolderOutInterceptor [DEBUG] op.getOutput().size(): 1
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@606ac615
+2011-03-09 13:19:49 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@1f2be27
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@7b34c5ff
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@6b248979
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@7563a320
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@41e22632 to phase prepare-send-ending
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Chain org.apache.cxf.phase.PhaseInterceptorChain@da2da17 was modified. Current flow:
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol [WSS4JOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.interceptor.LoggingOutInterceptor@355c6c8d
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@39757337
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutInterceptor@4ddf3d59
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.StaxOutInterceptor$StaxOutEndingInterceptor@13505258 to phase pre-stream-ending
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Chain org.apache.cxf.phase.PhaseInterceptorChain@da2da17 was modified. Current flow:
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol [WSS4JOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor@46dab859
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.binding.soap.saaj.SAAJOutInterceptor$SAAJOutEndingInterceptor@fcdfd19 to phase pre-protocol-ending
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Chain org.apache.cxf.phase.PhaseInterceptorChain@da2da17 was modified. Current flow:
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol [WSS4JOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  pre-protocol-ending [SAAJOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor$WSS4JOutInterceptorInternal@1ca37c6a to phase post-protocol
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Chain org.apache.cxf.phase.PhaseInterceptorChain@da2da17 was modified. Current flow:
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol [WSS4JOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  post-protocol [WSS4JOutInterceptorInternal]
+  pre-protocol-ending [SAAJOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@2bbd9de3
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor$SoapOutEndingInterceptor@51af4309 to phase write-ending
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Chain org.apache.cxf.phase.PhaseInterceptorChain@da2da17 was modified. Current flow:
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol [WSS4JOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  post-protocol [WSS4JOutInterceptorInternal]
+  write-ending [SoapOutEndingInterceptor]
+  pre-protocol-ending [SAAJOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.interceptor.WrappedOutInterceptor@45b3278a
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.interceptor.BareOutInterceptor@74e8f8c5
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor$WSS4JOutInterceptorInternal@1ca37c6a
+2011-03-09 13:19:50 WSS4JOutInterceptor [DEBUG] WSS4JOutInterceptor: enter handleMessage()
+2011-03-09 13:19:50 Init [DEBUG] Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.c14n.implementations.Canonicalizer20010315OmitComments)
+2011-03-09 13:19:50 Init [DEBUG] Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315WithComments)
+2011-03-09 13:19:50 Init [DEBUG] Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclOmitComments)
+2011-03-09 13:19:50 Init [DEBUG] Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclWithComments)
+2011-03-09 13:19:50 Init [DEBUG] Canonicalizer.register(http://www.w3.org/2006/12/xml-c14n11, org.apache.xml.security.c14n.implementations.Canonicalizer11_OmitComments)
+2011-03-09 13:19:50 Init [DEBUG] Canonicalizer.register(http://www.w3.org/2006/12/xml-c14n11#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer11_WithComments)
+2011-03-09 13:19:50 Init [DEBUG] Transform.register(http://www.w3.org/2000/09/xmldsig#base64, org.apache.xml.security.transforms.implementations.TransformBase64Decode)
+2011-03-09 13:19:50 Init [DEBUG] Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.transforms.implementations.TransformC14N)
+2011-03-09 13:19:50 Init [DEBUG] Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NWithComments)
+2011-03-09 13:19:50 Init [DEBUG] Transform.register(http://www.w3.org/2006/12/xml-c14n11, org.apache.xml.security.transforms.implementations.TransformC14N11)
+2011-03-09 13:19:50 Init [DEBUG] Transform.register(http://www.w3.org/2006/12/xml-c14n11#WithComments, org.apache.xml.security.transforms.implementations.TransformC14N11_WithComments)
+2011-03-09 13:19:50 Init [DEBUG] Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.transforms.implementations.TransformC14NExclusive)
+2011-03-09 13:19:50 Init [DEBUG] Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NExclusiveWithComments)
+2011-03-09 13:19:50 Init [DEBUG] Transform.register(http://www.w3.org/TR/1999/REC-xpath-19991116, org.apache.xml.security.transforms.implementations.TransformXPath)
+2011-03-09 13:19:50 Init [DEBUG] Transform.register(http://www.w3.org/2000/09/xmldsig#enveloped-signature, org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature)
+2011-03-09 13:19:50 Init [DEBUG] Transform.register(http://www.w3.org/TR/1999/REC-xslt-19991116, org.apache.xml.security.transforms.implementations.TransformXSLT)
+2011-03-09 13:19:50 Init [DEBUG] Transform.register(http://www.w3.org/2002/04/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+2011-03-09 13:19:50 Init [DEBUG] Transform.register(http://www.w3.org/2002/06/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+2011-03-09 13:19:50 SignatureAlgorithm [DEBUG] Init() called
+2011-03-09 13:19:50 Init [DEBUG] SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#dsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureDSA)
+2011-03-09 13:19:50 SignatureAlgorithm [DEBUG] Try to register http://www.w3.org/2000/09/xmldsig#dsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureDSA
+2011-03-09 13:19:50 Init [DEBUG] SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#rsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1)
+2011-03-09 13:19:50 SignatureAlgorithm [DEBUG] Try to register http://www.w3.org/2000/09/xmldsig#rsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1
+2011-03-09 13:19:50 Init [DEBUG] SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#hmac-sha1, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1)
+2011-03-09 13:19:50 SignatureAlgorithm [DEBUG] Try to register http://www.w3.org/2000/09/xmldsig#hmac-sha1 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1
+2011-03-09 13:19:50 Init [DEBUG] SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-md5, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5)
+2011-03-09 13:19:50 SignatureAlgorithm [DEBUG] Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-md5 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5
+2011-03-09 13:19:50 Init [DEBUG] SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160)
+2011-03-09 13:19:50 SignatureAlgorithm [DEBUG] Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160
+2011-03-09 13:19:50 Init [DEBUG] SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha256, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256)
+2011-03-09 13:19:50 SignatureAlgorithm [DEBUG] Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256
+2011-03-09 13:19:50 Init [DEBUG] SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha384, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384)
+2011-03-09 13:19:50 SignatureAlgorithm [DEBUG] Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha384 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384
+2011-03-09 13:19:50 Init [DEBUG] SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha512, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512)
+2011-03-09 13:19:50 SignatureAlgorithm [DEBUG] Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha512 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512
+2011-03-09 13:19:50 Init [DEBUG] SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA1)
+2011-03-09 13:19:50 SignatureAlgorithm [DEBUG] Try to register http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA1
+2011-03-09 13:19:50 Init [DEBUG] SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-md5, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5)
+2011-03-09 13:19:50 SignatureAlgorithm [DEBUG] Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-md5 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5
+2011-03-09 13:19:50 Init [DEBUG] SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160)
+2011-03-09 13:19:50 SignatureAlgorithm [DEBUG] Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160
+2011-03-09 13:19:50 Init [DEBUG] SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha256, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256)
+2011-03-09 13:19:50 SignatureAlgorithm [DEBUG] Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha256 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256
+2011-03-09 13:19:50 Init [DEBUG] SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha384, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384)
+2011-03-09 13:19:50 SignatureAlgorithm [DEBUG] Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha384 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384
+2011-03-09 13:19:50 Init [DEBUG] SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha512, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512)
+2011-03-09 13:19:50 SignatureAlgorithm [DEBUG] Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha512 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512
+2011-03-09 13:19:50 Init [DEBUG] Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP: A simple resolver for requests to HTTP space
+2011-03-09 13:19:50 Init [DEBUG] Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverLocalFilesystem: A simple resolver for requests to the local file system
+2011-03-09 13:19:50 Init [DEBUG] Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverFragment: A simple resolver for requests of same-document URIs
+2011-03-09 13:19:50 Init [DEBUG] Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverXPointer: A simple resolver for requests of XPointer fragents
+2011-03-09 13:19:50 Init [DEBUG] Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RSAKeyValueResolver: Can extract RSA public keys
+2011-03-09 13:19:50 Init [DEBUG] Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.DSAKeyValueResolver: Can extract DSA public keys
+2011-03-09 13:19:50 Init [DEBUG] Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509CertificateResolver: Can extract public keys from X509 certificates
+2011-03-09 13:19:50 Init [DEBUG] Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SKIResolver: Uses an X509v3 SubjectKeyIdentifier extension to retrieve a certificate from the storages
+2011-03-09 13:19:50 Init [DEBUG] Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver: Resolves keys and certificates using ResourceResolvers
+2011-03-09 13:19:50 Init [DEBUG] Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SubjectNameResolver: Uses an X509 SubjectName to retrieve a certificate from the storages
+2011-03-09 13:19:50 Init [DEBUG] Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509IssuerSerialResolver: Uses an X509 IssuerName and IssuerSerial to retrieve a certificate from the storages
+2011-03-09 13:19:50 Init [DEBUG] Now I try to bind prefixes:
+2011-03-09 13:19:50 Init [DEBUG] Now I try to bind ds to http://www.w3.org/2000/09/xmldsig#
+2011-03-09 13:19:50 Init [DEBUG] Now I try to bind xenc to http://www.w3.org/2001/04/xmlenc#
+2011-03-09 13:19:50 Init [DEBUG] Now I try to bind experimental to http://www.xmlsecurity.org/experimental#
+2011-03-09 13:19:50 Init [DEBUG] Now I try to bind dsig-xpath-old to http://www.w3.org/2002/04/xmldsig-filter2
+2011-03-09 13:19:50 Init [DEBUG] Now I try to bind dsig-xpath to http://www.w3.org/2002/06/xmldsig-filter2
+2011-03-09 13:19:50 Init [DEBUG] Now I try to bind ec to http://www.w3.org/2001/10/xml-exc-c14n#
+2011-03-09 13:19:50 Init [DEBUG] Now I try to bind xx to http://www.nue.et-inf.uni-siegen.de/~geuer-pollmann/#xpathFilter
+2011-03-09 13:19:50 Init [DEBUG] XX_init                             97 ms
+2011-03-09 13:19:50 Init [DEBUG]   XX_prng                           0 ms
+2011-03-09 13:19:50 Init [DEBUG]   XX_parsing                        9 ms
+2011-03-09 13:19:50 Init [DEBUG]   XX_configure_i18n                 2 ms
+2011-03-09 13:19:50 Init [DEBUG]   XX_configure_reg_c14n             18 ms
+2011-03-09 13:19:50 Init [DEBUG]   XX_configure_reg_jcemapper        4 ms
+2011-03-09 13:19:50 Init [DEBUG]   XX_configure_reg_keyInfo          15 ms
+2011-03-09 13:19:50 Init [DEBUG]   XX_configure_reg_keyResolver      7 ms
+2011-03-09 13:19:50 Init [DEBUG]   XX_configure_reg_prefixes         1 ms
+2011-03-09 13:19:50 Init [DEBUG]   XX_configure_reg_resourceresolver 10 ms
+2011-03-09 13:19:50 Init [DEBUG]   XX_configure_reg_sigalgos         18 ms
+2011-03-09 13:19:50 Init [DEBUG]   XX_configure_reg_transforms       12 ms
+2011-03-09 13:19:50 WSSConfig [DEBUG] The provider BC was added at position: 3
+2011-03-09 13:19:50 Loader [DEBUG] org.apache.security.juice.provider.JuiCEProviderOpenSSL
+java.lang.ClassNotFoundException: org.apache.security.juice.provider.JuiCEProviderOpenSSL
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:307)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:248)
+	at org.apache.ws.security.util.Loader.loadClass(Loader.java:185)
+	at org.apache.ws.security.WSSConfig.loadProvider(WSSConfig.java:578)
+	at org.apache.ws.security.WSSConfig.addJceProvider(WSSConfig.java:635)
+	at org.apache.ws.security.WSSConfig.staticInit(WSSConfig.java:294)
+	at org.apache.ws.security.WSSConfig.<init>(WSSConfig.java:312)
+	at org.apache.ws.security.WSSConfig.getNewInstance(WSSConfig.java:321)
+	at org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor$WSS4JOutInterceptorInternal.handleMessage(WSS4JOutInterceptor.java:173)
+	at org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor$WSS4JOutInterceptorInternal.handleMessage(WSS4JOutInterceptor.java:134)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:255)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:313)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:265)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:73)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:124)
+	at $Proxy25.lookupCustomer(Unknown Source)
+	at com.fusesource.customer.ws.SampleClient.main(SampleClient.java:39)
+2011-03-09 13:19:50 WSSConfig [DEBUG] The provider JuiCE could not be added: org.apache.security.juice.provider.JuiCEProviderOpenSSL
+2011-03-09 13:19:50 WSS4JOutInterceptor [DEBUG] Action: 33
+2011-03-09 13:19:50 WSS4JOutInterceptor [DEBUG] Actor: null
+2011-03-09 13:19:50 WSHandler [DEBUG] Performing Action: 1
+2011-03-09 13:19:50 ClientSidePasswordCallback [DEBUG] Number of callbacks = 1
+2011-03-09 13:19:50 ClientSidePasswordCallback [DEBUG] Setting password for user Alice existing password is 'null'
+2011-03-09 13:19:50 WSSecUsernameToken [DEBUG] Begin add username token...
+2011-03-09 13:19:50 Base64 [DEBUG] number of triplets = 5
+2011-03-09 13:19:50 Base64 [DEBUG] b1= 95, b2= -76, b3= -59
+2011-03-09 13:19:50 Base64 [DEBUG] val2 = 11
+2011-03-09 13:19:50 Base64 [DEBUG] k4   = 48
+2011-03-09 13:19:50 Base64 [DEBUG] vak  = 59
+2011-03-09 13:19:50 Base64 [DEBUG] b1= 57, b2= -96, b3= 72
+2011-03-09 13:19:50 Base64 [DEBUG] val2 = 10
+2011-03-09 13:19:50 Base64 [DEBUG] k4   = 16
+2011-03-09 13:19:50 Base64 [DEBUG] vak  = 26
+2011-03-09 13:19:50 Base64 [DEBUG] b1= 116, b2= -117, b3= 94
+2011-03-09 13:19:50 Base64 [DEBUG] val2 = 8
+2011-03-09 13:19:50 Base64 [DEBUG] k4   = 0
+2011-03-09 13:19:50 Base64 [DEBUG] vak  = 8
+2011-03-09 13:19:50 Base64 [DEBUG] b1= 115, b2= -35, b3= 16
+2011-03-09 13:19:50 Base64 [DEBUG] val2 = 13
+2011-03-09 13:19:50 Base64 [DEBUG] k4   = 48
+2011-03-09 13:19:50 Base64 [DEBUG] vak  = 61
+2011-03-09 13:19:50 Base64 [DEBUG] b1= 73, b2= 2, b3= 6
+2011-03-09 13:19:50 Base64 [DEBUG] val2 = 0
+2011-03-09 13:19:50 Base64 [DEBUG] k4   = 16
+2011-03-09 13:19:50 Base64 [DEBUG] vak  = 16
+2011-03-09 13:19:50 Base64 [DEBUG] b1=91
+2011-03-09 13:19:50 Base64 [DEBUG] b1<<2 = 22
+2011-03-09 13:19:50 Base64 [DEBUG] number of triplets = 6
+2011-03-09 13:19:50 Base64 [DEBUG] b1= 94, b2= -55, b3= -79
+2011-03-09 13:19:50 Base64 [DEBUG] val2 = 12
+2011-03-09 13:19:50 Base64 [DEBUG] k4   = 32
+2011-03-09 13:19:50 Base64 [DEBUG] vak  = 44
+2011-03-09 13:19:50 Base64 [DEBUG] b1= -32, b2= 66, b3= -37
+2011-03-09 13:19:50 Base64 [DEBUG] val2 = 4
+2011-03-09 13:19:50 Base64 [DEBUG] k4   = 0
+2011-03-09 13:19:50 Base64 [DEBUG] vak  = 4
+2011-03-09 13:19:50 Base64 [DEBUG] b1= -109, b2= 127, b3= 99
+2011-03-09 13:19:50 Base64 [DEBUG] val2 = 7
+2011-03-09 13:19:50 Base64 [DEBUG] k4   = 48
+2011-03-09 13:19:50 Base64 [DEBUG] vak  = 55
+2011-03-09 13:19:50 Base64 [DEBUG] b1= -12, b2= -11, b3= 99
+2011-03-09 13:19:50 Base64 [DEBUG] val2 = 15
+2011-03-09 13:19:50 Base64 [DEBUG] k4   = 0
+2011-03-09 13:19:50 Base64 [DEBUG] vak  = 15
+2011-03-09 13:19:50 Base64 [DEBUG] b1= -38, b2= -80, b3= 90
+2011-03-09 13:19:50 Base64 [DEBUG] val2 = 11
+2011-03-09 13:19:50 Base64 [DEBUG] k4   = 32
+2011-03-09 13:19:50 Base64 [DEBUG] vak  = 43
+2011-03-09 13:19:50 Base64 [DEBUG] b1= -37, b2= -122, b3= 23
+2011-03-09 13:19:50 Base64 [DEBUG] val2 = 8
+2011-03-09 13:19:50 Base64 [DEBUG] k4   = 48
+2011-03-09 13:19:50 Base64 [DEBUG] vak  = 56
+2011-03-09 13:19:50 WSHandler [DEBUG] Performing Action: 32
+2011-03-09 13:19:50 WSSecTimestamp [DEBUG] Begin add timestamp...
+2011-03-09 13:19:50 WSS4JOutInterceptor-Time [DEBUG] Send request: total= 529 request preparation= 492 request processing= 37
+
+2011-03-09 13:19:50 WSS4JOutInterceptor [DEBUG] WSS4JOutInterceptor: exit handleMessage()
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor$SoapOutEndingInterceptor@51af4309
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.binding.soap.saaj.SAAJOutInterceptor$SAAJOutEndingInterceptor@fcdfd19
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutInterceptor$StaxOutEndingInterceptor@13505258
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@41e22632
+2011-03-09 13:19:50 AbstractLoggingInterceptor [INFO] Outbound Message
+---------------------------
+ID: 1
+Address: http://0.0.0.0:8083/Customers
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {SOAPAction=["http://www.example.org/CustomerService/lookupCustomer"], Accept=[*/*]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><wsu:Timestamp xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="Timestamp-2"><wsu:Created>2011-03-09T13:19:50.723Z</wsu:Created><wsu:Expires>2011-03-09T13:24:50.723Z</wsu:Expires></wsu:Timestamp><wsse:UsernameToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-1"><wsse:Username>Alice</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">Xsmx4ELbk39j9PVj2rBa24YXEbA=</wsse:Password><wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">X7TFOaBIdItec90QSQIGWw==</wsse:Nonce><wsu:Created>2011-03-09T13:19:50.713Z</wsu:Created></wsse:UsernameToken></wsse:Security></soap:Header><soap:Body><ns2:lookupCustomer xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:ns3="http://www.fusesource.com/demo/customer"><customerId>007</customerId></ns2:lookupCustomer></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-09 13:19:50 HTTPConduit [DEBUG] Sending POST Message with Headers to http://0.0.0.0:8083/Customers Conduit :{http://demo.fusesource.com/wsdl/CustomerService/}SOAPOverHTTP.http-conduit
+Content-Type: text/xml; charset=UTF-8
+
+2011-03-09 13:19:50 HTTPConduit [DEBUG] SOAPAction: "http://www.example.org/CustomerService/lookupCustomer"
+2011-03-09 13:19:50 HTTPConduit [DEBUG] Accept: */*
+2011-03-09 13:19:50 HTTPConduit [DEBUG] No Trust Decider for Conduit '{http://demo.fusesource.com/wsdl/CustomerService/}SOAPOverHTTP.http-conduit'. An afirmative Trust Decision is assumed.
+2011-03-09 13:19:50 HTTPConduit [DEBUG] Response Code: 500 Conduit: {http://demo.fusesource.com/wsdl/CustomerService/}SOAPOverHTTP.http-conduit
+2011-03-09 13:19:50 HTTPConduit [DEBUG] Content length: 361
+2011-03-09 13:19:50 HTTPConduit [DEBUG] Header fields: 
+    null: [HTTP/1.1 500 Server Error]
+    Content-Length: [361]
+    Content-Type: [text/xml;charset=UTF-8]
+    Server: [Jetty(7.2.2.v20101205)]
+
+2011-03-09 13:19:50 ClientImpl [DEBUG] Interceptors contributed by bus: [org.apache.cxf.interceptor.LoggingInInterceptor@23bf8cd5]
+2011-03-09 13:19:50 ClientImpl [DEBUG] Interceptors contributed by client: []
+2011-03-09 13:19:50 ClientImpl [DEBUG] Interceptors contributed by endpoint: [org.apache.cxf.jaxws.interceptors.WrapperClassInInterceptor@74b70648, org.apache.cxf.jaxws.interceptors.HolderInInterceptor@1bfd9cd5, org.apache.cxf.jaxws.interceptors.SwAInInterceptor@2743724e]
+2011-03-09 13:19:50 ClientImpl [DEBUG] Interceptors contributed by binding: [org.apache.cxf.interceptor.AttachmentInInterceptor@3d057305, org.apache.cxf.interceptor.StaxInInterceptor@30c26c8f, org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@2c65394b, org.apache.cxf.interceptor.DocLiteralInInterceptor@299481b2, org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@54cee271, org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@5a749436, org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@1bae939f, org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@625db9eb, org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@775925c0, org.apache.cxf.interceptor.URIMappingInterceptor@7dbd9d76]
+2011-03-09 13:19:50 ClientImpl [DEBUG] Interceptors contributed by databinging: [org.apache.cxf.jaxb.attachment.JAXBAttachmentSchemaValidationHack@2bacee78]
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.LoggingInInterceptor@23bf8cd5 to phase receive
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassInInterceptor@74b70648 to phase post-logical
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.jaxws.interceptors.HolderInInterceptor@1bfd9cd5 to phase pre-invoke
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.jaxws.interceptors.SwAInInterceptor@2743724e to phase pre-invoke
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@3d057305 to phase receive
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.StaxInInterceptor@30c26c8f to phase post-stream
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@2c65394b to phase read
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.DocLiteralInInterceptor@299481b2 to phase unmarshal
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@54cee271 to phase unmarshal
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@5a749436 to phase read
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@1bae939f to phase read
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@625db9eb to phase post-protocol
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@775925c0 to phase pre-protocol
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.URIMappingInterceptor@7dbd9d76 to phase unmarshal
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.jaxb.attachment.JAXBAttachmentSchemaValidationHack@2bacee78 to phase post-protocol
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Chain org.apache.cxf.phase.PhaseInterceptorChain@665c1eae was created. Current flow:
+  receive [LoggingInInterceptor, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor]
+  pre-protocol [MustUnderstandInterceptor]
+  post-protocol [CheckFaultInterceptor, JAXBAttachmentSchemaValidationHack]
+  unmarshal [URIMappingInterceptor, DocLiteralInInterceptor, SoapHeaderInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [SwAInInterceptor, HolderInInterceptor]
+
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.interceptor.LoggingInInterceptor@23bf8cd5
+2011-03-09 13:19:50 AbstractLoggingInterceptor [INFO] Inbound Message
+----------------------------
+ID: 1
+Response-Code: 500
+Encoding: UTF-8
+Content-Type: text/xml;charset=UTF-8
+Headers: {content-type=[text/xml;charset=UTF-8], Content-Length=[361], Server=[Jetty(7.2.2.v20101205)]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><soap:Fault><faultcode xmlns:ns1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">ns1:FailedAuthentication</faultcode><faultstring>The security token could not be authenticated or authorized</faultstring></soap:Fault></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@3d057305
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxInInterceptor@30c26c8f
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@5a749436
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@2c65394b
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@1bae939f
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@775925c0
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@625db9eb
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.LoggingInInterceptor@23bf8cd5 to phase receive
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.interceptor.ClientFaultConverter@139ba1d8 to phase unmarshal
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.binding.soap.interceptor.Soap11FaultInInterceptor@4e9e75f6 to phase unmarshal
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Adding interceptor org.apache.cxf.jaxb.attachment.JAXBAttachmentSchemaValidationHack@2bacee78 to phase post-protocol
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Chain org.apache.cxf.phase.PhaseInterceptorChain@55291cd was created. Current flow:
+  receive [LoggingInInterceptor]
+  post-protocol [JAXBAttachmentSchemaValidationHack]
+  unmarshal [Soap11FaultInInterceptor, ClientFaultConverter]
+
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.interceptor.LoggingInInterceptor@23bf8cd5
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.jaxb.attachment.JAXBAttachmentSchemaValidationHack@2bacee78
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.Soap11FaultInInterceptor@4e9e75f6
+2011-03-09 13:19:50 PhaseInterceptorChain [DEBUG] Invoking handleMessage on interceptor org.apache.cxf.interceptor.ClientFaultConverter@139ba1d8
+2011-03-09 13:19:50 ClientImpl [DEBUG] set responseContext to be{org.apache.cxf.client=true, org.apache.cxf.message.Message.PROTOCOL_HEADERS={content-type=[text/xml;charset=UTF-8], Content-Length=[361], Server=[Jetty(7.2.2.v20101205)]}, org.apache.cxf.message.inbound=true, org.apache.cxf.interceptor.LoggingMessage.ID=1, Content-Type=text/xml;charset=UTF-8, org.apache.cxf.message.Message.ENCODING=UTF-8, org.apache.cxf.message.Message.RESPONSE_CODE=500, org.apache.cxf.headers.Header.list=[]}
+2011-03-09 13:21:37 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@199836ed: startup date [Wed Mar 09 13:21:37 GMT 2011]; root of context hierarchy
+2011-03-09 13:21:37 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-09 13:21:37 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-09 13:21:38 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-09 13:21:38 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-09 13:21:38 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-09 13:21:38 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-09 13:21:38 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-09 13:21:38 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-09 13:21:38 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-09 13:21:38 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@74f30494: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-09 13:21:39 ReflectionServiceFactoryBean [INFO] Creating Service {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService from WSDL: http://localhost:8083/Customers?wsdl
+2011-03-09 13:21:40 AbstractLoggingInterceptor [INFO] Outbound Message
+---------------------------
+ID: 1
+Address: http://0.0.0.0:8083/Customers
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {SOAPAction=["http://www.example.org/CustomerService/lookupCustomer"], Accept=[*/*]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><wsu:Timestamp xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="Timestamp-2"><wsu:Created>2011-03-09T13:21:40.976Z</wsu:Created><wsu:Expires>2011-03-09T13:26:40.976Z</wsu:Expires></wsu:Timestamp><wsse:UsernameToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-1"><wsse:Username>Alice</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">eDdgbwL0Qbl4JzTNIIHlxa+nYdw=</wsse:Password><wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">VdIKO5OUg9cDhPbK0Ds9oQ==</wsse:Nonce><wsu:Created>2011-03-09T13:21:40.973Z</wsu:Created></wsse:UsernameToken></wsse:Security></soap:Header><soap:Body><ns2:lookupCustomer xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:ns3="http://www.fusesource.com/demo/customer"><customerId>007</customerId></ns2:lookupCustomer></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-09 13:21:41 AbstractLoggingInterceptor [INFO] Inbound Message
+----------------------------
+ID: 1
+Response-Code: 500
+Encoding: UTF-8
+Content-Type: text/xml;charset=UTF-8
+Headers: {content-type=[text/xml;charset=UTF-8], Content-Length=[361], Server=[Jetty(7.2.2.v20101205)]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><soap:Fault><faultcode xmlns:ns1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">ns1:FailedAuthentication</faultcode><faultstring>The security token could not be authenticated or authorized</faultstring></soap:Fault></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-09 13:36:03 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@2b20bf2c: startup date [Wed Mar 09 13:36:03 GMT 2011]; root of context hierarchy
+2011-03-09 13:36:03 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-09 13:36:03 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-09 13:36:04 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-09 13:36:04 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-09 13:36:04 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-09 13:36:04 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-09 13:36:04 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-09 13:36:04 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-09 13:36:04 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-09 13:36:04 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b035079: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-09 13:36:05 ReflectionServiceFactoryBean [INFO] Creating Service {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService from WSDL: http://localhost:8083/Customers?wsdl
+2011-03-09 13:36:06 AbstractLoggingInterceptor [INFO] Outbound Message
+---------------------------
+ID: 1
+Address: http://0.0.0.0:8083/Customers
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {SOAPAction=["http://www.example.org/CustomerService/lookupCustomer"], Accept=[*/*]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><wsu:Timestamp xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="Timestamp-2"><wsu:Created>2011-03-09T13:36:06.660Z</wsu:Created><wsu:Expires>2011-03-09T13:41:06.660Z</wsu:Expires></wsu:Timestamp><wsse:UsernameToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-1"><wsse:Username>Alice</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">+s4/F7dIxHVchzqnhpYaYYvBadw=</wsse:Password><wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">jDvwbH5eS8onYW9YQAbC1A==</wsse:Nonce><wsu:Created>2011-03-09T13:36:06.657Z</wsu:Created></wsse:UsernameToken></wsse:Security></soap:Header><soap:Body><ns2:lookupCustomer xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:ns3="http://www.fusesource.com/demo/customer"><customerId>007</customerId></ns2:lookupCustomer></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-09 13:37:06 PhaseInterceptorChain [WARN] Interceptor for {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService#{http://demo.fusesource.com/wsdl/CustomerService/}lookupCustomer has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not send Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:255)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:313)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:265)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:73)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:124)
+	at $Proxy25.lookupCustomer(Unknown Source)
+	at com.fusesource.customer.ws.SampleClient.main(SampleClient.java:39)
+Caused by: java.net.SocketTimeoutException: SocketTimeoutException invoking http://0.0.0.0:8083/Customers: Read timed out
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:2107)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:2092)
+	at org.apache.cxf.io.CacheAndWriteOutputStream.postClose(CacheAndWriteOutputStream.java:47)
+	at org.apache.cxf.io.CachedOutputStream.close(CachedOutputStream.java:188)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:697)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	... 8 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:258)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:687)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:632)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1200)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:379)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponseInternal(HTTPConduit.java:2224)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponse(HTTPConduit.java:2193)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:2037)
+	... 13 more
+2011-03-09 14:07:08 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@2b20bf2c: startup date [Wed Mar 09 14:07:08 GMT 2011]; root of context hierarchy
+2011-03-09 14:07:08 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-09 14:07:08 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-09 14:07:08 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-09 14:07:08 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-09 14:07:08 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-09 14:07:08 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-09 14:07:08 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-09 14:07:08 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-09 14:07:08 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-09 14:07:09 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@74f30494: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-09 14:07:10 ReflectionServiceFactoryBean [INFO] Creating Service {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService from WSDL: http://localhost:8083/Customers?wsdl
+2011-03-09 14:07:11 AbstractLoggingInterceptor [INFO] Outbound Message
+---------------------------
+ID: 1
+Address: http://0.0.0.0:8083/Customers
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {SOAPAction=["http://www.example.org/CustomerService/lookupCustomer"], Accept=[*/*]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><wsu:Timestamp xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="Timestamp-2"><wsu:Created>2011-03-09T14:07:11.556Z</wsu:Created><wsu:Expires>2011-03-09T14:12:11.556Z</wsu:Expires></wsu:Timestamp><wsse:UsernameToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-1"><wsse:Username>Alice</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">H/BiUwol/uZn4MvQMDjz+5MCAns=</wsse:Password><wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">0fskJLbdTv5po/HL2z8diA==</wsse:Nonce><wsu:Created>2011-03-09T14:07:11.552Z</wsu:Created></wsse:UsernameToken></wsse:Security></soap:Header><soap:Body><ns2:lookupCustomer xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:ns3="http://www.fusesource.com/demo/customer"><customerId>007</customerId></ns2:lookupCustomer></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-09 14:07:11 AbstractLoggingInterceptor [INFO] Inbound Message
+----------------------------
+ID: 1
+Response-Code: 500
+Encoding: UTF-8
+Content-Type: text/xml;charset=UTF-8
+Headers: {content-type=[text/xml;charset=UTF-8], Content-Length=[361], Server=[Jetty(7.2.2.v20101205)]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><soap:Fault><faultcode xmlns:ns1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">ns1:InvalidSecurity</faultcode><faultstring>An error was discovered processing the &lt;wsse:Security> header</faultstring></soap:Fault></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-09 14:09:10 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@214a55f2: startup date [Wed Mar 09 14:09:10 GMT 2011]; root of context hierarchy
+2011-03-09 14:09:10 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-09 14:09:10 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-09 14:09:10 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-09 14:09:10 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-09 14:09:10 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-09 14:09:10 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-09 14:09:10 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-09 14:09:10 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-09 14:09:10 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-09 14:09:11 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@526d0040: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-09 14:09:11 ReflectionServiceFactoryBean [INFO] Creating Service {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService from WSDL: http://localhost:8083/Customers?wsdl
+2011-03-09 14:09:13 AbstractLoggingInterceptor [INFO] Outbound Message
+---------------------------
+ID: 1
+Address: http://0.0.0.0:8083/Customers
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {SOAPAction=["http://www.example.org/CustomerService/lookupCustomer"], Accept=[*/*]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><wsse:UsernameToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-1"><wsse:Username>Alice</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">bSPO07Sgw2PN+tBMsFUd2sA2vp0=</wsse:Password><wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">B+dsR9RIjNlt9G1jg2BaEQ==</wsse:Nonce><wsu:Created>2011-03-09T14:09:13.189Z</wsu:Created></wsse:UsernameToken></wsse:Security></soap:Header><soap:Body><ns2:lookupCustomer xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:ns3="http://www.fusesource.com/demo/customer"><customerId>007</customerId></ns2:lookupCustomer></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-09 14:09:13 AbstractLoggingInterceptor [INFO] Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml;charset=UTF-8
+Headers: {content-type=[text/xml;charset=UTF-8], Content-Length=[431], Server=[Jetty(7.2.2.v20101205)]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:lookupCustomerResponse xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:ns3="http://www.fusesource.com/demo/customer"><ret><ns3:firstName>Ade</ns3:firstName><ns3:lastName>Trenaman</ns3:lastName><ns3:phoneNumber>+353-1-01234567</ns3:phoneNumber><ns3:id>007</ns3:id></ret></ns2:lookupCustomerResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-09 17:17:58 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@175093f1: startup date [Wed Mar 09 17:17:58 GMT 2011]; root of context hierarchy
+2011-03-09 17:17:58 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-09 17:17:58 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-09 17:17:59 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-09 17:17:59 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-09 17:17:59 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-09 17:17:59 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-09 17:17:59 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-09 17:17:59 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-09 17:17:59 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-09 17:17:59 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b035079: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-09 17:18:00 ReflectionServiceFactoryBean [INFO] Creating Service {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService from WSDL: http://localhost:8083/Customers?wsdl
+2011-03-09 17:18:01 AbstractLoggingInterceptor [INFO] Outbound Message
+---------------------------
+ID: 1
+Address: http://0.0.0.0:8083/Customers
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {SOAPAction=["http://www.example.org/CustomerService/lookupCustomer"], Accept=[*/*]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><wsu:Timestamp xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="Timestamp-2"><wsu:Created>2011-03-09T17:18:01.502Z</wsu:Created><wsu:Expires>2011-03-09T17:23:01.502Z</wsu:Expires></wsu:Timestamp><wsse:UsernameToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-1"><wsse:Username>Alice</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">WtmjfcMCBo2ePmsHiG7dzGspKw4=</wsse:Password><wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">wHuTn49AUovUfLYh6/Wdqg==</wsse:Nonce><wsu:Created>2011-03-09T17:18:01.500Z</wsu:Created></wsse:UsernameToken></wsse:Security></soap:Header><soap:Body><ns2:lookupCustomer xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:ns3="http://www.fusesource.com/demo/customer"><customerId>007</customerId></ns2:lookupCustomer></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-09 17:18:01 AbstractLoggingInterceptor [INFO] Inbound Message
+----------------------------
+ID: 1
+Response-Code: 500
+Encoding: UTF-8
+Content-Type: text/xml;charset=UTF-8
+Headers: {content-type=[text/xml;charset=UTF-8], Content-Length=[361], Server=[Jetty(7.2.2.v20101205)]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><soap:Fault><faultcode xmlns:ns1="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">ns1:InvalidSecurity</faultcode><faultstring>An error was discovered processing the &lt;wsse:Security> header</faultstring></soap:Fault></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-09 17:20:24 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@72e6f7d2: startup date [Wed Mar 09 17:20:24 GMT 2011]; root of context hierarchy
+2011-03-09 17:20:24 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-09 17:20:24 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-09 17:20:24 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-09 17:20:24 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-09 17:20:24 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-09 17:20:24 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-09 17:20:24 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-09 17:20:24 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-09 17:20:24 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-09 17:20:24 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@74f30494: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-09 17:20:25 ReflectionServiceFactoryBean [INFO] Creating Service {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService from WSDL: http://localhost:8083/Customers?wsdl
+2011-03-09 17:20:26 AbstractLoggingInterceptor [INFO] Outbound Message
+---------------------------
+ID: 1
+Address: http://0.0.0.0:8083/Customers
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {SOAPAction=["http://www.example.org/CustomerService/lookupCustomer"], Accept=[*/*]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><wsu:Timestamp xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="Timestamp-2"><wsu:Created>2011-03-09T17:20:26.844Z</wsu:Created><wsu:Expires>2011-03-09T17:25:26.844Z</wsu:Expires></wsu:Timestamp><wsse:UsernameToken xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-1"><wsse:Username>Alice</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">Co2Fcrk16kn1YmwoWL5pTzeBFww=</wsse:Password><wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">8cVEYffhhQmcgxS8YdYc2w==</wsse:Nonce><wsu:Created>2011-03-09T17:20:26.842Z</wsu:Created></wsse:UsernameToken></wsse:Security></soap:Header><soap:Body><ns2:lookupCustomer xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:ns3="http://www.fusesource.com/demo/customer"><customerId>007</customerId></ns2:lookupCustomer></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-09 17:20:26 AbstractLoggingInterceptor [INFO] Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml;charset=UTF-8
+Headers: {content-type=[text/xml;charset=UTF-8], Content-Length=[431], Server=[Jetty(7.2.2.v20101205)]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:lookupCustomerResponse xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:ns3="http://www.fusesource.com/demo/customer"><ret><ns3:firstName>Ade</ns3:firstName><ns3:lastName>Trenaman</ns3:lastName><ns3:phoneNumber>+353-1-01234567</ns3:phoneNumber><ns3:id>007</ns3:id></ret></ns2:lookupCustomerResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2011-03-09 18:03:33 BusApplicationContext [INFO] Refreshing org.apache.cxf.bus.spring.BusApplicationContext@4cdada24: startup date [Wed Mar 09 18:03:33 GMT 2011]; root of context hierarchy
+2011-03-09 18:03:34 BusApplicationContext [INFO] Loaded configuration file file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml.
+2011-03-09 18:03:34 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2011-03-09 18:03:34 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-ws-security.xml]
+2011-03-09 18:03:34 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2011-03-09 18:03:34 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+2011-03-09 18:03:34 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+2011-03-09 18:03:34 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+2011-03-09 18:03:34 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2011-03-09 18:03:34 ControlledValidationXmlBeanDefinitionReader [INFO] Loading XML bean definitions from URL [file:/Users/ade/Documents/2011-CXF-Webinars/cxf-webinars/customer-ws-security-ut/src/main/resources/client.xml]
+2011-03-09 18:03:35 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@59db9f45: defining beans [cxf,org.apache.cxf.bus.spring.BusApplicationListener,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.service.factory.FactoryBeanListenerManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.jaxws.context.WebServiceContextResourceResolver,org.apache.cxf.jaxws.context.WebServiceContextImpl,org.apache.cxf.binding.xml.XMLBindingFactory,org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder,org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider,org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder,org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder,org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider,org.apache.cxf.transport.http.ClientOnlyHTTPTransportFactory,cxf.config0]; root of factory hierarchy
+2011-03-09 18:03:36 ReflectionServiceFactoryBean [INFO] Creating Service {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService from WSDL: http://localhost:8083/Customers?wsdl
+2011-03-09 18:03:38 PhaseInterceptorChain [WARN] Interceptor for {http://demo.fusesource.com/wsdl/CustomerService/}CustomerService#{http://demo.fusesource.com/wsdl/CustomerService/}lookupCustomer has thrown exception, unwinding now
+org.apache.cxf.binding.soap.SoapFault: Security processing failed.
+	at org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor$WSS4JOutInterceptorInternal.handleMessage(WSS4JOutInterceptor.java:272)
+	at org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor$WSS4JOutInterceptorInternal.handleMessage(WSS4JOutInterceptor.java:134)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:255)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:313)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:265)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:73)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:124)
+	at $Proxy25.lookupCustomer(Unknown Source)
+	at com.fusesource.customer.ws.SampleClient.main(SampleClient.java:39)
+Caused by: org.apache.ws.security.WSSecurityException: Unknown action defined: BinarySecurityToken
+	at org.apache.ws.security.util.WSSecurityUtil.decodeAction(WSSecurityUtil.java:956)
+	at org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor$WSS4JOutInterceptorInternal.handleMessage(WSS4JOutInterceptor.java:192)
+	... 9 more

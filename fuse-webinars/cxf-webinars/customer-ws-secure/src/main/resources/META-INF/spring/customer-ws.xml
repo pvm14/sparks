@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2011 FuseSource
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:jaxws="http://cxf.apache.org/jaxws"
+      xmlns:soap="http://cxf.apache.org/bindings/soap"
+      xmlns:osgix="http://www.springframework.org/schema/osgi-compendium"
+      xmlns:ctx="http://www.springframework.org/schema/context"
+      xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://cxf.apache.org/bindings/soap http://cxf.apache.org/schemas/configuration/soap.xsd
+http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+http://www.springframework.org/schema/osgi-compendium 
+        http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium.xsd  
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+  <import resource="classpath:META-INF/cxf/cxf.xml" />
+  <import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
+  <import resource="classpath:META-INF/cxf/cxf-extension-http.xml"/>  
+  <import resource="classpath:META-INF/cxf/osgi/cxf-extension-osgi.xml"/>
+    
+    
+  <!-- Configuration Admin entry - will read from etc/customer.cfg -->
+  <osgix:cm-properties id="props" persistent-id="customer">
+    <prop key="wssec.action">UsernameToken Timestamp</prop>
+  </osgix:cm-properties>
+   
+   <!-- The property placeholder allows variable substitution with ${} --> 
+  <ctx:property-placeholder properties-ref="props" />
+   
+  <jaxws:endpoint
+    xmlns:customer="http://demo.fusesource.com/wsdl/CustomerService/"
+    id="customerService"
+    address="/Customers"
+    serviceName="customer:CustomerService"
+    endpointName="customer:SOAPOverHTTP"
+    implementor="#customerServiceImpl">
+      
+    <jaxws:inInterceptors>
+      <bean class="org.apache.cxf.ws.security.wss4j.WSS4JInInterceptor">
+        <constructor-arg>
+          <map>
+            <entry key="action" value="${wssec.action}"/>
+            <entry key="passwordType" value="${wssec.passwordType}"/>
+            <entry key="passwordCallbackRef">
+              <ref bean="pwClbck"/>
+            </entry>
+            <entry key="decryptionPropRefId" value="decryptProps"/>
+            <entry key="decryptProps">
+              <props>
+                <prop key="org.apache.ws.security.crypto.provider">org.apache.ws.security.components.crypto.Merlin</prop>  
+                <prop key="org.apache.ws.security.crypto.merlin.keystore.type">jks</prop>  
+                <prop key="org.apache.ws.security.crypto.merlin.file">${decrypt.keystore}</prop>  
+                <prop key="org.apache.ws.security.crypto.merlin.keystore.password">${decrypt.keystorePassword}</prop>  
+                <prop key="org.apache.ws.security.crypto.merlin.keystore.alias">${decrypt.certAlias}</prop>  
+              </props>
+            </entry>
+            <entry key="encryptionKeyIdentifier" value="IssuerSerial"/>
+            <entry key="SignaturePropRefId" value="sigProps"/>
+            <entry key="sigProps">
+              <props>
+                <prop key="org.apache.ws.security.crypto.provider">org.apache.ws.security.components.crypto.Merlin</prop>  
+                <prop key="org.apache.ws.security.crypto.merlin.keystore.type">jks</prop>  
+                <prop key="org.apache.ws.security.crypto.merlin.file">${sigver.keystore}</prop>  
+                <prop key="org.apache.ws.security.crypto.merlin.keystore.password">${sigver.keystorePassword}</prop>  
+                <prop key="org.apache.ws.security.crypto.merlin.keystore.alias">${sigver.certAlias}</prop>  
+              </props>
+            </entry>
+            <entry key="signatureKeyIdentifier" value="DirectReference"/>
+          </map>
+        </constructor-arg>
+      </bean>
+    </jaxws:inInterceptors>      
+  </jaxws:endpoint>
+        
+  <bean id="customerServiceImpl"
+      class="com.fusesource.customer.ws.CustomerServiceImpl"/>
+      
+  <bean id="pwClbck" class="com.fusesource.customer.ws.PasswordCallback">
+    <constructor-arg>
+      <map>
+        <entry key="${decrypt.certAlias}" value="${decrypt.certPassword}"/>
+      </map>
+    </constructor-arg>
+  </bean>
+  
+</beans>
