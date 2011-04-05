@@ -79,7 +79,7 @@
               <sourceRoot>${basedir}/target/generated-sources/jaxws</sourceRoot>
               <wsdlOptions>
                 <wsdlOption>
-                  <wsdl>${basedir}/../wsdl/CustomerService.wsdl</wsdl>
+                  <wsdl>${basedir}/../src/main/resources/wsdl/CustomerService.wsdl</wsdl>
                 </wsdlOption>
               </wsdlOptions>
             </configuration>

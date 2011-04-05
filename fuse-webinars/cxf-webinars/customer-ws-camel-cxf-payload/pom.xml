@@ -47,7 +47,7 @@
     <!-- Ensure that WSDL and XSD files are copied into the bundle. -->
     <resources>
       <resource>
-        <directory>${basedir}/..</directory>
+        <directory>${basedir}/../src/main/resources</directory>
         <includes>
           <include>wsdl/*.wsdl</include>
           <include>xsd/*.xsd</include>

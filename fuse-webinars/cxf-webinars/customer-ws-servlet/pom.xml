@@ -33,18 +33,15 @@
     <dependency>
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-rt-frontend-jaxws</artifactId>
-      <version>${cxf.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-rt-transports-http</artifactId>
-      <version>${cxf.version}</version>
     </dependency>
         <!-- Jetty is needed if you're using the CXFServlet -->
     <dependency>
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-rt-transports-http-jetty</artifactId>
-      <version>${cxf.version}</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -68,7 +65,7 @@
           <webXml>src/main/resources/web.xml</webXml>
           <webResources>
             <resource>
-              <directory>${basedir}/../wsdl</directory>
+              <directory>${basedir}/../src/main/resources/wsdl</directory>
               <targetPath>WEB-INF</targetPath>
               <includes>
                 <include>*.wsdl</include>
@@ -88,7 +85,6 @@
       <plugin>
         <groupId>org.apache.cxf</groupId>
         <artifactId>cxf-codegen-plugin</artifactId>
-        <version>${cxf.version}</version>
         <executions>
           <execution>
             <id>generate-sources</id>
@@ -97,9 +93,9 @@
               <sourceRoot>${basedir}/target/generated-sources/jaxws</sourceRoot>
               <wsdlOptions>
                 <wsdlOption>
-                  <wsdl>${basedir}/../wsdl/CustomerService.wsdl</wsdl>
+                  <wsdl>${basedir}/../src/main/resources/wsdl/CustomerService.wsdl</wsdl>
                   <bindingFiles>
-                    <bindingFile>${basedir}/../wsdl/binding.xml</bindingFile>
+                    <bindingFile>${basedir}/../src/main/resources/wsdl/binding.xml</bindingFile>
                   </bindingFiles>
                 </wsdlOption>
               </wsdlOptions>

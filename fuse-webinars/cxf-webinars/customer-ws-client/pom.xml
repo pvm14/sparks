@@ -43,7 +43,6 @@
       <plugin>
         <groupId>org.apache.cxf</groupId>
         <artifactId>cxf-codegen-plugin</artifactId>
-        <version>${cxf.version}</version>
         <executions>
           <execution>
             <id>generate-sources</id>
@@ -52,7 +51,7 @@
               <sourceRoot>${basedir}/target/generated-sources/jaxws</sourceRoot>
               <wsdlOptions>
                 <wsdlOption>
-                  <wsdl>${basedir}/../wsdl/CustomerService.wsdl</wsdl>
+                  <wsdl>${basedir}/../src/main/resources/wsdl/CustomerService.wsdl</wsdl>
                 </wsdlOption>
               </wsdlOptions>
             </configuration>
