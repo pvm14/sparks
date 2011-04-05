@@ -16,11 +16,11 @@
 
 <features name="customer">
 
-  <repository>mvn:org.apache.servicemix/apache-servicemix/4.3.1-fuse-00-00/xml/features</repository>
+  <repository>mvn:org.apache.servicemix/apache-servicemix/${smx.version}/xml/features</repository>
 
   <feature name="customer-ws-secure" version="1.0.0">
     <feature version="${cxf.version}">cxf</feature>
-    <feature version="4.3.1-fuse-00-00">cxf-osgi</feature>
+    <feature version="${smx.version}">cxf-osgi</feature>
     <bundle>mvn:com.fusesource/customer-ws-secure/1.0.0</bundle>
   </feature>
   
