@@ -9,18 +9,7 @@ file with ServiceMix. In the ServiceMix shell, try this:
 	features:addUrl mvn:com.fusesource/customer-features/1.0.0/xml
 
 Now do 'features:list | grep customer'. You should see the relevant features listed. Pick
-the feature you're interested in, and install it using 'features:install'. For example, you can do
-
-	features:install customer-ws-secure 
-
-To uninstall a feature, you can just do 
-
-	features:uninstall <feature-name>
-
-To install the camel-cxf demos into Fuse ESB, you need to make make sure you 
-have installed the 'camel-cxf' feature. Also, you need to install the
-'camel-velocity' feature for the payload and provider examples. When you have 
-this done, you can install the relevant features. 
+the feature you're interested in, and install it using 'features:install'.
 
 Installing the customer-ws-secure web service.
 ----------------------------------------------
@@ -33,6 +22,10 @@ Then, you've got to copy the customer.cfg file to the <servicemix-install>/etc d
 
 	cp etc/customer.cfg <servicemix-install>/etc
 
+You'll also want to copy the org.ops4j.pax.web.cfg file to the <servicemix-install>/etc directory.
+
+        cp etc/org.ops4j.pax.web.cfg <servicemix-install>/etc
+
 Now, start up your Fuse ESB (ServiceMix) instance - it will pick up the 'customer' configuration
 from customer.cfg, and use this to pick up the correct certificates. To install the secure custoemr 
 web service, try: 
@@ -42,7 +35,15 @@ web service, try:
 If you like, you can later edit the <servicemix-install>/etc/customer.cfg file, for example, you 
 can change the WS-Security settings. If you do so, you must update the customer-ws-secure bundle
 to get the changes. To do this, do an 'osgi:list  | grep customer' in the the ServiceMix shell, to 
-get the bundle id, and then do 'osgi:update <bundle-id>'. 
+get the bundle id, and then do 'osgi:restart <bundle-id>'. 
+
+MISC
+----
+To install the camel-cxf demos into Fuse ESB, you need to make make sure you 
+have installed the 'camel-cxf' feature. Also, you need to install the
+'camel-velocity' feature for the payload and provider examples. When you have 
+this done, you can install the relevant features. 
+
 
 Running the secure customer WS client
 -------------------------------------
