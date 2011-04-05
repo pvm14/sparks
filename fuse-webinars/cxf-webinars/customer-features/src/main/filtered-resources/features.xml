@@ -23,5 +23,24 @@
     <feature version="${smx.version}">cxf-osgi</feature>
     <bundle>mvn:com.fusesource/customer-ws-secure/1.0.0</bundle>
   </feature>
-  
+
+  <feature name="customer-ws-camel-cxf-payload" version="1.0.0">
+    <feature version="${camel.version}">camel-cxf</feature>
+    <feature version="${smx.version}">camel-activemq</feature>
+    <feature version="${camel.version}">camel-velocity</feature>
+    <bundle>mvn:com.fusesource/customer-ws-camel-cxf-payload/1.0.0</bundle>
+  </feature>
+
+  <feature name="customer-ws-camel-cxf-pojo" version="1.0.0">
+    <feature version="${camel.version}">camel-cxf</feature>
+    <bundle>mvn:com.fusesource/customer-ws-camel-cxf-pojo/1.0.0</bundle>
+  </feature>
+
+  <feature name="customer-ws-camel-cxf-provider" version="1.0.0">
+    <feature version="${camel.version}">camel-cxf</feature>
+    <feature version="${smx.version}">camel-activemq</feature>
+    <feature version="${camel.version}">camel-velocity</feature>
+    <bundle>mvn:com.fusesource/customer-ws-camel-cxf-provider/1.0.0</bundle>
+  </feature>
+
 </features>

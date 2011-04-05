@@ -76,11 +76,11 @@
         </route>
     </camelContext>
 
-    <bean id="cxfPayloadProcessor" class="com.fusesource.customerwscamelcxfpayload.CxfPayloadProcessor"/>
+    <bean id="cxfPayloadProcessor" class="com.fusesource.customerwscamelcxfprovider.CxfPayloadProcessor"/>
 
-    <bean id="getCustomerStatus" class="com.fusesource.customerwscamelcxfpayload.GetCustomerStatus"/>
+    <bean id="getCustomerStatus" class="com.fusesource.customerwscamelcxfprovider.GetCustomerStatus"/>
 
-    <bean id="lookupCustomer" class="com.fusesource.customerwscamelcxfpayload.LookupCustomer"/>
+    <bean id="lookupCustomer" class="com.fusesource.customerwscamelcxfprovider.LookupCustomer"/>
 
     <bean id="activemq" class="org.apache.activemq.camel.component.ActiveMQComponent">
         <property name="brokerURL" value="tcp://localhost:61616"/>
