@@ -130,12 +130,18 @@ public class Main {
       });
     }
     
+    // Initialise the bus
+    //
     Bus bus = SpringBusFactory.newInstance().createBus();
     SpringBusFactory.setDefaultBus(bus);
 
+    // Define the properties to configure the WS Security Handler
+    //
     Map<String, Object> props = new HashMap<String, Object>();
     props.put(WSHandlerConstants.ACTION, getWSSecActions());
 
+    // Specify the callback handler for passwords.
+    //
     PasswordCallback passwords = new PasswordCallback();
     props.put(WSHandlerConstants.PW_CALLBACK_REF, passwords);
 
@@ -163,6 +169,10 @@ public class Main {
       passwords.addUser(sigCertAlias, sigCertPw);
     }
 
+    // Here we add the WS Security interceptor to perform security processing
+    // on the outgoing SOAP messages. Also, we configure a logging interceptor
+    // to log the message payload for inspection. 
+    //
     bus.getOutInterceptors().add(new WSS4JOutInterceptor(props));
     bus.getOutInterceptors().add(new LoggingOutInterceptor());
 
@@ -183,6 +193,8 @@ public class Main {
     }
     System.out.println("Looking up the customer...");
 
+    // Here's the part where we invoke on the web service. 
+    //
     Customer c = svc.lookupCustomer("007");
 
     System.out.println("Got customer " + c.getFirstName());
