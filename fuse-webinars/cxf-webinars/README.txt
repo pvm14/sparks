@@ -26,6 +26,12 @@ You'll also want to copy the org.ops4j.pax.web.cfg file to the <servicemix-insta
 
         cp etc/org.ops4j.pax.web.cfg <servicemix-install>/etc
 
+Finally, you might want to configure a user called 'Alice', with password 'ecilA' and roles 'user' 
+and 'admin'. You can do this by simply copying the file etc/users.properties to the 
+<servicemix-install>/etc directory.
+
+	cp etc/users.properties <servicemix-install>/etc
+
 Now, start up your Fuse ESB (ServiceMix) instance - it will pick up the 'customer' configuration
 from customer.cfg, and use this to pick up the correct certificates. To install the secure custoemr 
 web service, try: 
