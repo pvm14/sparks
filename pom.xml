@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (C) 2009 Progress Software, Inc.
+  http://fusesource.com
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+     http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.fusesource</groupId>
+    <artifactId>fusesource-pom</artifactId>
+    <version>1.5</version>
+  </parent>
+
+  <groupId>org.fusesource.sparks</groupId>
+  <artifactId>sparks-parent</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  
+  <name>FuseSource Sparks</name>
+  <description>Demos, archetypes and webinar code from the kind folk at fusesource.com. Enjoy!</description>
+
+  <modules>
+    <module>fuse-webinars</module>
+    <module>fuse-demos</module>
+  </modules>
+
+  <properties>
+    <forge-project-id>isparks</forge-project-id>
+    <forge-project-id-uc>SPARKS</forge-project-id-uc>
+    
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <release-altGitURL>scm:ssh://git@forge.fusesource.com/sparks.git</release-altGitURL>
+  </properties>
+
+  <url>http://${forge-project-id}.fusesource.org</url>
+  <inceptionYear>2009</inceptionYear>
+
+  <organization>
+    <name>FuseSource</name>
+    <url>http://fusesource.com/</url>
+  </organization> 
+
+  <issueManagement>
+    <system>jira</system>
+    <url>http://fusesource.com/issues/browse/${forge-project-id-uc}</url>
+  </issueManagement>
+  
+  <mailingLists>
+    <mailingList>
+      <name>${forge-project-id} dev</name>
+      <post>${forge-project-id}-dev@fusesource.org</post>
+      <subscribe>${forge-project-id}-dev-subscribe@fusesource.org</subscribe>
+    </mailingList>
+    <mailingList>
+      <name>${forge-project-id} commits</name>
+      <post>${forge-project-id}-commits@fusesource.org</post>
+      <subscribe>${forge-project-id}-commits-subscribe@fusesource.org</subscribe>
+    </mailingList>
+  </mailingLists>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:ssh://git@forge.fusesource.com/sparks.git</connection>
+    <developerConnection>${release-altGitURL}</developerConnection>
+    <url>http://fusesource.com/forge/git/sparks.git/</url>
+  </scm>
+      
+  <distributionManagement>
+    <site>
+      <id>sparks.fusesource.org</id>
+      <name>sparks</name>
+      <url>dav:http://fusesource.com/forge/dav/${forge-project-id}/maven/${project.version}</url>
+    </site>
+  </distributionManagement> 
+
+  <developers>
+    <developer>
+      <id>trenaman</id>
+      <name>Adrian Trenaman</name>
+      <email>trenaman@fusesource.com</email>
+      <url>http://trenaman.blogspot.com</url>
+      <timezone>GMT</timezone>
+    </developer>
+  </developers>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>2.1.1</version>
+        <dependencies>
+          <dependency>
+            <groupId>org.apache.maven.wagon</groupId>
+            <artifactId>wagon-webdav-jackrabbit</artifactId>
+            <version>1.0-beta-6</version>
+            <exclusions>
+              <exclusion>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+              </exclusion>
+            </exclusions>
+          </dependency>
+        </dependencies>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.1</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+          <optimize>true</optimize>
+          <debug>true</debug>
+          <showDeprecation>true</showDeprecation>
+          <showWarnings>true</showWarnings>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-plugin-plugin</artifactId>
+        <version>2.5.1</version>
+      </plugin>
+
+    </plugins>
+  </build>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>2.1.1</version>
+        <configuration>
+          <generateSitemap>true</generateSitemap>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.2</version>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>index</report>
+              <report>sumary</report>
+              <report>plugins</report>
+              <report>dependencies</report>
+              <report>mailing-list</report>
+              <report>issue-tracking</report>
+              <report>license</report>
+              <report>scm</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>taglist-maven-plugin</artifactId>
+        <version>2.4</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-plugin-plugin</artifactId>
+        <version>2.5.1</version>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>surefire-report-maven-plugin</artifactId>
+        <version>2.0-beta-1</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <version>2.2</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.7</version>
+        <reportSets>
+          <reportSet>
+            <id>javadoc</id>
+            <inherited>true</inherited>
+            <reports>
+              <report>javadoc</report>
+            </reports>
+            <configuration>
+              <aggregate>false</aggregate>
+              <keywords>true</keywords>
+              <nodeprecated>true</nodeprecated>
+              <quiet>false</quiet>
+              <verbose>false</verbose>
+              
+              <excludePackageNames>*.internal</excludePackageNames>
+              <linksource>true</linksource>
+              <links>
+                <link>http://java.sun.com/j2se/1.5.0/docs/api</link>
+              </links>
+              <tagletArtifacts>
+                <tagletArtifact>
+                  <groupId>org.apache.maven.plugin-tools</groupId>
+                  <artifactId>maven-plugin-tools-javadoc</artifactId>
+                  <version>2.5.1</version>
+                </tagletArtifact>
+              </tagletArtifacts>
+              
+            </configuration>
+          </reportSet>          
+        </reportSets>
+      </plugin>
+    </plugins>
+  </reporting>
+
+  <profiles>
+    
+    <!-- enables extra repositories which may have some
+         goodies that have not reached central yet -->
+    <profile>
+      <id>download</id>
+      <repositories>
+
+        <repository>
+          <id>fluido-skin</id>
+          <url>http://fluido-skin.googlecode.com/svn/repo/</url>
+        </repository>
+        
+        <repository>
+          <id>scala-tools.org</id>
+          <name>Scala-tools Maven2 Repository</name>
+          <url>http://scala-tools.org/repo-releases</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
+        
+      </repositories>
+      
+      <pluginRepositories>
+        <pluginRepository>
+          <id>scala</id>
+          <name>Scala Tools</name>
+          <url>http://scala-tools.org/repo-releases</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </pluginRepository>    
+      </pluginRepositories>      
+    </profile>
+    
+  </profiles>
+</project>
