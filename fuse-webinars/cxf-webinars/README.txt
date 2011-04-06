@@ -61,3 +61,6 @@ use (from the customer-ws-security-client dir):
 
 	mvn exec:java -Dexec.args="-u -t -user Alice -pw ecilA -sign -sa scott -sk ../certs/scott.jks -skpw scott123 -spw ttocs123 -encrypt -ea fuse-esb -ek ../certs/fuse-esb.jks -ekpw fuse-esb"
 
+If you want to do something simpler like UsernameToken with Timestamp, do: 
+
+	mvn exec:java -Dexec.args="-u -t -user Alice -pw ecilA"
