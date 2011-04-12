@@ -25,13 +25,37 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.fusesource</groupId>
+    <groupId>com.fusesource.webinars.persistence</groupId>
     <artifactId>sql-spring-persistence</artifactId>
     <name>FuseSource :: Webinars :: Camel Persistence :: SQL - Spring - Persistence</name>
+    <packaging>bundle</packaging>
+
+    <properties>
+
+        <osgi-import-pkg>
+             org.apache.camel,
+             org.apache.camel.component,
+             org.apache.camel.component.sql,
+             org.hsqldb,
+             *
+         </osgi-import-pkg>
+         <osgi-export-pkg></osgi-export-pkg>
+         <osgi-private-pkg>
+             com.fusesource.webinars.persistence,
+             com.fusesource.webinars.persistence.camel
+         </osgi-private-pkg>
+         <osgi-dynamic-pkg></osgi-dynamic-pkg>
+
+    </properties>
 
     <dependencies>
 
         <!-- Camel -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-core</artifactId>
+            <version>${camel.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-sql</artifactId>
@@ -68,6 +92,33 @@
                     <applicationContextUri>META-INF/spring/*.xml</applicationContextUri>
                 </configuration>
             </plugin>
+
+            <plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<version>2.2.0</version>
+				<configuration>
+					<instructions>
+
+						<Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
+						<Import-Package>
+                            ${osgi-import-pkg}
+					    </Import-Package>
+						<Export-Package>
+                            ${osgi-export-pkg}
+					    </Export-Package>
+						<Private-Package>
+                            ${osgi-private-pkg}
+						</Private-Package>
+                        <DynamicImport-Package>
+                            ${osgi-dynamic-pkg}
+						</DynamicImport-Package>
+                        <_failok>true</_failok>
+					</instructions>
+				</configuration>
+			</plugin>
+
         </plugins>
     </build>
 

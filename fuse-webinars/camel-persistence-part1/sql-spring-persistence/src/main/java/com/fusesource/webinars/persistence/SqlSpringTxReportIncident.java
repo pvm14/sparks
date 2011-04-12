@@ -13,7 +13,7 @@
   *    See the License for the specific language governing permissions and
   *    limitations under the License.
  */
-package com.fusesource.webinars.persistence;
+package com.fusesource.webinars.persistence.camel;
 
 import org.apache.camel.Body;
 import org.apache.camel.Endpoint;
