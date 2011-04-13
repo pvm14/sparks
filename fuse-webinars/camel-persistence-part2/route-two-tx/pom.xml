@@ -39,7 +39,6 @@
     </dependencies>
 
     <properties>
-
         <osgi-import-pkg>
              com.fusesource.webinars.persistence.dao,
              com.fusesource.webinars.persistence.model,
@@ -51,6 +50,6 @@
              com.fusesource.webinars.persistence.camel
          </osgi-private-pkg>
          <osgi-dynamic-pkg></osgi-dynamic-pkg>
-
     </properties>
+
 </project>
