@@ -23,9 +23,9 @@
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <name>FuseSource :: Webinars :: Fuse ESB &amp; Persistence :: Features</name>
+    <name>FuseSource :: Webinars :: Fuse ESB &amp; Persistence :: Database</name>
     <packaging>bundle</packaging>
-    <groupId>com.fusesource.webinars</groupId>
+    <groupId>com.fusesource.webinars.persistence</groupId>
     <artifactId>database</artifactId>
 
 

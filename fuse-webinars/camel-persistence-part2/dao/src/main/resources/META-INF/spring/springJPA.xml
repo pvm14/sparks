@@ -61,4 +61,10 @@
     <!-- Expose DAO as a OSGI Service for Camel Route -->
     <osgi:service ref="daoReport" interface="com.fusesource.webinars.persistence.dao.IncidentDAO"/>
 
+    <osgi:service ref="txManager" interface="org.springframework.transaction.PlatformTransactionManager">
+         <service-properties>
+                <entry key="tx" value="JPA"/>
+         </service-properties>
+    </osgi:service>
+
 </beans>

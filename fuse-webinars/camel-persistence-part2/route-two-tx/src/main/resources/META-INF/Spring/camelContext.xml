@@ -32,27 +32,17 @@
 
 
     <!-- Tx Manager -->
-    <osgi:reference id="txManager" interface="org.springframework.transaction.PlatformTransactionManager"/>
+    <osgi:reference id="txManager" filter="(tx=JPA)" interface="org.springframework.transaction.PlatformTransactionManager"/>
 
     <!-- Transaction POLICY used by Camel Transactional Route
-         We refer to the ServiceMiX TxManager -->
+         We refer to the Spring JPA TxManager -->
     <bean id="PROPAGATION_REQUIRED" class="org.apache.camel.spring.spi.SpringTransactionPolicy">
        <property name="transactionManager" ref="txManager"/>
     </bean>
 
-    <!-- The transaction error handler we refer to from the route
-    <bean id="transactionErrorHandler" class="org.apache.camel.spring.spi.TransactionErrorHandlerBuilder">
-        <property name="springTransactionPolicy" ref="PROPAGATION_REQUIRED"/>
-        <property name="transactionManager" ref="txManager"/>
-    </bean>
-    -->
-
-    <!-- ActiveMQ JMS Configuration
-         Is defined as Transacted and use ServiceMix TxManager -->
+    <!-- ActiveMQ JMS Configuration is defined as Transacted and use ServiceMix TxManager -->
     <bean id="jmsConfig" class="org.apache.camel.component.jms.JmsConfiguration">
-        <property name="connectionFactory">
-            <osgi:reference interface="javax.jms.ConnectionFactory"/>
-        </property>
+        <property name="connectionFactory" ref="activemqConnectionFactory"/>
         <property name="transactionManager">
             <osgi:reference interface="org.springframework.transaction.PlatformTransactionManager"/>
         </property>
@@ -71,12 +61,6 @@
     </bean>
 
     <camelContext id="camel" xmlns="http://camel.apache.org/schema/spring">
-
-        <!--
-        <errorHandler id="txErrorHandler" type="TransactionErrorHandler" transactionManagerRef="txManager">
-            <redeliveryPolicy maximumRedeliveries="0"/>
-        </errorHandler>
-        -->
 
         <endpoint id="cxfService1Endpoint" uri="${uriCxfServiceEndpoint}"/>
         <endpoint id="fileEndpoint" uri="${uriFileEndpoint}"/>
@@ -104,21 +88,6 @@
             <!-- <bean ref="processIncident" method="generateError"/> -->
             <log message=">>> Record inserted : ${body}"/>
         </route>
-
-        <!--
-        <route id="rollback-incident">
-            <from uri="file://target/datainsertrollback?moveFailed=failed"/>
-            <transacted/>
-            <unmarshal ref="csvReport"/>
-            <split>
-                <simple>${body}</simple>
-                <bean ref="processIncident"/>
-                <to uri="jpa://com.fusesource.webinars.persistence.model.Incident"/>
-                <bean ref="processIncident" method="generateError"/>
-                <log message=">>> Record not inserted : ${body}"/>
-            </split>
-        </route>
-        -->
 
     </camelContext>
 

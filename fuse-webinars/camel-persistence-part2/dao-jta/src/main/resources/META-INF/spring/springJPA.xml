@@ -35,31 +35,32 @@
 
     <tx:annotation-driven transaction-manager="txManager"/>
 
-    <osgi:reference id="txManager" interface="org.springframework.transaction.PlatformTransactionManager"/>
+    <osgi:reference id="txManager" interface="javax.transaction.TransactionManager"/>
 
-    <!-- Export SpringJTATxManager -->
+    <!-- -->
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="persistenceUnitName" value="reportincident"/>
+    </bean>
 
+    <!-- not required as Container will be managed by openJPA
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="persistenceUnitName" value="reportincident"/>
         <property name="dataSource" ref="reportdb"/>
         <property name="jpaVendorAdapter">
-            <!-- HSQL  -->
             <bean id="jpaAdapter" class="org.springframework.orm.jpa.vendor.OpenJpaVendorAdapter">
                 <property name="databasePlatform" value="org.apache.openjpa.jdbc.sql.HSQLDictionary"/>
                 <property name="showSql" value="true"/>
                 <property name="database" value="HSQL"/>
             </bean>
-            <!-- MySQL
             <bean id="jpaAdapter" class="org.springframework.orm.jpa.vendor.OpenJpaVendorAdapter">
                 <property name="databasePlatform" value="org.apache.openjpa.jdbc.sql.MySQLDictionary"/>
                 <property name="showSql" value="true"/>
                 <property name="database" value="MYSQL"/>
             </bean>
-            -->
+
         </property>
     </bean>
-
-    <osgi:reference id="reportdb" interface="javax.sql.DataSource" filter="(transactional=true)" />
+    -->
 
     <!-- Expose DAO as a OSGI Service for Camel Route -->
     <osgi:service ref="daoReport" interface="com.fusesource.webinars.persistence.dao.IncidentDAO"/>

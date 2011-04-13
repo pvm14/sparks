@@ -45,6 +45,7 @@
              org.apache.camel,
              org.apache.camel.component,
              org.apache.camel.component.jpa,
+             org.hsqldb,
              *
          </osgi-import-pkg>
          <osgi-export-pkg></osgi-export-pkg>

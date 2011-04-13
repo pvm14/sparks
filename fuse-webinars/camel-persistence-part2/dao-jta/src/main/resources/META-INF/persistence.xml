@@ -6,6 +6,13 @@
 
     <persistence-unit name="reportincident" transaction-type="JTA">
 
+        <provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
+
+        <jta-data-source>osgi:service/javax.sql.DataSource/(transactional=true)</jta-data-source>
+
+        <!-- Required by openJPA to update sequence table outside of Global Tx Management -->
+        <non-jta-data-source>osgi:service/javax.sql.DataSource/(transactional=false)</non-jta-data-source>
+
         <class>com.fusesource.webinars.persistence.model.Incident</class>
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
@@ -14,16 +21,12 @@
         <properties>
             <property name="openjpa.jdbc.SynchronizeMappings"
                       value="buildSchema(SchemaAction='add,deleteTableContents')"/>
-            <property name="openjpa.Log"
-                      value="commons"/>
             <property name="openjpa.jdbc.DBDictionary"
                       value="hsql(useSchemaName=true)"/>
+            <property name="openjpa.Log"
+                      value="DefaultLevel=INFO, Runtime=INFO, Tool=INFO, SQL=INFO"/>
             <property name="openjpa.jdbc.Schema"
                       value="PUBLIC"/>
-            <property name="openjpa.TransactionMode"
-                      value="managed"/>
-            <property name="openjpa.ManagedRuntime"
-                      value="jndi(TransactionManagerName=aries:services/javax.transaction.TransactionManager)"/>
             <property name="openjpa.Multithreaded"
                       value="true"/>
             <property name="openjpa.TransactionMode"
@@ -31,21 +34,6 @@
             <property name="openjpa.ConnectionFactoryMode"
                       value="managed"/>
         </properties>
-
-        <!--
-        <properties>
-            <property name="openjpa.jdbc.SynchronizeMappings"
-                      value="buildSchema(SchemaAction='add,deleteTableContents')"/>
-            <property name="openjpa.Log"
-                      value="commons" />
-            <property name="openjpa.jdbc.DBDictionary"
-                      value="mysql(useSchemaName=true)"/>
-            <property name="openjpa.TransactionMode"
-                      value="local"/>
-            <property name="openjpa.ManagedRuntime"
-                      value="jndi(TransactionManagerName=aries:services/javax.transaction.TransactionManager)"/>
-        </properties>
-                      -->
 
     </persistence-unit>
 </persistence>

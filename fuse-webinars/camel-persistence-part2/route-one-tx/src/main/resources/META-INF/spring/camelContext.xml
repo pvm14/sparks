@@ -27,11 +27,7 @@
            http://camel.apache.org/schema/spring/camel-spring.xsd
     ">
 
-    <!-- Tx Manager
     <osgi:reference id="txManager" interface="org.springframework.transaction.PlatformTransactionManager"/>
-    -->
-
-    <osgi:reference id="txManager" filter="(tx=JTA-Spring)" interface="org.springframework.transaction.PlatformTransactionManager"/>
 
     <!-- Transaction POLICY used by Camel Transactional Route
          We refer to the ServiceMiX TxManager -->
@@ -42,20 +38,14 @@
     <!-- ActiveMQ JMS Configuration
          Is defined as Transacted and use ServiceMix TxManager -->
     <bean id="jmsConfig" class="org.apache.camel.component.jms.JmsConfiguration">
-        <property name="connectionFactory">
-            <osgi:reference interface="javax.jms.ConnectionFactory"/>
-        </property>
+        <property name="connectionFactory" ref="activemqConnectionFactory"/>
         <property name="transactionManager" ref="txManager"/>
         <property name="transacted" value="true"/>
     </bean>
 
     <bean id="activemq" class="org.apache.activemq.camel.component.ActiveMQComponent">
-        <property name="connectionFactory">
-           <osgi:reference interface="javax.jms.ConnectionFactory"/>
-        </property>
-        <property name="transacted" value="true"/>
-        <property name="transactionManager" ref="txManager"/>
-        <property name="cacheLevel" value="0"/>
+        <property name="configuration" ref="jmsConfig"/>
+        <property name="cacheLevelName" value="CACHE_NONE"/>
     </bean>
 
     <bean id="processIncident" class="com.fusesource.webinars.persistence.camel.ProcessIncidents">
@@ -86,20 +76,10 @@
             <transacted ref="PROPAGATION_REQUIRED"/>
             <log message=">>> Incident received : ${body}"/>
             <bean ref="processIncident" method="saveReport"/>
-            <!-- <bean ref="processIncident" method="generateError"/> -->
+            <bean ref="processIncident" method="generateError"/>
             <log message=">>> Record inserted : ${body}"/>
         </route>
 
-
-        <!--
-        <route>
-          <from uri="timer://test?period=60000"/>
-          <filter>
-            <groovy>true</groovy>
-            <log message=">>>>> Groovy Test"/>
-          </filter>
-        </route>
-        -->
 
     </camelContext>
 

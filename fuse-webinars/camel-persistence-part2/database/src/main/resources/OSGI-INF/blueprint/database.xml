@@ -6,7 +6,7 @@
 
             <!-- JDBC Drivers -->
             <cm:property name="jdbc.driverClassName" value="org.hsqldb.jdbcDriver"/>
-            <cm:property name="jdbc.url" value="jdbc:hsqldb:hsql://127.0.0.1/database"/>
+            <cm:property name="jdbc.url" value="jdbc:hsqldb:hsql://localhost/reportdb"/>
             <cm:property name="jdbc.username" value="sa"/>
             <cm:property name="jdbc.password" value=""/>
 
@@ -22,39 +22,50 @@
         </cm:default-properties>
     </cm:property-placeholder>
 
-    <service auto-export="interfaces" ref="jta">
-        <service-properties>
-            <entry key="transactional" value="true"/>
-        </service-properties>
-    </service>
+ <service interface="javax.sql.DataSource" ref="jta">
+    <service-properties>
+      <entry key="transactional" value="true"/>
+    </service-properties>
+  </service>
 
-    <service auto-export="interfaces" ref="nonJTA">
-        <service-properties>
-            <entry key="transactional" value="false"/>
-        </service-properties>
-    </service>
+  <service interface="javax.sql.DataSource" ref="nonJTA">
+    <service-properties>
+      <entry key="transactional" value="false"/>
+    </service-properties>
+  </service>
 
-    <!-- ###### JDBC Data Source ###### -->
+  <!-- ###### JDBC Data Source ###### -->
 
-    <bean id="jta" class="org.enhydra.jdbc.standard.StandardXADataSource">
-        <property name="driverName" value="${jdbc.driverClassName}"/>
-        <property name="url" value="${jdbc.url}"/>
-        <property name="user" value="${jdbc.username}"/>
-        <property name="password" value="${jdbc.password}"/>
-    </bean>
+  <reference id="txManager" interface="javax.transaction.TransactionManager" availability="mandatory"/>
 
-    <bean class="org.apache.commons.dbcp.BasicDataSource" id="nonJTA">
-        <property name="driverClassName" value="${jdbc.driverClassName}"/>
-        <property name="url" value="${jdbc.url}"/>
-        <property name="username" value="${jdbc.username}"/>
-        <property name="password" value="${jdbc.password}"/>
-        <property name="initialSize" value="${jdbc.initialSize}"/>
-        <property name="maxActive" value="${jdbc.maxActive}"/>
-        <property name="maxIdle" value="${jdbc.maxIdle}"/>
-        <property name="defaultAutoCommit" value="false"/>
-        <property name="removeAbandoned" value="${jdbc.removeAbandoned}"/>
-        <property name="removeAbandonedTimeout" value="${jdbc.removeAbandonedTimeout}"/>
-        <property name="logAbandoned" value="${jdbc.logAbandoned}"/>
-    </bean>
+  <bean id="dataSource" class="org.enhydra.jdbc.standard.StandardXADataSource">
+    <property name="driverName" value="${jdbc.driverClassName}"/>
+    <property name="url" value="${jdbc.url}"/>
+    <property name="user" value="${jdbc.username}"/>
+    <property name="password" value="${jdbc.password}"/>
+    <property name="minCon" value="${jdbc.initialSize}"/>
+    <property name="maxCon" value="${jdbc.maxActive}"/>
+  </bean>
+
+  <bean id="jta" class="org.enhydra.jdbc.pool.StandardXAPoolDataSource">
+    <property name="dataSource" ref="dataSource"/>
+    <property name="transactionManager" ref="txManager"/>
+    <property name="user" value="${jdbc.username}"/>
+    <property name="password" value="${jdbc.password}"/>
+  </bean>
+
+  <bean class="org.apache.commons.dbcp.BasicDataSource" id="nonJTA">
+    <property name="driverClassName" value="${jdbc.driverClassName}"/>
+    <property name="url" value="${jdbc.url}"/>
+    <property name="username" value="${jdbc.username}"/>
+    <property name="password" value="${jdbc.password}"/>
+    <property name="initialSize" value="${jdbc.initialSize}"/>
+    <property name="maxActive" value="${jdbc.maxActive}"/>
+    <property name="maxIdle" value="${jdbc.maxIdle}"/>
+    <property name="defaultAutoCommit" value="false"/>
+    <property name="removeAbandoned" value="${jdbc.removeAbandoned}"/>
+    <property name="removeAbandonedTimeout" value="${jdbc.removeAbandonedTimeout}"/>
+    <property name="logAbandoned" value="${jdbc.logAbandoned}"/>
+  </bean>
 
 </blueprint>
