@@ -20,11 +20,11 @@
   <parent>
     <artifactId>cxf-webinars</artifactId>
     <groupId>com.fusesource</groupId>
-    <version>1.0.0</version>
+    <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>com.fusesource</groupId>
   <artifactId>customer-ws-secure</artifactId>
-  <version>1.0.0</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>customer-ws-secure</name>
   <packaging>bundle</packaging>
 

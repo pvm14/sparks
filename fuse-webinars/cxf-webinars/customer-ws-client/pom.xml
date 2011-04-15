@@ -20,11 +20,10 @@
   <parent>
     <artifactId>cxf-webinars</artifactId>
     <groupId>com.fusesource</groupId>
-    <version>1.0.0</version>
+    <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>com.fusesource</groupId>
   <artifactId>customer-ws-client</artifactId>
-  <version>1.0.0</version>
   <name>customer-ws-client</name>
   <url>http://maven.apache.org</url>
   <packaging>bundle</packaging>
