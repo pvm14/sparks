@@ -1,0 +1,152 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.fusesource</groupId>
+  <artifactId>osgi-test-hello-world-bundle</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>bundle</packaging>
+  <name>osgi-test-hello-world-bundle</name>
+  
+
+	<properties>
+		<equinox.ver>3.2.2</equinox.ver>
+		<spring.maven.artifact.version>2.5.6</spring.maven.artifact.version>
+		<slf4j.version>1.4.3</slf4j.version>
+		<spring.osgi.version>1.1.2</spring.osgi.version>
+	</properties>
+
+  <build>
+       <resources>
+            <!-- standard Maven folder -->
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <version>1.4.0</version>
+                <configuration>
+                    <instructions>
+                        <Export-Package>
+                            !com.fusesource.support.osgi.helloworld.internal,
+                            com.fusesource.support.osgi.helloworld*
+                        </Export-Package>
+                        <Private-Package>
+                        	com.fusesource.support.osgi.helloworld.internal
+                        </Private-Package>
+                        <Import-Package>*</Import-Package>
+                        <Include-Resource>src/main/resources</Include-Resource>
+                    </instructions>
+
+                </configuration>
+
+            </plugin>
+        </plugins>
+    </build>
+
+
+	
+	<dependencies>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.5</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+	  	<dependency>
+	  		<groupId>org.springframework</groupId>
+	  		<artifactId>spring-context</artifactId>
+	  		<version>${spring.maven.artifact.version}</version>
+	  	</dependency>
+	  	<dependency>
+	  		<groupId>org.springframework</groupId>
+	  		<artifactId>spring-core</artifactId>
+	  		<version>${spring.maven.artifact.version}</version>
+	  	</dependency>
+	</dependencies>		
+
+
+  
+
+
+   <!-- Add ServiceMix repositories for snaphots and releases -->
+    <pluginRepositories>
+	   <pluginRepository>
+	     <id>fusesource.m2</id>
+	     <name>IONA Open Source Community Release Repository</name>
+	     <url>http://repo.open.iona.com/maven2</url>
+	     <snapshots>
+	       <enabled>false</enabled>
+	     </snapshots>
+	     <releases>
+	       <enabled>true</enabled>
+	     </releases>
+	   </pluginRepository>
+	   <pluginRepository>
+	     <id>open.iona.m2-snapshot</id>
+	     <name>FuseSource Open Source Community Snapshot Repository</name>
+	     <url>http://repo.fusesource.com/maven2-snapshot</url>
+	     <snapshots>
+	       <enabled>true</enabled>
+	     </snapshots>
+	     <releases>
+	       <enabled>false</enabled>
+	     </releases>
+	   </pluginRepository>
+    </pluginRepositories>
+    <repositories>
+	   <repository>
+	     <id>fusesource.m2</id>
+	     <name>FuseSource Open Source Community Release Repository</name>
+	     <url>http://repo.fusesource.com/maven2</url>
+	     <snapshots>
+	       <enabled>false</enabled>
+	     </snapshots>
+	     <releases>
+	       <enabled>true</enabled>
+	     </releases>
+	   </repository>
+	   <repository>
+	     <id>fusesource.m2-snapshot</id>
+	     <name>FuseSource Open Source Community Snapshot Repository</name>
+	     <url>http://repo.fusesource.com/maven2-snapshot</url>
+	     <snapshots>
+	       <enabled>true</enabled>
+	     </snapshots>
+	     <releases>
+	       <enabled>false</enabled>
+	     </releases>
+	   </repository>
+
+	   <repository>
+	     <id>fusesource.m2</id>
+	     <name>FuseSource Public Repository</name>
+	     <url>http://repo.fusesource.com/nexus/content/repositories/public</url>
+	     <snapshots>
+	       <enabled>false</enabled>
+	     </snapshots>
+	     <releases>
+	       <enabled>true</enabled>
+	     </releases>
+	   </repository>
+
+
+    </repositories>
+</project>
