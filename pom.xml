@@ -79,6 +79,7 @@
     </license>
   </licenses>
 
+
   <scm>
     <connection>scm:ssh://git@forge.fusesource.com/sparks.git</connection>
     <developerConnection>${release-altGitURL}</developerConnection>
