@@ -42,7 +42,7 @@
     <forge-project-id-uc>SPARKS</forge-project-id-uc>
     
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <release-altGitURL>scm:ssh://git@forge.fusesource.com/sparks.git</release-altGitURL>
+    <release-altGitURL>scm:git://git@forge.fusesource.com/sparks.git</release-altGitURL>
   </properties>
 
   <url>http://${forge-project-id}.fusesource.org</url>
@@ -81,7 +81,7 @@
 
 
   <scm>
-    <connection>scm:ssh://git@forge.fusesource.com/sparks.git</connection>
+    <connection>scm:git://git@forge.fusesource.com/sparks.git</connection>
     <developerConnection>${release-altGitURL}</developerConnection>
     <url>http://fusesource.com/forge/git/sparks.git/</url>
   </scm>
@@ -105,7 +105,43 @@
   </developers>
 
   <build>
+    <extensions>
+      <!-- Enabling the use of SSH -->
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+         <artifactId>wagon-ssh-external</artifactId>
+         <version>1.0-beta-7</version>
+      </extension>
+    </extensions>
+
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.1</version>
+	<!--
+        <configuration>
+          <tagBase>https://svn.apache.org/repos/asf/maven/components/releases</tagBase>
+        </configuration>
+	-->
+      </plugin>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-scm-plugin</artifactId>
+      <dependencies>
+        <dependency>
+          <groupId>org.apache.maven.scm</groupId>
+          <artifactId>maven-scm-provider-gitexe</artifactId>
+          <version>1.1-SNAPSHOT</version>
+        </dependency>
+	<dependency>
+          <groupId>org.apache.maven.scm</groupId>
+          <artifactId>maven-scm-provider-gitssh</artifactId>
+          <version>1.1-SNAPSHOT</version>
+        </dependency>
+      </dependencies>
+    </plugin>
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
