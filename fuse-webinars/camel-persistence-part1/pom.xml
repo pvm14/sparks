@@ -26,7 +26,7 @@
 
     <groupId>com.fusesource</groupId>
     <artifactId>persistence-webinars</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>FuseSource :: Webinars :: Camel Persistence</name>
     <packaging>pom</packaging>
 

@@ -24,7 +24,7 @@
   <groupId>com.fusesource.test</groupId>
   <artifactId>camel-cxf-corba-test</artifactId>
   <packaging>bundle</packaging>
-  <version>0.0.1</version>
+  <version>0.0.2-SNAPSHOT</version>
   <name>A Camel OSGi Service Unit</name>
   <url>http://www.myorganization.org</url>
 

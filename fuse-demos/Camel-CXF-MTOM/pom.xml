@@ -3,7 +3,7 @@
   <groupId>com.fusesource.test</groupId>
   <artifactId>camel-cxf-mtom-demo</artifactId>
   <packaging>pom</packaging>
-  <version>0.0.1</version>
+  <version>0.0.2-SNAPSHOT</version>
   
   <modules>
   	<module>mtom-service</module>

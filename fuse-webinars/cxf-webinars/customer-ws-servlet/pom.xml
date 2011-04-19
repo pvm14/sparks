@@ -19,11 +19,11 @@
   <parent>
     <artifactId>cxf-webinars</artifactId>
     <groupId>com.fusesource</groupId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
   <groupId>com.fusesource</groupId>
   <artifactId>customer-ws-servlet</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <name>customer-ws-servlet</name>
   <url>http://fusesource.com</url>
   <packaging>war</packaging>
