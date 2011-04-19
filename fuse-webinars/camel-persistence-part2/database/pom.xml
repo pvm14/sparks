@@ -14,9 +14,7 @@
   ~    See the License for the specific language governing permissions and
   ~    limitations under the License.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>persistence-webinars-2</artifactId>
         <groupId>com.fusesource</groupId>
@@ -36,10 +34,10 @@
             org.enhydra.jdbc.standard,
             *
         </osgi-import-pkg>
-        <osgi-export-pkg></osgi-export-pkg>
-        <osgi-private-pkg></osgi-private-pkg>
-        <osgi-dynamic-pkg></osgi-dynamic-pkg>
-        <require-bundle></require-bundle>
+        <osgi-export-pkg />
+        <osgi-private-pkg />
+        <osgi-dynamic-pkg />
+        <require-bundle />
     </properties>
 
 </project>
