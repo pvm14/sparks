@@ -25,7 +25,7 @@
     <groupId>org.fusesource.sparks</groupId>
     <artifactId>fuse-demos</artifactId>
     <version>1.0.1-SNAPSHOT</version>
-   </parent>
+  </parent>
    
   <groupId>org.fusesource.sparks.fuse-demos</groupId>
   <artifactId>esb-fragments-demo</artifactId>
