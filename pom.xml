@@ -167,12 +167,12 @@
         <dependency>
           <groupId>org.apache.maven.scm</groupId>
           <artifactId>maven-scm-provider-gitexe</artifactId>
-          <version>1.1-SNAPSHOT</version>
+          <version>1.1</version>
         </dependency>
 	<dependency>
           <groupId>org.apache.maven.scm</groupId>
           <artifactId>maven-scm-provider-gitssh</artifactId>
-          <version>1.1-SNAPSHOT</version>
+          <version>1.1</version>
         </dependency>
       </dependencies>
     </plugin>
