@@ -26,7 +26,6 @@
   <groupId>org.fusesource.sparks.fuse-webinars.cxf-webinars</groupId>
   <artifactId>customer-features</artifactId>
   <name>customer-features</name>
-  <version>1.0.1-SNAPSHOT</version>
   <url>http://www.fusesource.com</url>
   <packaging>pom</packaging>
 

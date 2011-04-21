@@ -29,7 +29,6 @@
     <artifactId>payment-service</artifactId>
     <packaging>pom</packaging>
     <name>FuseSource Example Payment Service</name>
-    <version>1.2.1-SNAPSHOT</version>
     <url>http://fusesource.com/</url>
 
     <licenses>

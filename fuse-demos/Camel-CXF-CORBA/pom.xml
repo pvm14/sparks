@@ -30,7 +30,6 @@
   <groupId>org.fusesource.sparks.fuse-demos</groupId>
   <artifactId>camel-cxf-corba-demo</artifactId>
   <packaging>bundle</packaging>
-  <version>0.0.2-SNAPSHOT</version>
   <name>Camel-CXF to CORBA Demo</name>
   <url>http://www.fusesource.com</url>
 

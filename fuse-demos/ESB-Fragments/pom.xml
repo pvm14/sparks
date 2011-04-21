@@ -30,7 +30,6 @@
   <groupId>org.fusesource.sparks.fuse-demos</groupId>
   <artifactId>esb-fragments-demo</artifactId>
   <packaging>pom</packaging>
-  <version>0.0.2-SNAPSHOT</version>
   <name>ESB Fragments Demo</name>
   <url>http://www.fusesource.com</url>
 

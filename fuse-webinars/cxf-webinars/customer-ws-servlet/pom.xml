@@ -25,7 +25,6 @@
 
   <groupId>org.fusesource.sparks.fuse-webinars.cxf-webinars</groupId>
   <artifactId>customer-ws-servlet</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
   <name>customer-ws-servlet</name>
   <url>http://fusesource.com</url>
   <packaging>war</packaging>

@@ -25,7 +25,6 @@
 
   <groupId>org.fusesource.sparks.fuse-webinars.cxf-webinars</groupId>
   <artifactId>customer-ws-camel-cxf-provider</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
   <name>customer-ws-camel-cxf-provider</name>
   <url>http://www.fusesource.com</url>
   <packaging>bundle</packaging>

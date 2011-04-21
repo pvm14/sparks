@@ -11,8 +11,8 @@ Require-Bundle: org.apache.cxf.bundle
 Bundle-Vendor: FuseSource
 DynamicImport-Package: *
 Build-Jdk: 1.6.0_20
-Bundle-Version: 0.0.2.SNAPSHOT
-Bnd-LastModified: 1303389840206
+Bundle-Version: 1.0.1.SNAPSHOT
+Bnd-LastModified: 1303396375381
 Bundle-ManifestVersion: 2
 Bundle-Description: Demos, archetypes and webinar code from the kind f
  olk at fusesource.com. Enjoy!

@@ -26,7 +26,6 @@
   
     <groupId>org.fusesource.sparks.fuse-webinars</groupId>
     <artifactId>persistence-webinars</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
     <name>FuseSource :: Webinars :: Camel Persistence</name>
     <packaging>pom</packaging>
 
