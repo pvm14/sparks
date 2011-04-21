@@ -16,7 +16,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.fusesource.webinars.persistence</groupId>
+            <groupId>org.fusesource.sparks.fuse-webinars.persistence-webinars-2</groupId>
             <artifactId>dao</artifactId>
             <version>${pom.version}</version>
         </dependency>
