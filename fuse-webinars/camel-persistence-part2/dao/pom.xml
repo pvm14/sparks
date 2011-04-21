@@ -78,7 +78,7 @@
          <osgi-private-pkg>
            com.fusesource.webinars.persistence.dao.impl
          </osgi-private-pkg>
-         <osgi-dynamic-pkg /
+         <osgi-dynamic-pkg />
     </properties>
 
     <dependencies>
