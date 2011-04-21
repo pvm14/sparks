@@ -31,6 +31,7 @@
     <module>Camel-CXF-CORBA</module>
     <module>Camel-CXF-MTOM</module>
     <module>ESB-Fragments</module>
+    <module>ActiveMQ-Http-NetworkConnector</module>
   </modules>
 
   <inceptionYear>2011</inceptionYear>
@@ -38,6 +39,6 @@
   <organization>
     <name>FuseSource</name>
     <url>http://fusesource.com/</url>
-  </organization> 
-
+  </organization>
+  
 </project>
