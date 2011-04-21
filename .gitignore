@@ -1,0 +1,17 @@
+# Specific Mac file
+.DS_Store
+
+# Folders to be excluded
+target/
+webgen/out
+webgen/webgen.cache
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings
