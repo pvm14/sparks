@@ -16,31 +16,31 @@
   -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
+ 
+    <modelVersion>4.0.0</modelVersion>
+
     <parent>
-        <groupId>com.fusesource</groupId>
-        <artifactId>persistence-webinars</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
+      <groupId>org.fusesource.sparks.fuse-webinars</groupId>
+      <artifactId>persistence-webinars</artifactId>
+      <version>1.0.1-SNAPSHOT</version>
     </parent>
 
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>com.fusesource</groupId>
+    <groupId>org.fusesource.sparks.fuse-webinars.persistence-webinars</groupId>
     <artifactId>sql-spring</artifactId>
     <name>FuseSource :: Webinars :: Camel Persistence :: SQL - Spring</name>
 
     <dependencies>
-
         <!-- Camel -->
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-sql</artifactId>
-            <version>${camel.version}</version>
+            <version>${camel-version}</version>
         </dependency>
-
         <!-- HSQL DB -->
         <dependency>
             <groupId>hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
-            <version>${hsqldb.version}</version>
+            <version>${hsqldb-version}</version>
         </dependency>
     </dependencies>
 
@@ -49,12 +49,11 @@
             <plugin>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-maven-plugin</artifactId>
-                <version>${camel.version}</version>
+                <version>${camel-version}</version>
                 <configuration>
                     <applicationContextUri>META-INF/spring/*.xml</applicationContextUri>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
 </project>

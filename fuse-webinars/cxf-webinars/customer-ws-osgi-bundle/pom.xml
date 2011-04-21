@@ -16,16 +16,18 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
   <parent>
+    <groupId>org.fusesource.sparks.fuse-webinars</groupId>
     <artifactId>cxf-webinars</artifactId>
-    <groupId>com.fusesource</groupId>
     <version>1.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.fusesource</groupId>
+
+  <groupId>org.fusesource.sparks.fuse-webinars.cxf-webinars</groupId>
   <artifactId>customer-ws-osgi-bundle</artifactId>
   <version>1.0.1-SNAPSHOT</version>
   <name>customer-ws-osgi-bundle</name>
-  <url>http://maven.apache.org</url>
+  <url>http://www.fusesource.com</url>
   <packaging>bundle</packaging>
 
   <dependencies>
@@ -37,6 +39,7 @@
     <dependency>
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-rt-frontend-jaxws</artifactId>
+      <version>${cxf-version}</version>
     </dependency>
   </dependencies>
 
@@ -45,6 +48,7 @@
       <plugin>
         <groupId>org.apache.cxf</groupId>
         <artifactId>cxf-codegen-plugin</artifactId>
+        <version>${cxf-version}</version>
         <executions>
           <execution>
             <id>generate-sources</id>

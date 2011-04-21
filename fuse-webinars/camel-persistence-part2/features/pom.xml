@@ -15,16 +15,20 @@
   ~    limitations under the License.
   -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>persistence-webinars-2</artifactId>
-        <groupId>com.fusesource</groupId>
-        <version>1.0.1-SNAPSHOT</version>
-    </parent>
+    
     <modelVersion>4.0.0</modelVersion>
+    
+        <parent>
+      <groupId>org.fusesource.sparks.fuse-webinars</groupId>
+      <artifactId>persistence-webinars-2</artifactId>
+      <version>1.0.1-SNAPSHOT</version>
+    </parent>
+
+    <groupId>org.fusesource.sparks.fuse-webinars.persistence-webinars-2</groupId> 
+    <artifactId>persistence</artifactId>
     <name>FuseSource :: Webinars :: Fuse ESB &amp; Persistence :: Features</name>
     <packaging>jar</packaging>
-    <groupId>com.fusesource.webinars</groupId>
-    <artifactId>persistence</artifactId>
+    
 
     <build>
         <!-- enable filtering of the features file -->
@@ -56,7 +60,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
-                <version>${build-helper-maven-plugin.version}</version>
+                <version>${build-helper-maven-plugin-version}</version>
                 <executions>
                     <execution>
                         <id>attach-artifacts</id>

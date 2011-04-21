@@ -20,11 +20,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.fusesource.examples</groupId>
         <artifactId>payment-service</artifactId>
+        <groupId>org.fusesource.sparks.fuse-webinars</groupId>
         <version>1.2.1-SNAPSHOT</version>
     </parent>
 
+    <groupId>org.fusesource.sparks.fuse-webinars.payment-service</groupId>
     <artifactId>payment-service-shared</artifactId>
     <packaging>bundle</packaging>
     <name>FuseSource Example Payment Service :: Shared</name>

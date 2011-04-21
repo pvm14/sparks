@@ -19,7 +19,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.fusesource.examples</groupId>
+  <parent>
+    <groupId>org.fusesource.sparks</groupId>
+    <artifactId>fuse-webinars</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+  </parent>
+  
+    <groupId>org.fusesource.sparks.fuse-webinars</groupId>
     <artifactId>payment-service</artifactId>
     <packaging>pom</packaging>
     <name>FuseSource Example Payment Service</name>
@@ -55,7 +61,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
         <servicemix.version>4.3.1-fuse-01-09</servicemix.version>
         <servicemix.nmr.version>1.4.0-fuse-01-09</servicemix.nmr.version>
         <karaf.version>2.1.4-fuse-00-09</karaf.version>
@@ -64,7 +69,6 @@
         <osgi.core.version>4.2.0</osgi.core.version>
         <spring.version>3.0.5.RELEASE</spring.version>
         <spring.osgi.version>1.2.0</spring.osgi.version>
-
         <pax.logging.version>1.5.3</pax.logging.version>
     </properties>
 

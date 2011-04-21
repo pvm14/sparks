@@ -21,69 +21,24 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.fusesource.test</groupId>
-  <artifactId>camel-cxf-corba-test</artifactId>
+  <parent>
+    <groupId>org.fusesource.sparks</groupId>
+    <artifactId>fuse-demos</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+   </parent>
+   
+  <groupId>org.fusesource.sparks.fuse-demos</groupId>
+  <artifactId>camel-cxf-corba-demo</artifactId>
   <packaging>bundle</packaging>
   <version>0.0.2-SNAPSHOT</version>
-  <name>A Camel OSGi Service Unit</name>
-  <url>http://www.myorganization.org</url>
+  <name>Camel-CXF to CORBA Demo</name>
+  <url>http://www.fusesource.com</url>
 
   <properties>
     <commons.logging.version>1.1.1</commons.logging.version>
     <camel-version>2.4.0-fuse-02-00</camel-version>
     <cxf-version>2.2.10-fuse-00-00</cxf-version>
-    <!-- <cxf-version>2.2.10</cxf-version> -->
   </properties>
-  
-  
-  <repositories>
-    <repository>
-      <id>open.iona.m2</id>
-      <name>IONA Open Source Community Release Repository</name>
-      <url>http://repo.open.iona.com/maven2</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </repository>
-    <repository>
-      <id>open.iona.m2-snapshot</id>
-      <name>IONA Open Source Community Snapshot Repository</name>
-      <url>http://repo.fusesource.com/maven2-snapshot</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-    </repository>
-  </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>open.iona.m2</id>
-      <name>IONA Open Source Community Release Repository</name>
-      <url>http://repo.fusesource.com/maven2</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </pluginRepository>
-    <pluginRepository>
-      <id>open.iona.m2-snapshot</id>
-      <name>IONA Open Source Community Snapshot Repository</name>
-      <url>http://repo.fusesource.com/maven2-snapshot</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-    </pluginRepository>
-  </pluginRepositories>
 
   <dependencies>
     <dependency>

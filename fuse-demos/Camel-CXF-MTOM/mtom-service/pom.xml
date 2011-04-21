@@ -1,14 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<parent>
-		<artifactId>camel-cxf-mtom-demo</artifactId>
-		<groupId>com.fusesource.test</groupId>
-		<version>0.0.2-SNAPSHOT</version>
-	</parent>
-
+	
 	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+	  <artifactId>camel-cxf-mtom-demo</artifactId>
+	  <groupId>org.fusesource.sparks.fuse-demos</groupId>
+	  <version>0.0.2-SNAPSHOT</version>
+	</parent>
+	
+	<groupId>org.fusesource.sparks.fuse-demos.camel-cxf-mtom-demo</groupId>
 	<artifactId>mtom-service</artifactId>
 	<packaging>bundle</packaging>
-	<version>0.0.2-SNAPSHOT</version>
 	<name>MTOM Example Service</name>
 	
 	<properties>

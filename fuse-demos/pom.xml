@@ -17,16 +17,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.fusesource.sparks</groupId>
-  <artifactId>fuse-demos</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
+  <parent>
+    <groupId>org.fusesource.sparks</groupId>
+    <artifactId>sparks-parent</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+   </parent>
   
+  <artifactId>fuse-demos</artifactId>
+  <packaging>pom</packaging>
   <name>FuseSource Demos</name>
-
-  <modules>
+  <url>http://www.fusesource.com</url>
+  <modules>  
     <module>Camel-CXF-CORBA</module>
     <module>Camel-CXF-MTOM</module>
+    <module>ESB-Fragments</module>
   </modules>
 
   <inceptionYear>2011</inceptionYear>

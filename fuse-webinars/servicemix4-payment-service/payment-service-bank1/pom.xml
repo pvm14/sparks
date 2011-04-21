@@ -21,10 +21,11 @@
 
     <parent>
         <artifactId>payment-service</artifactId>
-        <groupId>com.fusesource.examples</groupId>
+        <groupId>org.fusesource.sparks.fuse-webinars</groupId>
         <version>1.2.1-SNAPSHOT</version>
     </parent>
 
+    <groupId>org.fusesource.sparks.fuse-webinars.payment-service</groupId>
     <artifactId>payment-service-bank1</artifactId>
     <packaging>bundle</packaging>
     <name>FuseSource Example Payment Service :: Bank1</name>

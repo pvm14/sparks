@@ -102,8 +102,43 @@
       <url>http://trenaman.blogspot.com</url>
       <timezone>GMT</timezone>
     </developer>
+    <developer>
+      <id>tmielke</id>
+      <name>Torsten Mielke</name>
+      <email>torsten@fusesource.com</email>
+      <url>http://tmielke.blogspot.com</url>
+      <timezone>CET</timezone>
+    </developer>
   </developers>
 
+  <pluginRepositories>
+    <pluginRepository>
+      <id>fusesource.m2</id>
+      <name>FuseSource Repository</name>
+      <url>http://repo.fusesource.com/nexus/content/groups/public</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <repositories>
+    <repository>
+      <id>fusesource.m2</id>
+      <name>FuseSource Repository</name>
+      <url>http://repo.fusesource.com/nexus/content/groups/public</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+  </repositories>
+  
   <build>
     <extensions>
       <!-- Enabling the use of SSH -->
