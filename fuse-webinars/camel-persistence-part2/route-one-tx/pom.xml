@@ -35,7 +35,10 @@
         <dependency>
             <groupId>org.fusesource.sparks.fuse-webinars.persistence-webinars-2</groupId>
             <artifactId>dao</artifactId>
+            <!--  
             <version>${pom.version}</version>
+            -->
+           <version>1.0.1</version>
         </dependency>
     </dependencies>
 
