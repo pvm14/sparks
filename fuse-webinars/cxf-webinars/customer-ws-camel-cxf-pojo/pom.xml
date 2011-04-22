@@ -19,20 +19,12 @@
   <parent>
     <groupId>org.fusesource.sparks.fuse-webinars</groupId>
     <artifactId>cxf-webinars</artifactId>
-<<<<<<< HEAD
-    <groupId>com.fusesource</groupId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>  
-  <groupId>com.fusesource</groupId>
-  <artifactId>customer-ws-camel-cxf-pojo</artifactId>
-  <packaging>bundle</packaging>
-=======
     <version>1.0.1-SNAPSHOT</version>
   </parent>
 
   <groupId>org.fusesource.sparks.fuse-webinars.cxf-webinars</groupId>
   <artifactId>customer-ws-camel-cxf-pojo</artifactId>
->>>>>>> e2337e28216d54865295c0077896c298466e9729
+  
   <name>customer-ws-camel-cxf-pojo</name>
   <url>http://www.fusesource.com</url>
   <packaging>bundle</packaging>

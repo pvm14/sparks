@@ -20,20 +20,11 @@
   <parent>
     <groupId>org.fusesource.sparks.fuse-webinars</groupId>
     <artifactId>cxf-webinars</artifactId>
-<<<<<<< HEAD
-    <groupId>com.fusesource</groupId>
-    <version>0.0.1-SNAPSHOT</version>
-=======
     <version>1.0.1-SNAPSHOT</version>
->>>>>>> e2337e28216d54865295c0077896c298466e9729
   </parent>
 
   <groupId>org.fusesource.sparks.fuse-webinars.cxf-webinars</groupId>
   <artifactId>customer-ws-secure</artifactId>
-<<<<<<< HEAD
-  <version>0.0.1-SNAPSHOT</version>
-=======
->>>>>>> e2337e28216d54865295c0077896c298466e9729
   <name>customer-ws-secure</name>
   <packaging>bundle</packaging>
 

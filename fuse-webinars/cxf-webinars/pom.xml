@@ -16,14 +16,6 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-<<<<<<< HEAD
-  <groupId>com.fusesource</groupId>
-  <artifactId>cxf-webinars</artifactId>
-  <packaging>pom</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>cxf-webinars</name>
-=======
->>>>>>> e2337e28216d54865295c0077896c298466e9729
     
   <parent>
     <groupId>org.fusesource.sparks</groupId>
