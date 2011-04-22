@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2011 FuseSource
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.fusesource.support</groupId>
+    <artifactId>http-reconnect-test</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+    <name>Broker HTTP Proxy Test</name>
+    <url>http://www.fusesource.com</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <activemq.version>5.4.2-fuse-01-00</activemq.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <artifactId>activemq-core</artifactId>
+            <groupId>org.apache.activemq</groupId>
+            <version>${activemq.version}</version>
+        </dependency>
+        <dependency>
+            <artifactId>activemq-core</artifactId>
+            <groupId>org.apache.activemq</groupId>
+            <version>${activemq.version}</version>
+            <type>test-jar</type>
+        </dependency>
+        <dependency>
+            <artifactId>activemq-optional</artifactId>
+            <groupId>org.apache.activemq</groupId>
+            <version>${activemq.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.14</version>
+        </dependency>
+
+        <!-- needed by activemq-optional -->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.2</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+   
+	        <plugin>
+	          <groupId>org.apache.maven.plugins</groupId>
+	          <artifactId>maven-surefire-plugin</artifactId>
+	          <version>2.8.1</version>
+	          <configuration>
+	            <skipTests>true</skipTests>
+	          </configuration>
+	        </plugin>
+        </plugins>
+    </build>
+</project>

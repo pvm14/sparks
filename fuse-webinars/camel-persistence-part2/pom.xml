@@ -14,21 +14,18 @@
   ~    See the License for the specific language governing permissions and
   ~    limitations under the License.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.apache.servicemix.features</groupId>
-        <artifactId>features</artifactId>
-        <version>4.3.1-fuse-01-09</version>
+      <groupId>org.fusesource.sparks</groupId>
+      <artifactId>fuse-webinars</artifactId>
+      <version>1.0.1-SNAPSHOT</version>
     </parent>
-
-    <groupId>com.fusesource</groupId>
+  
+    <groupId>org.fusesource.sparks.fuse-webinars</groupId>
     <artifactId>persistence-webinars-2</artifactId>
-    <version>1.0.0</version>
     <name>FuseSource :: Webinars :: Fuse ESB &amp; Persistence</name>
     <packaging>pom</packaging>
 
@@ -42,22 +39,26 @@
         <module>features</module>
         <module>idempotent</module>
         <module>aggregation</module>
+       
     </modules>
 
     <properties>
-        <build-helper-maven-plugin.version>1.5</build-helper-maven-plugin.version>
-        <felix-plugin.version>2.0.1</felix-plugin.version>
-
+        <build-helper-maven-plugin-version>1.5</build-helper-maven-plugin-version>
+        <felix-plugin-version>2.0.1</felix-plugin-version>
         <aries-version>0.2-incubating</aries-version>
-        <servicemix.version>4.3.1-fuse-01-09</servicemix.version>
-        <openjpa.version>2.1.0</openjpa.version>
-        <hsqldb.version>1.8.0.10</hsqldb.version>
-
+        <servicemix-version>4.3.1-fuse-01-09</servicemix-version>
+        <openjpa-version>2.1.0</openjpa-version>
+        <hsqldb-version>1.8.0.10</hsqldb-version>
+        <commons-logging-version>1.1.1</commons-logging-version>
+        <camel-version>2.6.0-fuse-01-09</camel-version>
+        <openjpa-version>2.0.0</openjpa-version>
+		<openjpa-plugin-version>1.2</openjpa-plugin-version>
+		
         <osgi-import-pkg>*  </osgi-import-pkg>
-        <osgi-export-pkg></osgi-export-pkg>
-        <osgi-private-pkg></osgi-private-pkg>
-        <osgi-dynamic-pkg></osgi-dynamic-pkg>
-        <require-bundle></require-bundle>
+        <osgi-export-pkg />
+        <osgi-private-pkg />
+        <osgi-dynamic-pkg />
+        <require-bundle />
 
         <persistence-file>META-INF/persistence.xml</persistence-file>
     </properties>
@@ -66,12 +67,12 @@
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-core</artifactId>
-            <version>${camel.version}</version>
+            <version>${camel-version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-spring</artifactId>
-            <version>${camel.version}</version>
+            <version>${camel-version}</version>
         </dependency>
     </dependencies>
 
@@ -139,7 +140,7 @@
 				<groupId>org.apache.felix</groupId>
 				<artifactId>maven-bundle-plugin</artifactId>
 				<extensions>true</extensions>
-				<version>${felix-plugin.version}</version>
+				<version>${felix-plugin-version}</version>
 				<configuration>
 					<instructions>
                         <Meta-Persistence>

@@ -17,28 +17,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-<<<<<<< HEAD
-  <groupId>com.fusesource.sparks</groupId>
-  <artifactId>webinars</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-=======
   <parent>
     <groupId>org.fusesource.sparks</groupId>
     <artifactId>sparks-parent</artifactId>
     <version>1.0.1-SNAPSHOT</version>
-   </parent>
-   
-  <groupId>org.fusesource.sparks</groupId>
-  <artifactId>fuse-webinars</artifactId>
->>>>>>> e2337e28216d54865295c0077896c298466e9729
+  </parent>
+  
+  <artifactId>fuse-archetypes</artifactId>
   <packaging>pom</packaging>
-  <name>FuseSource Webinars</name>
+  <name>Maven Archetypes from FuseSource</name>
 
   <modules>
-    <module>cxf-webinars</module>
-    <module>camel-persistence-part1</module>
-    <module>camel-persistence-part2</module>
-    <module>servicemix4-payment-service</module>
   </modules>
 
   <inceptionYear>2011</inceptionYear>

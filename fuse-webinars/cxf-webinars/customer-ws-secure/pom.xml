@@ -14,17 +14,26 @@
   ~    See the License for the specific language governing permissions and
   ~    limitations under the License.
 -->
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
   <parent>
+    <groupId>org.fusesource.sparks.fuse-webinars</groupId>
     <artifactId>cxf-webinars</artifactId>
+<<<<<<< HEAD
     <groupId>com.fusesource</groupId>
     <version>0.0.1-SNAPSHOT</version>
+=======
+    <version>1.0.1-SNAPSHOT</version>
+>>>>>>> e2337e28216d54865295c0077896c298466e9729
   </parent>
-  <groupId>com.fusesource</groupId>
+
+  <groupId>org.fusesource.sparks.fuse-webinars.cxf-webinars</groupId>
   <artifactId>customer-ws-secure</artifactId>
+<<<<<<< HEAD
   <version>0.0.1-SNAPSHOT</version>
+=======
+>>>>>>> e2337e28216d54865295c0077896c298466e9729
   <name>customer-ws-secure</name>
   <packaging>bundle</packaging>
 
@@ -42,28 +51,38 @@
     <dependency>
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-rt-ws-security</artifactId>
-      <version>${cxf.version}</version>
+      <version>${cxf-version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-rt-frontend-jaxws</artifactId>
+      <version>${cxf-version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-rt-transports-http</artifactId>
+      <version>${cxf-version}</version>
     </dependency>
     <dependency>
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
+      <version>1.4</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-beans</artifactId>
+      <version>${spring-version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
-    </dependency>    
+      <version>${spring-version}</version>
+    </dependency>   
+    <dependency>
+	  <groupId>org.apache.servicemix.specs</groupId>
+	  <artifactId>org.apache.servicemix.specs.jbi-api-1.0</artifactId>
+	  <version>1.3.0.2-fuse</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -71,6 +90,7 @@
       <plugin>
         <groupId>org.apache.cxf</groupId>
         <artifactId>cxf-codegen-plugin</artifactId>
+        <version>${cxf-version}</version>
         <executions>
           <execution>
             <id>generate-sources</id>

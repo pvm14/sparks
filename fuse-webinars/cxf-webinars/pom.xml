@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--
   ~ Copyright 2011 FuseSource
   ~
@@ -17,22 +16,35 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
+<<<<<<< HEAD
   <groupId>com.fusesource</groupId>
   <artifactId>cxf-webinars</artifactId>
   <packaging>pom</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>cxf-webinars</name>
+=======
+>>>>>>> e2337e28216d54865295c0077896c298466e9729
     
   <parent>
-    <groupId>org.apache.servicemix.features</groupId>
-    <artifactId>features</artifactId>
-    <version>4.3.1-fuse-01-09</version>
+    <groupId>org.fusesource.sparks</groupId>
+    <artifactId>fuse-webinars</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
-
+  
+  <groupId>org.fusesource.sparks.fuse-webinars</groupId>
+  <artifactId>cxf-webinars</artifactId>
+  <name>CXF Webinar code</name>
+  <packaging>pom</packaging>
+  <url>http://wwww.fusesource.com</url>
+  
   <properties>
-    <smx.version>4.3.1-fuse-01-09</smx.version>
+    <smx-version>4.3.1-fuse-01-09</smx-version>
+    <cxf-version>2.3.3-fuse-01-09</cxf-version>
+    <spring-version>3.0.5.RELEASE</spring-version>
+    <camel-version>2.6.0-fuse-01-09</camel-version>
   </properties>
   
+  <!--  TODO: Remove -->
   <pluginRepositories>
     <pluginRepository>
       <id>fusesource.com</id>
@@ -67,8 +79,9 @@
     <module>customer-ws-camel-cxf-pojo</module>
     <module>customer-ws-camel-cxf-payload</module>
     <module>customer-ws-camel-cxf-provider</module>
-    <module>customer-ws-secure</module>
     <module>customer-ws-security-client</module>
+    <module>customer-ws-secure</module>
     <module>customer-features</module>
+    
   </modules>
 </project>

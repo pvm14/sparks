@@ -14,19 +14,26 @@
   ~    See the License for the specific language governing permissions and
   ~    limitations under the License.
 -->
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <parent>
+    <groupId>org.fusesource.sparks.fuse-webinars</groupId>
     <artifactId>cxf-webinars</artifactId>
+<<<<<<< HEAD
     <groupId>com.fusesource</groupId>
     <version>0.0.1-SNAPSHOT</version>
+=======
+    <version>1.0.1-SNAPSHOT</version>
+>>>>>>> e2337e28216d54865295c0077896c298466e9729
   </parent>
-  <groupId>com.fusesource</groupId>
+
+  <groupId>org.fusesource.sparks.fuse-webinars.cxf-webinars</groupId>
   <artifactId>customer-features</artifactId>
   <name>customer-features</name>
+  <url>http://www.fusesource.com</url>
   <packaging>pom</packaging>
-  
+
   <build>
     <!-- enable filtering of the features file -->
     <resources>
@@ -38,8 +45,7 @@
         </includes>
       </resource>
     </resources>
-                
-                        
+
     <plugins>
       <!-- replace property placeholders in the features file with property values -->
       <plugin>
@@ -55,7 +61,7 @@
           </execution>
         </executions>
       </plugin>
-                        
+
       <!-- attach the generated features file as an artifact, so that it is published to the maven repository -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>

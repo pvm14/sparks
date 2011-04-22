@@ -13,19 +13,29 @@
   ~    See the License for the specific language governing permissions and
   ~    limitations under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <parent>
+    <groupId>org.fusesource.sparks.fuse-webinars</groupId>
     <artifactId>cxf-webinars</artifactId>
+<<<<<<< HEAD
     <groupId>com.fusesource</groupId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>  
   <groupId>com.fusesource</groupId>
   <artifactId>customer-ws-camel-cxf-pojo</artifactId>
   <packaging>bundle</packaging>
-  <name>customer-ws-camel-cxf-pojo</name>
+=======
+    <version>1.0.1-SNAPSHOT</version>
+  </parent>
 
+  <groupId>org.fusesource.sparks.fuse-webinars.cxf-webinars</groupId>
+  <artifactId>customer-ws-camel-cxf-pojo</artifactId>
+>>>>>>> e2337e28216d54865295c0077896c298466e9729
+  <name>customer-ws-camel-cxf-pojo</name>
+  <url>http://www.fusesource.com</url>
+  <packaging>bundle</packaging>
 
   <dependencies>
     <dependency>
@@ -36,10 +46,12 @@
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-core</artifactId>
+      <version>${camel-version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-cxf</artifactId>
+      <version>${camel-version}</version>
     </dependency>
   </dependencies>
   <build>
@@ -47,6 +59,7 @@
       <plugin>
         <groupId>org.apache.cxf</groupId>
         <artifactId>cxf-codegen-plugin</artifactId>
+        <version>${cxf-version}</version>
         <executions>
           <execution>
             <id>generate-sources</id>
@@ -75,8 +88,6 @@
           </instructions>
         </configuration>
       </plugin>
-
     </plugins>
   </build>
-
 </project>

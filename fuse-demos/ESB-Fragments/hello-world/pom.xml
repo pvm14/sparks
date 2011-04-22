@@ -1,19 +1,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.fusesource</groupId>
+  
+  <parent>
+    <groupId>org.fusesource.sparks.fuse-demos</groupId>
+    <artifactId></artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+  </parent>
+   
+  <groupId>org.fusesource.sparks.fuse-demos.esb-fragments-demo</groupId>
   <artifactId>osgi-test-hello-world-bundle</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>osgi-test-hello-world-bundle</name>
-  
 
-	<properties>
-		<equinox.ver>3.2.2</equinox.ver>
-		<spring.maven.artifact.version>2.5.6</spring.maven.artifact.version>
-		<slf4j.version>1.4.3</slf4j.version>
-		<spring.osgi.version>1.1.2</spring.osgi.version>
-	</properties>
+  <properties>
+	<equinox.ver>3.2.2</equinox.ver>
+	<spring.maven.artifact.version>2.5.6</spring.maven.artifact.version>
+	<slf4j.version>1.4.3</slf4j.version>
+	<spring.osgi.version>1.1.2</spring.osgi.version>
+  </properties>
 
   <build>
        <resources>

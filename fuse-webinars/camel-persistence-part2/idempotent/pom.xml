@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>persistence-webinars-2</artifactId>
-        <groupId>com.fusesource</groupId>
-        <version>1.0.0</version>
-    </parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
     <modelVersion>4.0.0</modelVersion>
-    <name>FuseSource :: Webinars :: Fuse ESB &amp; Persistence :: Camel - Idempotent</name>
-    <groupId>com.fusesource.webinars.persistence</groupId>
+    
+       <parent>
+      <groupId>org.fusesource.sparks.fuse-webinars</groupId>
+      <artifactId>persistence-webinars-2</artifactId>
+      <version>1.0.1-SNAPSHOT</version>
+    </parent>
+
+    <groupId>org.fusesource.sparks.fuse-webinars.persistence-webinars-2</groupId>  
     <artifactId>idempotent</artifactId>
+    <name>FuseSource :: Webinars :: Fuse ESB &amp; Persistence :: Camel - Idempotent</name>
     <packaging>bundle</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>com.fusesource.webinars.persistence</groupId>
+            <groupId>org.fusesource.sparks.fuse-webinars.persistence-webinars-2</groupId>
             <artifactId>dao</artifactId>
             <version>${pom.version}</version>
         </dependency>
@@ -64,11 +65,10 @@
             org.springframework.transaction.support;resolution:=optional;version="[2.5,4.0)",
             *
         </osgi-import-pkg>
-        <osgi-export-pkg></osgi-export-pkg>
+        <osgi-export-pkg />
         <osgi-private-pkg>
             com.fusesource.webinars.persistence.camel
         </osgi-private-pkg>
-        <osgi-dynamic-pkg></osgi-dynamic-pkg>
+        <osgi-dynamic-pkg />
     </properties>
-
 </project>

@@ -14,73 +14,71 @@
   ~    See the License for the specific language governing permissions and
   ~    limitations under the License.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>persistence-webinars-2</artifactId>
-        <groupId>com.fusesource</groupId>
-        <version>1.0.0</version>
-    </parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
     <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+      <groupId>org.fusesource.sparks.fuse-webinars</groupId>
+      <artifactId>persistence-webinars-2</artifactId>
+      <version>1.0.1-SNAPSHOT</version>
+    </parent>
+  
+    <groupId>org.fusesource.sparks.fuse-webinars.persistence-webinars-2</groupId>
+    <artifactId>dao</artifactId>
     <name>FuseSource :: Webinars :: Fuse ESB &amp; Persistence :: DAO</name>
     <packaging>bundle</packaging>
-    <groupId>com.fusesource.webinars.persistence</groupId>
-    <artifactId>dao</artifactId>
 
     <properties>
-        <openjpa-plugin.version>1.2</openjpa-plugin.version>
-
         <osgi-import-pkg>
-                org.hsqldb;resolution:=optional,
-                com.fusesource.webinars.persistence.dao,
-                com.fusesource.webinars.persistence.model,
-                javax.persistence;resolution:=optional;version="[1.1.0,2.1.0)",
-                javax.persistence.criteria;resolution:=optional;version="[1.1.0,2.1.0)",
-                javax.persistence.metamodel;resolution:=optional;version="[1.1.0,2.1.0)",
-                javax.persistence.spi;resolution:=optional;version="[1.1.0,2.1.0)",
-                javax.sql;resolution:=optional,
-                javax.transaction;resolution:=optional;version=1.1,
-                org.aopalliance.aop;resolution:=optional,
-                org.apache.camel.dataformat.bindy.annotation;version=2.6,
-                org.apache.commons.dbcp;resolution:=optional;version="[1.2,1.5)",
-                org.apache.commons.lang.builder;version="[2.4,3.0)",
-                org.apache.commons.logging,
-                org.apache.log4j,
-                org.apache.openjpa.conf;resolution:=optional;version="[2.0,3.0)",
-                org.apache.openjpa.enhance;version=2.1,
-                org.apache.openjpa.persistence;resolution:=optional;version="[2.0,3.0)",
-                org.apache.openjpa.persistence.criteria;resolution:=optional;version="[2.0,3.0)",
-                org.apache.openjpa.persistence.query;resolution:=optional;version="[2.0,3.0)",
-                org.apache.openjpa.util;version=2.1,
-                org.apache.xbean.spring.jndi,
-                org.aspectj.lang;resolution:=optional,
-                org.springframework.aop;resolution:=optional;version="[2.5,4.0)",
-                org.springframework.aop.framework;resolution:=optional;version="[2.5,4.0)",
-                org.springframework.context.weaving;resolution:=optional;version="[2.5,4.0)",
-                org.springframework.instrument.classloading;resolution:=optional;version="[2.5,4.0)",
-                org.springframework.orm;resolution:=optional;version="[2.5,4.0)",
-                org.springframework.orm.jpa;resolution:=optional;version="[2.5,4.0)",
-                org.springframework.orm.jpa.support;resolution:=optional;version="[2.5,4.0)",
-                org.springframework.orm.jpa.vendor;resolution:=optional;version="[2.5,4.0)",
-                org.springframework.stereotype;version=3.0,
-                org.springframework.transaction;resolution:=optional;version="[2.5,4.0)",
-                org.springframework.transaction.annotation;version=3.0,
-                org.springframework.transaction.aspectj;resolution:=optional;version="[2.5,4.0)",
-                org.springframework.transaction.jta;version=3.0,
-                org.springframework.transaction.support;resolution:=optional;version="[2.5,4.0)",
-                serp.util,
-                *
+           org.hsqldb;resolution:=optional,
+           com.fusesource.webinars.persistence.dao,
+           com.fusesource.webinars.persistence.model,
+           javax.persistence;resolution:=optional;version="[1.1.0,2.1.0)",
+           javax.persistence.criteria;resolution:=optional;version="[1.1.0,2.1.0)",
+           javax.persistence.metamodel;resolution:=optional;version="[1.1.0,2.1.0)",
+           javax.persistence.spi;resolution:=optional;version="[1.1.0,2.1.0)",
+           javax.sql;resolution:=optional,
+           javax.transaction;resolution:=optional;version=1.1,
+           org.aopalliance.aop;resolution:=optional,
+           org.apache.camel.dataformat.bindy.annotation;version=2.6,
+           org.apache.commons.dbcp;resolution:=optional;version="[1.2,1.5)",
+           org.apache.commons.lang.builder;version="[2.4,3.0)",
+           org.apache.commons.logging,
+           org.apache.log4j,
+           org.apache.openjpa.conf;resolution:=optional;version="[2.0,3.0)",
+           org.apache.openjpa.enhance;version=2.1,
+           org.apache.openjpa.persistence;resolution:=optional;version="[2.0,3.0)",
+           org.apache.openjpa.persistence.criteria;resolution:=optional;version="[2.0,3.0)",
+           org.apache.openjpa.persistence.query;resolution:=optional;version="[2.0,3.0)",
+           org.apache.openjpa.util;version=2.1,
+           org.apache.xbean.spring.jndi,
+           org.aspectj.lang;resolution:=optional,
+           org.springframework.aop;resolution:=optional;version="[2.5,4.0)",
+           org.springframework.aop.framework;resolution:=optional;version="[2.5,4.0)",
+           org.springframework.context.weaving;resolution:=optional;version="[2.5,4.0)",
+           org.springframework.instrument.classloading;resolution:=optional;version="[2.5,4.0)",
+           org.springframework.orm;resolution:=optional;version="[2.5,4.0)",
+           org.springframework.orm.jpa;resolution:=optional;version="[2.5,4.0)",
+           org.springframework.orm.jpa.support;resolution:=optional;version="[2.5,4.0)",
+           org.springframework.orm.jpa.vendor;resolution:=optional;version="[2.5,4.0)",
+           org.springframework.stereotype;version=3.0,
+           org.springframework.transaction;resolution:=optional;version="[2.5,4.0)",
+           org.springframework.transaction.annotation;version=3.0,
+           org.springframework.transaction.aspectj;resolution:=optional;version="[2.5,4.0)",
+           org.springframework.transaction.jta;version=3.0,
+           org.springframework.transaction.support;resolution:=optional;version="[2.5,4.0)",
+           serp.util,
+           *
          </osgi-import-pkg>
          <osgi-export-pkg>
-                com.fusesource.webinars.persistence.dao,
-                com.fusesource.webinars.persistence.model
+           com.fusesource.webinars.persistence.dao,
+           com.fusesource.webinars.persistence.model
          </osgi-export-pkg>
          <osgi-private-pkg>
-                com.fusesource.webinars.persistence.dao.impl
+           com.fusesource.webinars.persistence.dao.impl
          </osgi-private-pkg>
-         <osgi-dynamic-pkg></osgi-dynamic-pkg>
-
+         <osgi-dynamic-pkg />
     </properties>
 
     <dependencies>
@@ -88,7 +86,7 @@
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-jpa</artifactId>
-            <version>${camel.version}</version>
+            <version>${camel-version}</version>
             <scope>compile</scope>
             <exclusions>
                 <exclusion>
@@ -100,7 +98,7 @@
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-bindy</artifactId>
-            <version>${camel.version}</version>
+            <version>${camel-version}</version>
             <scope>compile</scope>
         </dependency>
 
@@ -113,13 +111,14 @@
         <dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging</artifactId>
+			<version>${commons-logging-version}</version>
         </dependency>
 
         <!-- OpenJPA -->
         <dependency>
             <groupId>org.apache.openjpa</groupId>
             <artifactId>openjpa</artifactId>
-            <version>${openjpa.version}</version>
+            <version>${openjpa-version}</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
@@ -130,7 +129,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>openjpa-maven-plugin</artifactId>
-                <version>${openjpa-plugin.version}</version>
+                <version>${openjpa-plugin-version}</version>
                 <configuration>
                     <includes>**/model/*.class</includes>
                     <addDefaultConstructor>true</addDefaultConstructor>
@@ -150,17 +149,16 @@
                     <dependency>
                         <groupId>org.apache.openjpa</groupId>
                         <artifactId>openjpa</artifactId>
-                        <version>${openjpa.version}</version>
+                        <version>${openjpa-version}</version>
                     </dependency>
                     <dependency>
                         <groupId>commons-logging</groupId>
                         <artifactId>commons-logging</artifactId>
-                        <version>${commons-logging.version}</version>
+                        <version>${commons-logging-version}</version>
                     </dependency>
                 </dependencies>
 
             </plugin>
 		</plugins>
 	</build>
-
 </project>

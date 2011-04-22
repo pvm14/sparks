@@ -14,23 +14,22 @@
   ~    See the License for the specific language governing permissions and
   ~    limitations under the License.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>persistence-webinars-2</artifactId>
-        <groupId>com.fusesource</groupId>
-        <version>1.0.0</version>
-    </parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
     <modelVersion>4.0.0</modelVersion>
+    
+    <parent>
+      <groupId>org.fusesource.sparks.fuse-webinars</groupId>
+      <artifactId>persistence-webinars-2</artifactId>
+      <version>1.0.1-SNAPSHOT</version>
+    </parent>
+  
+    <groupId>org.fusesource.sparks.fuse-webinars.persistence-webinars-2</groupId>
+    <artifactId>dao-jta</artifactId>
     <name>FuseSource :: Webinars :: Fuse ESB &amp; Persistence :: DAO - JTA</name>
     <packaging>bundle</packaging>
-    <groupId>com.fusesource.webinars.persistence</groupId>
-    <artifactId>dao-jta</artifactId>
-
+    
     <properties>
-        <openjpa-plugin.version>1.2</openjpa-plugin.version>
-
          <osgi-import-pkg>
                 org.apache.derby.jdbc;resolution:=optional,
                 com.atomikos.jdbc;resolution:=optional,
@@ -85,16 +84,16 @@
          <osgi-private-pkg>
                 com.fusesource.webinars.persistence.dao.impl
          </osgi-private-pkg>
-         <osgi-dynamic-pkg></osgi-dynamic-pkg>
+         <osgi-dynamic-pkg />
          <!-- <require-bundle>wrap_mvn_com.atomikos_transactions_3.7.0</require-bundle>-->
     </properties>
 
     <dependencies>
-            <!-- Camel -->
+        <!-- Camel -->
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-jpa</artifactId>
-            <version>${camel.version}</version>
+            <version>${camel-version}</version>
             <scope>compile</scope>
             <exclusions>
                 <exclusion>
@@ -106,10 +105,9 @@
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-bindy</artifactId>
-            <version>${camel.version}</version>
+            <version>${camel-version}</version>
             <scope>compile</scope>
         </dependency>
-
         <!-- Commons -->
         <dependency>
 			<groupId>commons-lang</groupId>
@@ -119,24 +117,23 @@
         <dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging</artifactId>
+			<version>${commons-logging-version}</version>
         </dependency>
-
         <!-- OpenJPA -->
         <dependency>
             <groupId>org.apache.openjpa</groupId>
             <artifactId>openjpa</artifactId>
-            <version>${openjpa.version}</version>
+            <version>${openjpa-version}</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
 
     <build>
 		<plugins>
-
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>openjpa-maven-plugin</artifactId>
-                <version>${openjpa-plugin.version}</version>
+                <version>${openjpa-plugin-version}</version>
                 <configuration>
                     <includes>**/model/*.class</includes>
                     <addDefaultConstructor>true</addDefaultConstructor>
@@ -151,22 +148,19 @@
                         </goals>
                     </execution>
                 </executions>
-
                 <dependencies>
                     <dependency>
                         <groupId>org.apache.openjpa</groupId>
                         <artifactId>openjpa</artifactId>
-                        <version>${openjpa.version}</version>
+                        <version>${openjpa-version}</version>
                     </dependency>
                     <dependency>
                         <groupId>commons-logging</groupId>
                         <artifactId>commons-logging</artifactId>
-                        <version>${commons-logging.version}</version>
+                        <version>${commons-logging-version}</version>
                     </dependency>
                 </dependencies>
-
             </plugin>
 		</plugins>
 	</build>
-
 </project>
