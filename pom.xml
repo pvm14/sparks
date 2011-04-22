@@ -35,6 +35,7 @@
   <modules>
     <module>fuse-webinars</module>
     <module>fuse-demos</module>
+    <module>fuse-archetypes</module>
   </modules>
 
   <properties>
