@@ -66,12 +66,22 @@ can change the WS-Security settings. If you do so, you must update the customer-
 to get the changes. To do this, do an 'osgi:list  | grep customer' in the the ServiceMix shell, to 
 get the bundle id, and then do 'osgi:restart <bundle-id>'. 
 
-MISC
-----
-To install the camel-cxf demos into Fuse ESB, you need to make make sure you 
-have installed the 'camel-cxf' feature. Also, you need to install the
-'camel-velocity' feature for the payload and provider examples. When you have 
-this done, you can install the relevant features. 
+Installing the camel-cxf routes
+-------------------------------
+To install the camel-cxf demos into Fuse ESB, you need install the relevant feature.
+
+For example, to install the camel-cxf POJO route, do 
+
+    karaf@root> features:uninstall customer-ws-camel-cxf-pojo
+
+To install the camel-cxf Payload route, do 
+
+    karaf@root> features:uninstall customer-ws-camel-cxf-payload
+
+Finally, to install the camel-cxf Provider route, do 
+
+    karaf@root> features:uninstall customer-ws-camel-cxf-pojo
+
 
 
 Running the secure customer WS client
