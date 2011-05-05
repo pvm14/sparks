@@ -43,11 +43,11 @@ public class CustomerServiceImpl implements CustomerService {
         Customer c = new Customer();
         MessageContext ctx = wsc.getMessageContext();
         
-        AuthorizationPolicy p = (AuthorizationPolicy) ctx.get("org.apache.cxf.configuration.security.AuthorizationPolicy");
-        if (p != null)  {
-          String user = p.getUserName();
-          String pw = p.getPassword();
-        }
+//        AuthorizationPolicy p = (AuthorizationPolicy) ctx.get("org.apache.cxf.configuration.security.AuthorizationPolicy");
+//        if (p != null)  {
+//          String user = p.getUserName();
+//          String pw = p.getPassword();
+//        }
         
         c.setFirstName("Ade");
         c.setLastName("Trenaman");
@@ -58,10 +58,12 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     public void updateCustomer(Customer cust) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        log.info("updating customer " + cust.getFirstName());
     }
 
     public void getCustomerStatus(String customerId, Holder<String> status, Holder<String> statusMessage) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        log.info("Getting status for customer " + customerId);
+        status.value = "Active";
+        statusMessage.value = "In the park, playing with my frisbee.";
     }
 }

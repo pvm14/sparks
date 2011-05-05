@@ -29,7 +29,7 @@
 ">
 
   <cxf:cxfEndpoint id="customer-ws"
-        address="http://0.0.0.0:9003/Customer"
+        address="http://127.0.0.1:9003/Customer"
         endpointName="c:SOAPOverHTTP"
         serviceName="c:CustomerService"
         serviceClass="com.fusesource.demo.wsdl.customerservice.CustomerService"
