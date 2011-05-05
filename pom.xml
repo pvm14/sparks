@@ -47,7 +47,7 @@
   </properties>
 
   <url>http://${forge-project-id}.fusesource.org</url>
-  <inceptionYear>2009</inceptionYear>
+  <inceptionYear>2011</inceptionYear>
 
   <organization>
     <name>FuseSource</name>
