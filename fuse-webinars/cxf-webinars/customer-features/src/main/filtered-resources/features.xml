@@ -23,6 +23,12 @@
     <feature version="${smx-version}">cxf-osgi</feature>
     <bundle>mvn:org.fusesource.sparks.fuse-webinars.cxf-webinars/customer-ws-osgi-bundle/${pom.version}</bundle>
   </feature>
+  
+  <feature name="customer-ws-client" version="${pom.version}">
+    <feature version="${cxf-version}">cxf</feature>
+    <feature version="${smx-version}">cxf-osgi</feature>
+    <bundle>mvn:org.fusesource.sparks.fuse-webinars.cxf-webinars/customer-ws-client/${pom.version}</bundle>
+  </feature>  
 
   <feature name="customer-ws-secure" version="${pom.version}">
     <feature version="${cxf-version}">cxf</feature>

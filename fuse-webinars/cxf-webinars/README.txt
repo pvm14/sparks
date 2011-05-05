@@ -6,15 +6,38 @@ The samples for the cxf-webinars have all been modeled as ServiceMix 'features',
 is, sets of bundles. To install each feature, you must first register the features
 file with ServiceMix. In the ServiceMix shell, try this: 
 
-	features:addUrl mvn:com.fusesource/customer-features/1.0.0/xml
+    karaf@root> features:addUrl mvn:org.fusesource.sparks.fuse-webinars.cxf-webinars/customer-features/<version>/xml
 
 Now do 'features:list | grep customer'. You should see the relevant features listed. Pick
 the feature you're interested in, and install it using 'features:install'.
 
+Installing the customer-ws-osgi-bundle
+--------------------------------------
+The 'customer-ws-osgi-bundle' deploys a simple web service listening on ServiceMix's
+HTTP port (by default, this is port 8181). To install, just do 
+
+    karaf@root> features:install customer-ws
+
+You will now find that the server is listening on 'http://localhost:8181/cxf/Customers' 
+- you can verify this quickly by pointing your browser at 'http://localhost:8181/cxf/Customers?wsdl'.
+You can test the service by using a tool such as SoapUI from http://www.soapui.org. 
+
+Alternatively, you can install a bundle that creates a CXF client to this web 
+service. 
+
+    karaf@root> features:install customer-ws-client
+
+The bundle creates a thread that invokes on the web service once a second. It logs 
+the response it gets; you can view the log using 
+
+    karaf@root> log:display -n 10
+
+
 Installing the customer-ws-secure web service.
 ----------------------------------------------
-First, you've got copy the certificates to the <servicemix-install>/etc directory. You 
-can do this with something like: 
+The customer-ws-secure web service provides a secure implementation of the web service. 
+To make this work, First, you've got copy the certificates to the <servicemix-install>/etc 
+directory. You can do this with something like: 
 
 	cp certs/*jks <servicemix-install>/etc
 
