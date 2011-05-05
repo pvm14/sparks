@@ -34,7 +34,6 @@ public class CustomerServiceImpl implements CustomerService {
 
     private static final Logger log = LoggerFactory.getLogger(CustomerServiceImpl.class);
 
-
     @Resource
     private WebServiceContext wsc;
     
@@ -43,11 +42,11 @@ public class CustomerServiceImpl implements CustomerService {
         Customer c = new Customer();
         MessageContext ctx = wsc.getMessageContext();
         
-//        AuthorizationPolicy p = (AuthorizationPolicy) ctx.get("org.apache.cxf.configuration.security.AuthorizationPolicy");
-//        if (p != null)  {
-//          String user = p.getUserName();
-//          String pw = p.getPassword();
-//        }
+        AuthorizationPolicy p = (AuthorizationPolicy) ctx.get("org.apache.cxf.configuration.security.AuthorizationPolicy");
+        if (p != null)  {
+          String user = p.getUserName();
+          String pw = p.getPassword();
+        }
         
         c.setFirstName("Ade");
         c.setLastName("Trenaman");
